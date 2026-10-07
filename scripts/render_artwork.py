@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Render the project's deliberately simple SVG primitives; no font/stock inputs.
 
 Developer dependency: Pillow 12.3.0. Checked-in PNGs do not require Pillow at runtime.
@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-PIX = ROOT / 'plugin/mod_videolesson/pix'
+PIX = ROOT / 'plugin/mod_videolessonstream/pix'
 
 
 def render(source, output):

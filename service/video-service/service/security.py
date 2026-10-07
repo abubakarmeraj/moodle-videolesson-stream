@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 import base64
 import hashlib
 import hmac
@@ -27,14 +27,26 @@ def identifier(value):
         raise Rejected('invalid_identifier', 400)
     return value
 
-def authenticate(headers, body):
-    keyid, timestamp, nonce, signature = [headers.get('x-cf-' + k, '') for k in ('key', 'time', 'nonce', 'signature')]
+def authenticate(headers, body, path='/v2/rpc'):
+    # Authenticate the exact route and complete header family; reject mixed identities.
+    if path == '/v2/rpc':
+        prefix, other = 'x-vl-', 'x-cf-'
+    elif path == '/v1/rpc' and config.ALLOW_LEGACY_PROTOCOL:
+        prefix, other = 'x-cf-', 'x-vl-'
+    else:
+        raise Rejected('service_auth')
+    if any(name.lower().startswith(other) for name in headers):
+        raise Rejected('service_auth')
+    names = [prefix + k for k in ('key', 'time', 'nonce', 'signature')]
+    if hasattr(headers, 'getlist') and any(len(headers.getlist(name)) != 1 for name in names):
+        raise Rejected('service_auth')
+    keyid, timestamp, nonce, signature = [headers.get(name, '') for name in names]
     selected=config.AUTH_KEYS.get(keyid)
     if not selected or (selected[1] is not None and selected[1]<=time.time()) or not re.fullmatch(r'[0-9]{10}', timestamp) or abs(time.time()-int(timestamp)) > 60:
         raise Rejected('service_auth')
     if not re.fullmatch(r'[a-f0-9]{64}', nonce) or not re.fullmatch(r'[a-f0-9]{64}', signature):
         raise Rejected('service_auth')
-    canonical = '\n'.join(['POST', '/v1/rpc', keyid, timestamp, nonce, digest(body)])
+    canonical = '\n'.join(['POST', path, keyid, timestamp, nonce, digest(body)])
     expected = hmac.new(selected[0].encode(), canonical.encode(), hashlib.sha256).hexdigest()
     if not hmac.compare_digest(expected, signature):
         raise Rejected('service_auth')
@@ -47,7 +59,7 @@ def authenticate(headers, body):
 
 def grant(video, subject, session):
     now = int(time.time())
-    payload = {'aud':'codefortex-media', 'tenant':video['tenant'], 'video':video['uuid'],
+    payload = {'aud':'videolesson-stream-media', 'tenant':video['tenant'], 'video':video['uuid'],
         'revision':video['revision'], 'sub':subject, 'session':session, 'exp':now+config.GRANT_TTL, 'iat':now}
     data = base64.urlsafe_b64encode(json.dumps(payload, separators=(',',':')).encode()).rstrip(b'=')
     mac = hmac.new(config.GRANT_KEY.encode(), data, hashlib.sha256).hexdigest()
@@ -59,7 +71,10 @@ def verify_grant(token):
         if len(token) > 2048 or not hmac.compare_digest(hmac.new(config.GRANT_KEY.encode(), data.encode(), hashlib.sha256).hexdigest(), signature):
             raise ValueError()
         result = json.loads(base64.urlsafe_b64decode(data+'='*((-len(data))%4)))
-        if result['aud'] != 'codefortex-media' or result['tenant'] != config.TENANT or result['exp'] <= time.time():
+        audiences = {'videolesson-stream-media'}
+        if config.ALLOW_LEGACY_PROTOCOL:
+            audiences.add('codefortex-media')  # Temporary protocol-1 grant compatibility.
+        if result['aud'] not in audiences or result['tenant'] != config.TENANT or result['exp'] <= time.time():
             raise ValueError()
         identifier(result['video'])
         if not re.fullmatch(r'[a-f0-9]{64}', result['sub']) or not re.fullmatch(r'[a-f0-9]{64}', result['session']):

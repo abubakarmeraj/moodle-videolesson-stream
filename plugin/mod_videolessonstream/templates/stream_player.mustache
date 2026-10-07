@@ -1,0 +1,5 @@
+{{! ValeLMS contributors additions, GPL v3 or later. All dynamic values use Mustache escaping. }}
+<section class="vls-video-region" aria-label="{{name}}">
+    <video id="vls-player" controls playsinline preload="metadata" aria-label="{{name}}"{{#width}} style="--vls-video-aspect: {{width}} / {{height}}"{{/width}}></video>
+    <p id="vls-watch-status" role="status" aria-live="polite"></p>
+</section>

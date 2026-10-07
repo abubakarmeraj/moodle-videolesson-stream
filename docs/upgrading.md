@@ -1,27 +1,34 @@
-# Upgrading
+# Upgrading and the RC2 identity boundary
 
-Keep a matched recovery point of Moodle data, service MariaDB, protected generated
-configuration and both buckets. Do not restore only one side of references/accounting.
+RC2 coordinates **mod_videolessonstream2026100702 / ValeLMS3.1.0-rc2** with
+**ValeLMS Video Service0.5.0-rc2**, protocol2/schema001–005. RC1 was a different
+component, `mod_videolesson`. **Installing RC2 is not an in-place RC1 plugin
+upgrade.** Read [RC1 to RC2](rc1-to-rc2.md) before changing an existing prerelease site.
 
-RC1 coordinates plugin **2026100701 / 3.1.0-rc1** with service **0.5.0-rc1**,
-protocol1/schema001–005. The previous development plugin/service tuple is not the
-advertised RC1 tuple. Stop runtime roles during controlled source replacement;
-preserve DB/Redis identities, secrets, tenant and policy. Independently verify
-artifact manifests before replacement. Do not regenerate an installation handoff.
+Keep matched backups of Moodle DB/moodledata, service MariaDB, protected
+configuration and both buckets. Do not uninstall RC1, rename/adopt its tables or
+assume Moodle migrates activities/files/progress/capabilities automatically.
+Fresh RC2 installs its own13-table namespace. It has only its own version savepoint;
+there is no inherited RC1 upgrade chain or automatic destructive migration.
 
-From plugin2026100700, Moodle runs a version savepoint only; no new columns/tables
-or media mutation. Purge Moodle caches normally after source replacement. Service
-0.5.0-dev.1 → 0.5.0-rc1 changes release/license metadata, not schema: migrations
-remain001–005, no006. Run the supported migrator to verify existing schema; do not
-manually edit version rows. Earlier plugin versions may have real supported upgrades.
+Service migrations001–005 and dependency lock are unchanged; no006 is introduced
+for identity/protocol changes. Stop roles during controlled source replacement;
+preserve DB/Redis identities, explicit Redis namespace, tenant, policy and secrets.
+The new default namespace does not migrate old queues. Do not point separate
+Moodle reference authorities at the same writable service tenant/state.
 
-Compose: use the new extracted bundle and existing `VIDEO_CONFIG` directory,
-rebuild/start using the documented overlay. Native: stop roles, prepare a new
-verified release/venv and explicitly switch `current` after matched backup; the
-installer intentionally refuses a silent changed-source adoption. There is no
-automatic in-place native upgrade command in RC1.
+New requests sign the exact `/v2/rpc` route with X-VL headers; new grants use the
+neutral media audience. Authenticated protocol1 aliases temporarily remain when
+SERVICE_ALLOW_LEGACY_PROTOCOL=true. Disable them only after retiring old clients
+and grants. Aliases do not migrate Moodle data; RC1's setup compatibility tuple
+does not silently become RC2-compatible. Existing ready objects are not retranscoded.
 
-Require Test Connection and one small upload/playback/completion smoke before
-resuming normal use. Existing ready media need no retranscode, reseed or URL changes.
-The new original plugin artwork uses stable filenames; normal Moodle/browser
-asset cache refresh may be needed. Never bypass Moodle downgrade protection.
+Compose: use the new verified bundle and existing protected VIDEO_CONFIG for a
+controlled service upgrade. Native: stop roles, prepare a verified release/venv
+and explicitly switch current after matched backup; the installer deliberately
+does not silently adopt changed source. Never regenerate identity as routine upgrade.
+
+Purge Moodle caches normally after installing/replacing RC2 source. Require
+Test Connection and a short matched-artifact upload/playback/completion smoke
+before normal use. Do not bypass Moodle downgrade protection, publish RC2 or
+modify an existing hosted LMS as part of Local qualification.

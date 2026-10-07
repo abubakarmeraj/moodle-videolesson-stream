@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Signed server-only control plane. Never accepts media bodies or arbitrary URLs."""
 import hashlib
 import json
@@ -314,7 +314,8 @@ def health():
 @app.get('/live')
 def live(): return {'alive':True}
 
-@app.post('/v1/rpc')
+@app.post('/v1/rpc')  # Temporary authenticated alias; operator-disableable.
+@app.post('/v2/rpc')
 async def endpoint(request: Request):
     requestid = str(uuid.uuid4())
     started = time.monotonic()
@@ -327,7 +328,7 @@ async def endpoint(request: Request):
             async for chunk in request.stream():
                 body += chunk
                 if len(body)>65536: raise Rejected('body_limit',413)
-        await run_in_threadpool(authenticate,request.headers,body)
+        await run_in_threadpool(authenticate,request.headers,body,request.url.path)
         data=json.loads(body)
         if not isinstance(data,dict): raise Rejected('invalid_json',400)
         await run_in_threadpool(rate,'rpc',config.TENANT,6000)

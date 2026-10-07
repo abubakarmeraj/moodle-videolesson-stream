@@ -22,7 +22,7 @@ node_modules, media, DB state and .lab out of Git. See [installation](docs/insta
 
 ## Repository layout and development lanes
 
-- plugin/mod_videolesson/: Moodle PHP, capabilities, forms, AMD and player integration.
+- plugin/mod_videolessonstream/: Moodle PHP, capabilities, forms, AMD and player integration.
 - service/video-service/: Python API, gateway, dispatcher, worker, janitor and migrations.
 - deploy/: Compose/native installation and safe example configuration.
 - tests/ and scripts/: public offline checks and build tooling.
@@ -49,12 +49,12 @@ resolved Compose configuration or disable TLS verification. The
 
 ~~~sh
 .venv/bin/python -B -m unittest discover -s tests -v
-find plugin/mod_videolesson tests -name '*.php' -print0 | xargs -0 -n1 php -l
+find plugin/mod_videolessonstream tests -name '*.php' -print0 | xargs -0 -n1 php -l
 php tests/test_compatibility.php
 node tests/test_upload_urls.cjs
 node scripts/build_upload_amd.cjs /tmp/video-amd-check
-cmp /tmp/video-amd-check/upload.min.js plugin/mod_videolesson/amd/build/upload.min.js
-cmp /tmp/video-amd-check/upload.min.js.map plugin/mod_videolesson/amd/build/upload.min.js.map
+cmp /tmp/video-amd-check/upload.min.js plugin/mod_videolessonstream/amd/build/upload.min.js
+cmp /tmp/video-amd-check/upload.min.js.map plugin/mod_videolessonstream/amd/build/upload.min.js.map
 .venv/bin/python -B scripts/check_release.py
 ~~~
 

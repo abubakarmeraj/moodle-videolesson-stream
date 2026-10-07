@@ -1,6 +1,6 @@
 # Third-party notices
 
-Project-owned code and original CodeFortex artwork are GPL-3.0-or-later. This
+Project-owned code and original ValeLMS artwork are GPL-3.0-or-later. This
 does not relicense upstream code, libraries, services or operating systems.
 Original BitKea Technologies LLP / MooPlugins PHP copyrights and GPL3-or-later
 grants remain in the inherited Moodle plugin. Moodle itself is not bundled.

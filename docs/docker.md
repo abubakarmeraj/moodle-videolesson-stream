@@ -1,7 +1,7 @@
 # Docker Compose installation
 
 Run on Linux with Docker Engine, Compose v2 and Python 3.12. Extract
-`codefortex-video-service-0.5.0-rc1.tar.gz`; commands below run from its
+`valelms-video-service-0.5.0-rc2.tar.gz`; commands below run from its
 `video-lesson/` root. No Moodle, MinIO or TLS-certificate service is bundled.
 
 ## Prepare

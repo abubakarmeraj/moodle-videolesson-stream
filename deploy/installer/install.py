@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Native installer. Fresh Ubuntu 24.04 only; existing DB requires manual integration.
 
 Qualification mode has no usable storage credentials and denies non-loopback traffic.
@@ -117,7 +117,7 @@ def main():
         raise RuntimeError('Failure injection is restricted to qualification mode')
     source = Path(__file__).resolve().parents[2] / 'service/video-service'
     version = (source / 'VERSION').read_text().strip()
-    if version != '0.5.0-rc1':
+    if version != '0.5.0-rc2':
         raise RuntimeError('Service version outside reviewed installer contract')
     import importlib.util
     spec = importlib.util.spec_from_file_location('release_manifest', Path(__file__).with_name('manifest.py'))

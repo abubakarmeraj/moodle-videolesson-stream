@@ -1,0 +1,5166 @@
+{
+  "scope": "starting tracked source vs intended current public tree; inventory and delta excluded to avoid self-reference",
+  "before_count": 145,
+  "after_count": 36,
+  "before": [
+    {
+      "path": "CHANGELOG.md",
+      "line": 14,
+      "column": 12,
+      "category": "F",
+      "line_sha256": "a9f4395f126286a95c3f6271fbd91c47bf92a4de6cb4bd4f300c02ea7a7a9074"
+    },
+    {
+      "path": "README.md",
+      "line": 1,
+      "column": 3,
+      "category": "A",
+      "line_sha256": "c9609c4f695a7cdcd92f55eee6207790738bdae66ad58c85d1b15ea3249f22d8"
+    },
+    {
+      "path": "README.md",
+      "line": 8,
+      "column": 49,
+      "category": "A",
+      "line_sha256": "2977b397a80de6f9a323cbcc3ec44e1d137a202b3ad71d4e8e4d2e3cff399a3e"
+    },
+    {
+      "path": "README.md",
+      "line": 48,
+      "column": 54,
+      "category": "A",
+      "line_sha256": "3fc74860ea922c82d68ac74a181aab9004ac52b007b118b020f1d56b97599bc7"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "line": 3,
+      "column": 33,
+      "category": "A",
+      "line_sha256": "e459d39edef49dcf3ac104fd1753c486fcea2fcd065e8fc29d7264a641c9ced4"
+    },
+    {
+      "path": "deploy/docker/Dockerfile",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/docker/compose.yaml",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/docker/compose.yaml",
+      "line": 5,
+      "column": 10,
+      "category": "C",
+      "line_sha256": "0ee57b00125252bc86af8b36af6b1fcb92937c0db436c85fe595cc3c3122a450"
+    },
+    {
+      "path": "deploy/docker/prepare.py",
+      "line": 3,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/installer/check.py",
+      "line": 3,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/installer/install.py",
+      "line": 3,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/installer/install.sh",
+      "line": 3,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "deploy/installer/manifest.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "docs/development/ARTWORK-PROVENANCE.md",
+      "line": 1,
+      "column": 12,
+      "category": "A",
+      "line_sha256": "eca4d342ab6ce90f002a438e1031f9dac6eef03899b3952d46b3afe00be17610"
+    },
+    {
+      "path": "docs/development/ARTWORK-PROVENANCE.md",
+      "line": 3,
+      "column": 43,
+      "category": "A",
+      "line_sha256": "e974f706e1a85ac804560b409d733e5d1c7e7aa0fa058703878d4310c85b2e4a"
+    },
+    {
+      "path": "docs/development/ARTWORK-PROVENANCE.md",
+      "line": 18,
+      "column": 30,
+      "category": "B",
+      "line_sha256": "c070810dfb581e50986eb9c39daec84623bcddc9990234b3344306556336ad50"
+    },
+    {
+      "path": "docs/development/ARTWORK-PROVENANCE.md",
+      "line": 21,
+      "column": 5,
+      "category": "C",
+      "line_sha256": "109e0ac23d2a9fd4130f6096dbeedbd9bf5959b0eb4b9502c2a69f25afb735f1"
+    },
+    {
+      "path": "docs/development/LICENSE-AUDIT.md",
+      "line": 13,
+      "column": 4,
+      "category": "A",
+      "line_sha256": "67ba8af9090d53f88986c1c901b2b52a948fde8dd6cd43dbb9b8361464ccc954"
+    },
+    {
+      "path": "docs/development/RC1-ARTIFACT-VERIFICATION-HANDOFF.md",
+      "line": 9,
+      "column": 20,
+      "category": "F",
+      "line_sha256": "572504bf9770a5d9d133f38d7c685ad028bbdd7de8d59323a97a00a786bc305e"
+    },
+    {
+      "path": "docs/development/rc1/PREPARATION-RESULTS.md",
+      "line": 3,
+      "column": 41,
+      "category": "F",
+      "line_sha256": "9b7bb9f8e2a5468327fedd1915788b60dccdf3763ecb0cc117469af60766a4e5"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 963,
+      "column": 43,
+      "category": "F",
+      "line_sha256": "d72961cdc14f2052d69b251c1951d447548ec5152487e2262f9a166caedb72d6"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 965,
+      "column": 36,
+      "category": "F",
+      "line_sha256": "1549667a802921c765c852b4d5dccc95ec2d84257c0d1bbb6c7290f7bffd91e5"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 966,
+      "column": 18,
+      "category": "F",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 977,
+      "column": 18,
+      "category": "F",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 988,
+      "column": 18,
+      "category": "F",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 999,
+      "column": 18,
+      "category": "F",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 1010,
+      "column": 18,
+      "category": "F",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/docker.md",
+      "line": 4,
+      "column": 2,
+      "category": "C",
+      "line_sha256": "0ef755b3fbc7227f169a3a08577219289e9ffcdfb49bafc6446cbd752346a5cf"
+    },
+    {
+      "path": "docs/release/IDENTITY.json",
+      "line": 4,
+      "column": 22,
+      "category": "F",
+      "line_sha256": "2a1c7b37162e7cd4c461db1113e4e60f1ea73c61abe1571547253aca1776ce90"
+    },
+    {
+      "path": "docs/release/PRODUCT-MANIFEST.json",
+      "line": 23,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/PRODUCT-MANIFEST.json",
+      "line": 28,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/PRODUCT-MANIFEST.json",
+      "line": 173,
+      "column": 45,
+      "category": "F",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/PRODUCT-MANIFEST.json",
+      "line": 813,
+      "column": 41,
+      "category": "F",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/PRODUCT-MANIFEST.json",
+      "line": 943,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "docs/release/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 478,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 483,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 628,
+      "column": 45,
+      "category": "F",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1268,
+      "column": 41,
+      "category": "F",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1398,
+      "column": 47,
+      "category": "F",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "plugin/mod_videolesson/README.md",
+      "line": 1,
+      "column": 3,
+      "category": "A",
+      "line_sha256": "02c244a508e7a2f45c7e30d094022b8b733240ddf2dc1e4f73b261096e2d6e38"
+    },
+    {
+      "path": "plugin/mod_videolesson/ajax.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js",
+      "line": 1,
+      "column": 25,
+      "category": "C",
+      "line_sha256": "2e56111d18d314e949656db75ee4b10d31044423c4b3f0d35fd63ee6fc97a179"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js",
+      "line": 1,
+      "column": 3255,
+      "category": "C",
+      "line_sha256": "2e56111d18d314e949656db75ee4b10d31044423c4b3f0d35fd63ee6fc97a179"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js",
+      "line": 3,
+      "column": 22,
+      "category": "A",
+      "line_sha256": "da89921379e4b70befb896ee06817f0d8d87aeb9d73b939827de6c9df53433a6"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js.map",
+      "line": 1,
+      "column": 22,
+      "category": "B",
+      "line_sha256": "0c76c9085d16fd94eb6bfc8f18c61b1111115541a35f25f31ab9335813103fc8"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js.map",
+      "line": 1,
+      "column": 60,
+      "category": "B",
+      "line_sha256": "0c76c9085d16fd94eb6bfc8f18c61b1111115541a35f25f31ab9335813103fc8"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js.map",
+      "line": 1,
+      "column": 98,
+      "category": "B",
+      "line_sha256": "0c76c9085d16fd94eb6bfc8f18c61b1111115541a35f25f31ab9335813103fc8"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/codefortex.min.js.map",
+      "line": 1,
+      "column": 5962,
+      "category": "B",
+      "line_sha256": "0c76c9085d16fd94eb6bfc8f18c61b1111115541a35f25f31ab9335813103fc8"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/build/upload.min.js.map",
+      "line": 1,
+      "column": 1858,
+      "category": "B",
+      "line_sha256": "577e911ec174b23b4482389feac44491dc3c661d17f5b727ce2af607fcebcf99"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/src/codefortex.js",
+      "line": 1,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/src/codefortex.js",
+      "line": 148,
+      "column": 60,
+      "category": "C",
+      "line_sha256": "085591d25cb5d4029b7f0ae879d1b835c89142c74a648733f3ca03def4c06d83"
+    },
+    {
+      "path": "plugin/mod_videolesson/amd/src/upload.js",
+      "line": 1,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "814d9807f7b657fd1732b934bfbbcb2545c48c054d0495a54f275466cdd92ce7"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/access.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/gateway_provider.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/library.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/provider.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "2778424c6058538c012a54c47d8961f1a21467dc0d6cb9faad258f872528be49"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/providers.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/providers.php",
+      "line": 15,
+      "column": 21,
+      "category": "C",
+      "line_sha256": "1f12cba394166feaa877f256a4e20f0b6e53191744e3ebc5a96742ada066f995"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/provisioning.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/real_provider.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "866e83676b9fe579855d190c2694cf73ee55c6e6cecb3393ab45f4925fcac4fc"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/references.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/service_lifecycle.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/service_setup.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "255a43fb2eb45bd30235d3c4d3cf3770dbc99af0853e5d5582b966d74504d926"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/source_policy.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/upload_provider.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/local/watch.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/privacy/provider.php",
+      "line": 97,
+      "column": 50,
+      "category": "A",
+      "line_sha256": "7d51cbc2b1c8b94025bc782e16e66d04313f03a4eedf7ff9b7f04eade7c33051"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/privacy/provider.php",
+      "line": 224,
+      "column": 63,
+      "category": "A",
+      "line_sha256": "e52c47350f43e720c4554a7cd4223940dd01dd148087427f44faa22a054043a8"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/privacy/provider.php",
+      "line": 298,
+      "column": 59,
+      "category": "A",
+      "line_sha256": "251a580b81336cdbcb8da1c3060e07c33cbbe02093ed6f6695b1684c31eac7a9"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/task/reconcile.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/task/reconcile.php",
+      "line": 14,
+      "column": 21,
+      "category": "A",
+      "line_sha256": "cad205709feee39e6832b33c2fa1f4499f448d4b8d0caed092e3d71b6af1bed8"
+    },
+    {
+      "path": "plugin/mod_videolesson/classes/task/reconcile.php",
+      "line": 17,
+      "column": 21,
+      "category": "A",
+      "line_sha256": "c1938dc0ec02b0a35449a8cbb5909289a75eced07f853d4f64868c59d69b7931"
+    },
+    {
+      "path": "plugin/mod_videolesson/cli/reconcile.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/cli/reconcile.php",
+      "line": 8,
+      "column": 18,
+      "category": "A",
+      "line_sha256": "3483fa6ce665f053f05f5420ce719a41f86dae2d95fd8e81a61ee05d0086f3b0"
+    },
+    {
+      "path": "plugin/mod_videolesson/db/install.xml",
+      "line": 207,
+      "column": 48,
+      "category": "A",
+      "line_sha256": "8337dbb656b8370b92a7fdc66bacb58de719575010a50abc6015a863029eaa81"
+    },
+    {
+      "path": "plugin/mod_videolesson/db/install.xml",
+      "line": 226,
+      "column": 49,
+      "category": "A",
+      "line_sha256": "4736adbdeedd8d85024f3958d69a72522252b76f3e151795798ba74e540b6429"
+    },
+    {
+      "path": "plugin/mod_videolesson/db/install.xml",
+      "line": 242,
+      "column": 55,
+      "category": "A",
+      "line_sha256": "2f544e6168dd8be0305029adb59ec34293643892f82a28dd601d6695b058e6de"
+    },
+    {
+      "path": "plugin/mod_videolesson/lang/en/videolesson.php",
+      "line": 758,
+      "column": 4,
+      "category": "A",
+      "line_sha256": "ca3819c1b462267b7812196c23132c50b195d333226c980fdf4644ef722efe7d"
+    },
+    {
+      "path": "plugin/mod_videolesson/lang/en/videolesson.php",
+      "line": 779,
+      "column": 211,
+      "category": "A",
+      "line_sha256": "a1c27bab56a1ce1debec7092a8724e19a253d13aff554b1b7e1c2c19f22ee47d"
+    },
+    {
+      "path": "plugin/mod_videolesson/lang/en/videolesson.php",
+      "line": 784,
+      "column": 51,
+      "category": "A",
+      "line_sha256": "50e11cde63e3192062ae77bbc450e5ed3a9726a5af8f55d1d8302ebc6d05a84d"
+    },
+    {
+      "path": "plugin/mod_videolesson/lib.php",
+      "line": 46,
+      "column": 22,
+      "category": "D",
+      "line_sha256": "186dc28a3bd05137eee1996aa9a9b102ca6cc29d6430233055e789b5e9147a01"
+    },
+    {
+      "path": "plugin/mod_videolesson/locallib.php",
+      "line": 27,
+      "column": 58,
+      "category": "A",
+      "line_sha256": "6ae29f20160a4c21940d541a00b2c7aa482e2742e3a995abef0f9c63d89abf99"
+    },
+    {
+      "path": "plugin/mod_videolesson/manage.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4c8c6de7e4effeecf9bc1380bed59a6195bad3c60c0008256378928a810684f3"
+    },
+    {
+      "path": "plugin/mod_videolesson/manage.php",
+      "line": 70,
+      "column": 34,
+      "category": "C",
+      "line_sha256": "42a04404ad40acc55174bb947cb114bebe9d5f1c772dc9a5e47ffb0987e070e5"
+    },
+    {
+      "path": "plugin/mod_videolesson/media.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "4a10bf046fa8c93d25d445bf91c7be24d9f2bd69fb261b195b55cd0a16d75405"
+    },
+    {
+      "path": "plugin/mod_videolesson/media.php",
+      "line": 10,
+      "column": 27,
+      "category": "C",
+      "line_sha256": "5cfa8f12c4abadcdb95d5e55bf7656e866d697c6d60c7eeeb924cb505863a9d2"
+    },
+    {
+      "path": "plugin/mod_videolesson/pix/codefortex-controls.svg",
+      "line": 1,
+      "column": 46,
+      "category": "B",
+      "line_sha256": "e3fa5add52275324f52a21e6b7c429b25c6c49681dbacfce5e9f8d896536bbf8"
+    },
+    {
+      "path": "plugin/mod_videolesson/pix/monologo.svg",
+      "line": 2,
+      "column": 21,
+      "category": "B",
+      "line_sha256": "1e99845e6ebad2f2ea12eb3f3269db4e35bb64e7adfda554dbeccc0c8b205b3d"
+    },
+    {
+      "path": "plugin/mod_videolesson/pix/thumbnail.svg",
+      "line": 2,
+      "column": 21,
+      "category": "B",
+      "line_sha256": "1e99845e6ebad2f2ea12eb3f3269db4e35bb64e7adfda554dbeccc0c8b205b3d"
+    },
+    {
+      "path": "plugin/mod_videolesson/pix/thumbnail.svg",
+      "line": 4,
+      "column": 10,
+      "category": "A",
+      "line_sha256": "3d31c13bdea650d189991d20afa6b1aa00bd60de98080c88212592d7f7cbea2a"
+    },
+    {
+      "path": "plugin/mod_videolesson/service_setup.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "255a43fb2eb45bd30235d3c4d3cf3770dbc99af0853e5d5582b966d74504d926"
+    },
+    {
+      "path": "plugin/mod_videolesson/styles.css",
+      "line": 1,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "113cc2f3696961dfe22bcc2460b930d982fff5f7df435061ae152cdd6242b90c"
+    },
+    {
+      "path": "plugin/mod_videolesson/templates/codefortex_player.mustache",
+      "line": 1,
+      "column": 5,
+      "category": "B",
+      "line_sha256": "80c1c64d2b4a67a475898b083dddf27c4f84a76f0fbfcd9896092e9a9849326a"
+    },
+    {
+      "path": "plugin/mod_videolesson/upload.php",
+      "line": 2,
+      "column": 4,
+      "category": "B",
+      "line_sha256": "9aea6ca6f16ae208834215dd0a7f9970f59ab91ed6f6bb2709d87b3d083d8ece"
+    },
+    {
+      "path": "plugin/mod_videolesson/version.php",
+      "line": 28,
+      "column": 21,
+      "category": "A",
+      "line_sha256": "31bec82853867dc40305dd6f68f477cadacb2635b2b85ec050cae97169c2e865"
+    },
+    {
+      "path": "plugin/mod_videolesson/view.php",
+      "line": 53,
+      "column": 51,
+      "category": "C",
+      "line_sha256": "c1f4cd2bfd493040544fe368a253b93564c13f5ef0c34a53775b36daf2d804b6"
+    },
+    {
+      "path": "plugin/mod_videolesson/view.php",
+      "line": 68,
+      "column": 57,
+      "category": "C",
+      "line_sha256": "56cc2aa6112a0eaf09d875c7d959357b0e40e718395eba0158bab05717fcafb5"
+    },
+    {
+      "path": "scripts/build_upload_amd.cjs",
+      "line": 2,
+      "column": 19,
+      "category": "B",
+      "line_sha256": "5940b6dcc8dc0b14c7c411a09fd9077611ba7da9213c0aa220e4b4d38bc053d4"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "scripts/prepare_rc1.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "scripts/prepare_rc1.py",
+      "line": 18,
+      "column": 97,
+      "category": "B",
+      "line_sha256": "82ed72aea6c55b3a0b2ea1c0e00bed8c7700201f6e9f766d2cdcf4c8438bb23c"
+    },
+    {
+      "path": "scripts/prepare_rc1.py",
+      "line": 23,
+      "column": 94,
+      "category": "B",
+      "line_sha256": "7ce2224dbe6fdb67964fd78fff386ce7689715c5d0888bbf852851db65cc67a3"
+    },
+    {
+      "path": "scripts/prepare_rc1.py",
+      "line": 28,
+      "column": 92,
+      "category": "B",
+      "line_sha256": "1d472e26aa1e24fd544016ee276dc37227db731e31ae779e0619d394b503fb42"
+    },
+    {
+      "path": "scripts/prepare_rc1.py",
+      "line": 31,
+      "column": 64,
+      "category": "C",
+      "line_sha256": "e44f8612245714fe170063af2602074258d0cac3e69787396ba2c50f07c568a3"
+    },
+    {
+      "path": "scripts/public_release.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "scripts/public_release.py",
+      "line": 89,
+      "column": 36,
+      "category": "A",
+      "line_sha256": "b1e12bd3271f72008059700fa705f3072307596b9029823b46cb9dfd62c1a429"
+    },
+    {
+      "path": "scripts/public_release.py",
+      "line": 158,
+      "column": 39,
+      "category": "C",
+      "line_sha256": "7c847a9222a73f88bea4431a70309d0cc9c8ad95e58e5a254853eed68435f013"
+    },
+    {
+      "path": "scripts/render_artwork.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/Dockerfile",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/README.md",
+      "line": 1,
+      "column": 3,
+      "category": "A",
+      "line_sha256": "44274b0d36884af579b0fb54deccf0d0fd7f6010db3ef4bd576215eca161f02a"
+    },
+    {
+      "path": "service/video-service/deployment/environment.example",
+      "line": 9,
+      "column": 9,
+      "category": "C",
+      "line_sha256": "57f37b8848977bec62a5e7da1accf88510bf51514beb31e04dd55ad75a1549f8"
+    },
+    {
+      "path": "service/video-service/deployment/environment.example",
+      "line": 10,
+      "column": 9,
+      "category": "C",
+      "line_sha256": "b13ebd879d3a46246b167dfa25b76295234402da21c88b9e812f59ba5efb270e"
+    },
+    {
+      "path": "service/video-service/deployment/environment.example",
+      "line": 13,
+      "column": 17,
+      "category": "D",
+      "line_sha256": "f2a617dd2c1e6d688943a73222c8f160701eaf249b91e7ecdde47f2f6e3fc861"
+    },
+    {
+      "path": "service/video-service/deployment/environment.example",
+      "line": 38,
+      "column": 17,
+      "category": "C",
+      "line_sha256": "939c8e1e9e77fbd3401a464e370437b88075f283c600fca6c6428930232c6f97"
+    },
+    {
+      "path": "service/video-service/pyproject.toml",
+      "line": 3,
+      "column": 9,
+      "category": "C",
+      "line_sha256": "c6a12583927f17271a0245a8fbdb3397edcf1bed19e73d3ab90fe44d088c0ed6"
+    },
+    {
+      "path": "service/video-service/release/python-sbom.json",
+      "line": 2,
+      "column": 14,
+      "category": "C",
+      "line_sha256": "f58d991f0f940f11cb99a960a56d8842820d41699b5962994e02d728d0fe81e9"
+    },
+    {
+      "path": "service/video-service/service/__init__.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/__init__.py",
+      "line": 3,
+      "column": 4,
+      "category": "A",
+      "line_sha256": "61a4c2e32ad929b35f8ef77d94da4c77e6c4c3a031eb8b74b22bed41f4ae69e4"
+    },
+    {
+      "path": "service/video-service/service/accounting.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/api.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/capabilities.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/capacity.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/config.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/config.py",
+      "line": 102,
+      "column": 47,
+      "category": "D",
+      "line_sha256": "9885c1322c48cb19ceed2170abb2e62697c8a632b0ee84d1ebf5ebf55c276839"
+    },
+    {
+      "path": "service/video-service/service/db.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/diagnostics.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/dispatcher.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/gateway.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/hardening.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/janitor.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/migrate.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/recycle.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/security.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/security.py",
+      "line": 50,
+      "column": 23,
+      "category": "E",
+      "line_sha256": "29b9ff202677a9a2c979b22f67b10a79b4c07396df8e3068546df6efa5f32941"
+    },
+    {
+      "path": "service/video-service/service/security.py",
+      "line": 62,
+      "column": 30,
+      "category": "E",
+      "line_sha256": "eb16072bf5f3a33b52abcd61b06d924a5046553c92124daa1ef18e481fc8e7b4"
+    },
+    {
+      "path": "service/video-service/service/storage.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/storage_admin.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "service/video-service/service/worker.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "tests/test_compatibility.php",
+      "line": 3,
+      "column": 19,
+      "category": "B",
+      "line_sha256": "3523b9641f11ceef0e112d5d85bd73525c81a70ef6a408d40df519ec97f8d97c"
+    },
+    {
+      "path": "tests/test_moodle_setup.php",
+      "line": 3,
+      "column": 19,
+      "category": "B",
+      "line_sha256": "da8a2349c33bdd04369bac929e682b4384be8ac52fd5406aeb210b422053705f"
+    },
+    {
+      "path": "tests/test_os1_baseline.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "tests/test_os2_storage.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "tests/test_release.py",
+      "line": 2,
+      "column": 18,
+      "category": "B",
+      "line_sha256": "b1b9033a281a300cbb824f799ab7b4e13b24249707ce0055fa7ec70689f04432"
+    },
+    {
+      "path": "tests/test_release.py",
+      "line": 19,
+      "column": 44,
+      "category": "A",
+      "line_sha256": "19253f049bdb0c5bbc9d1c88fe74fe9062e6f57440b954a3397e55b76cb4da9e"
+    },
+    {
+      "path": "tests/test_upload_urls.cjs",
+      "line": 2,
+      "column": 19,
+      "category": "B",
+      "line_sha256": "5940b6dcc8dc0b14c7c411a09fd9077611ba7da9213c0aa220e4b4d38bc053d4"
+    }
+  ],
+  "after": [
+    {
+      "path": "CHANGELOG.md",
+      "line": 29,
+      "column": 12,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "a9f4395f126286a95c3f6271fbd91c47bf92a4de6cb4bd4f300c02ea7a7a9074"
+    },
+    {
+      "path": "docs/development/RC1-ARTIFACT-VERIFICATION-HANDOFF.md",
+      "line": 9,
+      "column": 20,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "572504bf9770a5d9d133f38d7c685ad028bbdd7de8d59323a97a00a786bc305e"
+    },
+    {
+      "path": "docs/development/RC2-IDENTITY-AUDIT.md",
+      "line": 27,
+      "column": 95,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "fd4be40c94c58ca80567563c32fde3b2ba7d2d888cd0de0b088895c12b4ba159"
+    },
+    {
+      "path": "docs/development/RC2-IDENTITY-AUDIT.md",
+      "line": 45,
+      "column": 44,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "1a3743a45a10e06625e438ed60f1c0b088882f2fdb69d7f3149a805538b8ffc2"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 1,
+      "column": 12,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "eca4d342ab6ce90f002a438e1031f9dac6eef03899b3952d46b3afe00be17610"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 3,
+      "column": 43,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e974f706e1a85ac804560b409d733e5d1c7e7aa0fa058703878d4310c85b2e4a"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 18,
+      "column": 30,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c070810dfb581e50986eb9c39daec84623bcddc9990234b3344306556336ad50"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 21,
+      "column": 5,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "109e0ac23d2a9fd4130f6096dbeedbd9bf5959b0eb4b9502c2a69f25afb735f1"
+    },
+    {
+      "path": "docs/development/rc1/LICENSE-AUDIT.md",
+      "line": 13,
+      "column": 4,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "67ba8af9090d53f88986c1c901b2b52a948fde8dd6cd43dbb9b8361464ccc954"
+    },
+    {
+      "path": "docs/development/rc1/PREPARATION-RESULTS.md",
+      "line": 3,
+      "column": 41,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9b7bb9f8e2a5468327fedd1915788b60dccdf3763ecb0cc117469af60766a4e5"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 963,
+      "column": 43,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d72961cdc14f2052d69b251c1951d447548ec5152487e2262f9a166caedb72d6"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 965,
+      "column": 36,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1549667a802921c765c852b4d5dccc95ec2d84257c0d1bbb6c7290f7bffd91e5"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 966,
+      "column": 18,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 977,
+      "column": 18,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 988,
+      "column": 18,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 999,
+      "column": 18,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 1010,
+      "column": 18,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78d918b0db4d0a02abb4258852ed200964ef9c1748d84bc1fb112306772486ee"
+    },
+    {
+      "path": "docs/development/rc2/BLOCKER-RESULTS.md",
+      "line": 20,
+      "column": 3,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "70b7a26ea6432f5c2378699596f82ed5a7606547100a0f35e38946198cc1d2f4"
+    },
+    {
+      "path": "docs/release/rc1/COLLISION-SCHEMA.xml",
+      "line": 207,
+      "column": 48,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8337dbb656b8370b92a7fdc66bacb58de719575010a50abc6015a863029eaa81"
+    },
+    {
+      "path": "docs/release/rc1/COLLISION-SCHEMA.xml",
+      "line": 226,
+      "column": 49,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4736adbdeedd8d85024f3958d69a72522252b76f3e151795798ba74e540b6429"
+    },
+    {
+      "path": "docs/release/rc1/COLLISION-SCHEMA.xml",
+      "line": 242,
+      "column": 55,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2f544e6168dd8be0305029adb59ec34293643892f82a28dd601d6695b058e6de"
+    },
+    {
+      "path": "docs/release/rc1/IDENTITY.json",
+      "line": 4,
+      "column": 22,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2a1c7b37162e7cd4c461db1113e4e60f1ea73c61abe1571547253aca1776ce90"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 23,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 28,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 173,
+      "column": 45,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 813,
+      "column": 41,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 943,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 478,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 483,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 628,
+      "column": 45,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1268,
+      "column": 41,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1398,
+      "column": 47,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "scripts/check_identity.py",
+      "line": 37,
+      "column": 53,
+      "category": "C",
+      "reason": "old/invalid-name detector or fail-closed negative test",
+      "line_sha256": "6e5f36300f5f3a0be853033db903fc75b21f008d72452605b00312b1e4d1259d"
+    },
+    {
+      "path": "service/video-service/service/security.py",
+      "line": 76,
+      "column": 28,
+      "category": "E",
+      "reason": "explicit temporary authenticated protocol1 grant alias",
+      "line_sha256": "9c2a4aa71b591038fcb39ccb4ee9335c4ab93a2e402707f34a939b902efdc0a0"
+    },
+    {
+      "path": "tests/test_rc2_protocol.py",
+      "line": 86,
+      "column": 55,
+      "category": "E",
+      "reason": "legacy grant compatibility negative/positive regression",
+      "line_sha256": "e7721473b53cc22c14661afb1ddf1926aa67768d2ec64352abc8d48f8abe7c2f"
+    },
+    {
+      "path": "tests/test_rc2_protocol.py",
+      "line": 90,
+      "column": 56,
+      "category": "E",
+      "reason": "legacy grant compatibility negative/positive regression",
+      "line_sha256": "5e16dca1db7adc6d026470f8abb730e56c1a355de13a9e3ca98635561098e029"
+    }
+  ],
+  "component_occurrences": [
+    {
+      "path": "README.md",
+      "line": 12,
+      "column": 50,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "93b3d9d704b8ec9ff0b166d3c6ca2d2a9df098aab6e4164a47c5db331b0830f4"
+    },
+    {
+      "path": "docs/development/ORIGINAL-PLUGIN-COEXISTENCE.md",
+      "line": 4,
+      "column": 29,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "8f0c51c6ab5ab078fdd957a77ff2691600ac483360f2b589a04d3b3aeed6db84"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 10,
+      "column": 10,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0693a2ead1fc8dfcba14b47ea1ab55a387a6127233e5ac56139283c5e85cc141"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 11,
+      "column": 10,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d4406e3cd2def563313a28837bbfb3a7db590aa0ea033d2b8310153ae1ed0b1c"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 12,
+      "column": 10,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "49e3967145a1d7082276f658f74189d11141d65b6b6b97790612468a6faeef71"
+    },
+    {
+      "path": "docs/development/rc1/ARTWORK-PROVENANCE.md",
+      "line": 13,
+      "column": 10,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0edf67a1078bfbf3d47eb3b6c739541a8d420c835157f97c318508babcacb305"
+    },
+    {
+      "path": "docs/development/rc1/PUBLICATION-MANIFEST.md",
+      "line": 12,
+      "column": 10,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "eb83ece9c967798ef94f8b5c03b5c38590676b76bf852ccac6b201cd55727174"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 10,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "453ae0d4b3e8a06f663fb9cd446d305fc9953009c95278f3068436fbf3758171"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 20,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "860cc131c6c606fa75a23eef8369f5c4425c764bb23be46a1ae4545486a37d38"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 30,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0318d445fb5a4995d330540813a743e8910cd07c4ddb861373c3fd5684c45e88"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 40,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0440c1d16c3bb39cbfcf28237a02745bdc902a43de9aaeefab68e0e409f51ebe"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 963,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d72961cdc14f2052d69b251c1951d447548ec5152487e2262f9a166caedb72d6"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 974,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "45074f5c7e2d4d7dfe26a4bc3f0b45e3eb0a9a66c1f74636a7e37406990b853a"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 985,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5f0c4027b496f9a09cf304d545ce359255b0a9c8404c5bbe2ea62bb4f7ab4981"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 996,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0423b6b4f2acc17fd8cd9b8597b5bee53b0bd1a0470d4de0450c48ece89e9660"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 1007,
+      "column": 23,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8a788baede9744b1d8c5a09284c813a6910227b94d2afbef2ad6ee825f26a882"
+    },
+    {
+      "path": "docs/development/rc1/THIRD-PARTY-INVENTORY.json",
+      "line": 1016,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ee1ae3f9545720607a11bcdd814da55b80921d61b5f5ccad2dbeb20f4cc1ec63"
+    },
+    {
+      "path": "docs/development/rc2/BLOCKER-RESULTS.md",
+      "line": 18,
+      "column": 3,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "5bd66f3446c1325944bfba5492767b1cdefd504894f17782fdff35b12d210f41"
+    },
+    {
+      "path": "docs/rc1-to-rc2.md",
+      "line": 3,
+      "column": 23,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "4f8dbe0261755e7fe6705ba5a047957c497dba9da90b792ec3c0f61166f0260e"
+    },
+    {
+      "path": "docs/release/rc1/COLLISION-SCHEMA.xml",
+      "line": 2,
+      "column": 84,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "38a472b6c85ac8b676aee452e37dba1f0cd811fd3953d08ea76aadfa912868d6"
+    },
+    {
+      "path": "docs/release/rc1/IDENTITY.json",
+      "line": 2,
+      "column": 24,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d47600fc390c181450c8f580645b4ecb3f3a2822aadaa950b0df5e6222948e23"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 3,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "383eb1cfc5f1eb6da0142ae048faabed138804c56f8a21b90de4c9faa69d15ea"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 8,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7fcc72c46959e113cf005ee0f0e8e79e7ccab4c7a278fb6a9cefb454f82ad57f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 13,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43a872ad8c1f8c0ed6ef2f00421afdfbdc07852c15ed60902effa729868a25e5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 18,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dd897a1b6e467e0dd659651cc2429809f619536a96d6c5ba3464c7abd3592135"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 23,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 28,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 33,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "42137144d019f2f314a87a602a03d5a047d078a6913dfc8c2916cd515f09f2c0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 38,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1129ddd5827a20019df6d466ec1123c8737b40037ebbff7dc1f8fa9c20c14191"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 43,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ef56125fe17b75844a1afdd90f5a0e881be91b5f0bea18b822c0d05cecb4c525"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 48,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "252aa6ae49e29daa92d7ff5f571af0f3bd50f0977a38926788dc31a84faa14d9"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 53,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7857eaef98716f60ef8f75199a63abdb3a373b5fea6cd5968a886c770ba44b86"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 58,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b21810313c294f75fa195b447c24f6f2fe7868ea5fbcc9b277009df551999457"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 63,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "09d11ecfceeed273e07119ce155ff32d0d204f615263f45de5ca5189f96bf5b1"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 68,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4cfb64e8ca13ac1b76314cbfb7892227772b415be117336769c79231dfc169d9"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 73,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43b24155f1c03ac44de2d9e24936fee451b0f8a361be9084113f1d6375de4f7c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 78,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6b0ecc63f085d1446d815891e1f06c6403f7612e67685542fee1e609905f51ff"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 83,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "57d3b204e6a2bcb9321681119ddc93a6adddd5b7a2716e9f9756e5e4b6b16391"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 88,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43d56b13228bd05d2c190d768aa06d69de9822075ce40f627ae4be7e0c1113b3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 93,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6cebe8b1448e1a658c68ffc83419f1260ad470ec1d04f8c93c3564d870d8b840"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 98,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "345b44bd9aa0426df7f760e8406d9488c5d189acfe2ba43ae4b09b286be7f36a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 103,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07b471868b1abd29426fc31b1c9428c10bb10321ea90c07080c098da999abdd4"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 108,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "070360b9a89e20d6e0a23eac2f27da00d0570091cda843d5a0191e07c6dd0fa1"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 113,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "583dbc1462e28e93aca735e120792f532f694bcf159565c5154627ab34ed8527"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 118,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "408e1553b2eba4a122cbfe80b387885cb587a2b479e0de8e2f69b8b2c9754d8d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 123,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7331274572785778c11554d6f8b10d94e7a707dd95aaf2aad2a726a7981b3c5f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 128,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "42f72334986cccfd20c0b93703a344f71e2c01aaba37875a3e1c43cf6556e4bb"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 133,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "db1c7a2115eb3faebfbf2dad0774422252d4aec9693a78f78b3eceddb7c3615e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 138,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "52b31d072e357d8a51e0bbd17330eb9caec33fcdacd7b2c02d126fa42d57c8c4"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 143,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "80926cf0011da4de51e0732e75aaabc3543782fa9838fd9c4ac687d4a3ceac2c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 148,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acb13953080728da4697749f8d4ff579160fbc64ea2dbcf8c6368062bd0359ee"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 153,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d857c7a86c08868449b893476403430005103a5076b1c589f3d2de31f64e801d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 158,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "57e2c2b2f29d4f987857a798a5a94df2bc09e0d65c16aea08bc96eae1891fb9f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 163,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "99dc0721991b92050f529f556563a59cc9508af974f142db8c099bdf3040d0de"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 168,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f1d2a635fa381944bd79e2f2bde6b719e26184b36d46cbcc51112fe6589a19f0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 173,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 178,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d4a1d366607c31a8cd82b279af21135cc2dde165bd5b613329c9ff9cc044e2d7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 183,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6648dacb671e005b5078246b613e15c08b270d970ccb99d65ae1875a623cdb65"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 188,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0aab9c921649d26aad71e0551eb023994cbe09871d57bc86c037451d91b6f6e4"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 193,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "79aa2ad7e306d5f793f0cdc6347cba2b28f5ff3e4df0cb32b9b52a76e5dc2e0c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 198,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8b3b70b8baf3a67d796e7eeaade2920e7a694dd09f969fd2795d1c48d34b3e30"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 203,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6d95020ad36a8e56f9c87566a425586b70063737b15ece98046de9747079de6a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 208,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9ae6f864358362547eff9d777ef02b57cc640f0261f654e936dc9b4ffa466a01"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 213,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "52e1c0585888059ed789021bc802e75c794cdc92b94100effee0fe43cb137075"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 218,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "49f0dcec18e15feb88ca4ba0aaf6512c809f0e84a95db5eff88c71550df0984e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 223,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4976bf19ee22f6eb70f51d221e4789ac9e353881c0b08cf4d638ba633e3ae534"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 228,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5497bad50bf85036f716c7b0efff3c2a389c2fb5eb13903bfcf771a53d9fcc72"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 233,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e28d99bc7fd97c772b4491c0a88b9e4ee227e1650c254cd5eb16776d45e94611"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 238,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "682f67d0cc3637ed6b7f252362f1f98acd33e1349393306ae8bd72aafbb2d8f4"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 243,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8cf3b6dba3c7946d28df01e29a1c50375f9a9a520fac8001d917d6ea308b97b0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 248,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c9595ef40a4bddb1a983b827693b2becc943a676628443ede91c3576c6a23cc8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 253,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e78c944422b85063080b7a2b4dcdcadebb0b2cd03e60077cf7f68c2161b0b326"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 258,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b119cc6e30645e2db9c7be92f144e6697b0f9d6b692e6672870f1b90c7527fd9"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 263,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c55e982c1dec32430d8fc3d466c671724596ee09b3b2ff46e4614a817a374cc9"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 268,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ff8d0cea02b47f6ff7153f56dba625eb095383b250df2597c6a8c25e63c54bb3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 273,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89be1b673d35683c423d611546142bedf69320be057aaf1ac055c434b21621b2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 278,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bc38611d99f6a410b9f518e4257e0c6673f4e3c19f65410b654329f80d27c0af"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 283,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "954744ab814aa94b76c191a74f50d1a6cb0a003979cb45d044945466df797845"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 288,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "158be2ebca8fb9c852cf0c582bb7ec2decb14a3c42dee9999afc45acc44689e3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 293,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acc60531dd81062bae7a7e4dcf8cf2472cdd35ccf1a159881c12ebae7adadbed"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 298,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "abb9b324c21c693e8974a94a0f88e596c073fa1be6e2e7248e0cb89862021ed7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 303,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "66b146e1d7757f15ddef0d9f29fd05d751ae40ea2b21c159b4ceff27c9f9eab9"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 308,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b5aa619bebc82a88d4792c10749a26e617511205723091173794950030ec2e80"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 313,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ce5eb6ebe798c4a21320eb5c440ab4d95fc1430d76eb34392a762ab4733612ee"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 318,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "051b959819c6ea8affd6bc29d986c4e1851616c786a4e50f7c44bcba79b7a6cc"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 323,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e09b6731a6bf3701fa8700f890ca6703404c8536d3a5869d6d98c353e4155150"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 328,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07acbe412623f3a280a1db677a98ac729be7ea9116c549e931db4dda7b157b1f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 333,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8465df4b2228e585e5afc32b54b11bc4eac8a1451f594cfea89a67af036f6dc7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 338,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5b5a796e67f187e8d1c049fbe34d9cb86b13286ce6c54d60479a324fb0268a1a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 343,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "573fff1173e1f88e2b8922936715685f91964dffcd183e91f762ede75d140f23"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 348,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a193f93293676e76baefc6d796ecbf27928adc13ffd0a61dc85008ffce15666e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 353,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ad5da7fab840e0f873dc2d3258f08ed5550b190d0915d972959166c8ebeb884f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 358,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1770713ec5a2218a7c66d0b1e38dc2b4b1b3a4ee0e7d2773a895201f64fac4b5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 363,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "03516962365b1fd2422bf469f1971ee7913e2585d68b539989ef3d6d5c76f13f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 368,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "69d4a4b7c74b9753e086250b8213f7fe95e5b981626d80f51f424b084a2c8662"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 373,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "38912cdbc8c28835b0bfbc833e81e890a0525af0d8896d7f70ba440594954c04"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 378,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0b975da77e4ae61e1d174edba4c9b3a3d697e8bbe6dffadd017a4e130e44ad2d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 383,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d77de78ee629aabf94bf5d34103b31f9913f88f8985c8262eb36c0c5e7016e7d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 388,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d274c96dff91c7a88e830d997349731df8a096dcb45dd0473e0963e1bb6ba16c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 393,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3d662336e026fee2fc9246bc8214d6603e1a3cac782d06a9badd4fcbdb70f331"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 398,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2d27aa310dc48d40b466a8d88f5ffb2eb9cb7dae42f3b632e50318f652321148"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 403,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dcaf3e64fad9412e00b70981d271eb9db5cae6807afa905ad4148da27fc1b101"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 408,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6a8f3ecf0e67c17dbfde93f60c18ed2b10a6db2f68dcc65887896f695bb34fcc"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 413,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dd36095524aedce0b2d29dd4e9f21e044960f0233ce6a7598a7c0815447d032d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 418,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b463befe6947e82fa6ffa32771a2410e5f6fb910b8d52036819877bf18ac5bb5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 423,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "99e6592b7ea25a4a999f510a3d08d4597f4285eb16e0c7d15407d470423672e8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 428,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f067a14e8aed4e3c0d99be83df0248a02d5b037221ff12d7794d36f6e025e627"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 433,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5620acf0af0595c2f82ad09ec8da842f0aac83456520c4b5a155ec594b759313"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 438,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2c5e6969057a522fceb7b13dffd93aa7e67af97cd009cb134b054073f62f0d43"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 443,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4c559b67e8e920d5541bd06ae92b70477b4aa4064cf596ce81883722b9a7dd69"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 448,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ff56ff56c2aa9289375d473406fe7fcdbf03a048f14364c13854e2b01785a2c2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 453,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "589a5650df58fd9b1c0cf9f057dae78172704df929432030177cbe8831d2ed07"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 458,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ad59bed8dc998c596d7ac6d1e48d3404e7380fc6c6df23a09453bf4be8dbecac"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 463,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9da5fe26434019cb74176970d9ad3ab0811e84da8257aadd96d32edc97770374"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 468,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0b3000ef19f2bd3f992beb4934f96aa266c03bc4ddd53e94cc0c1e47fa0cf7dd"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 473,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "64a31bad59dadb6cf18ad0a0dd097e1383ed126a8079ca615109e07b0f81df30"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 478,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "880e626a5709f9b181119b015ed13f08740b94f161906f1327d46d53367a7c8f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 483,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8c40c011a35481703c5c08c2b45c2b09bfeff5ca6d96ab0a12667311b31bd9e3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 488,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a70c65d376d0cc2edfd70e11550f6ca1a9e3f2701aa177c08f0d9efabf411ae6"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 493,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "355f056cb77b06e43433c20b91a1c9faf5b3bb22ee787dd363f9123b9c9eb013"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 498,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "85178b6b207b7d7ed63f00a831ed97953f9def75bd25d2792246780d9570d805"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 503,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "247d42989dd06f049a95703389ec8c644030fc79a495f9dcace0811e6b9a0e8c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 508,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6978191918965204c8c8d03be9372def4db148b688f28f9fe41a283c2bb5f55a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 513,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2b1f972ad1770b005efbf0574dfe88a2cbf520029d6c05a1d8c66ba4e79e7ece"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 518,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "485f3553356e6eea7217c77b64ecf08d3a9296291f4d7ca8c94c7f1d4daee282"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 523,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "370a6bcbc90898c8e6f7fca91e8df1f15e183db9e893a934a4c641bfde4c5162"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 528,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ccc7889a204f388c79960d65cd93da2f3708f63c8314f158285a55d19f08efa8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 533,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "74e30b9db93bbfe8dea220d5e000baeb4fce4c5cb75e1f1e797617dc6722e3e3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 538,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "13fdda73f09b8e0c0b4b0260d786d2cd5c5f6498516017a220ef8fed63a86ea8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 543,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cd624ca190ce018f87efa0d6e39a0ae2065739338d3edf89ac06379bfd761b90"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 548,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c93fe950fcca88244c9440d5f69d4453db88465ac08ff72b5814dd1f59c46b49"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 553,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "fa26af78a961c0a779a9187ba62805ecad2182c5e89c52d3ec18c7a898eecc05"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 558,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a03160d4cd8f7bbf700b384a324e332cc22a7ae390f804fc3c1e32ca7fddbb18"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 563,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "929518a5665fdf88dbb08b586c4f3b28c3b457881da0c112972894c77d04da9c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 568,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "eef26596e3dc0775e21ca8925948806853f23eb1a742a2ebeb73427776622f5b"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 573,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b2082d369fafc6a4c9d52762d24896b2cad6988c098f5e80bd44d81f4f312282"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 578,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "63ef32775133a66b0e2271208042e0aee94d5853fb43e2f2b436f6bffee27da7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 583,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a58c6ba07e0cdefd8d6f0b855004f219401def1282c79cb73b13c737a189a294"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 588,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cafcc7facd7a428a3ae6104a21b63e12ecaaba48d6ee4c4fded8da852a6317fa"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 593,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5f62d690741694635279b59efa14a2ff64f9a00ba4edc747d8832a03eb9b434a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 598,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "36d3292c1a513621104d3e7591c5af584203b73deed5d235480edef4bcc80be0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 603,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "86c3f91d05eea1692d7d764e9cfa72b2489008731941c4547fbec420ee19b53a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 608,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "85eedcaa67e38d95fddeb4019d0a4e37605c1e0e4a872a4faae3914950d39a70"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 613,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d5d55dfd7ef1aa85e3916e74a512aba2756bf3d0129410b4ba28ad46da21a707"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 618,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "825283f18acb30adce158028691d1ee0062ef55db828e319c8b527a781c2bc9d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 623,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "73decc443455f7dc7f90196c652938e3fad1bd751abe31dc1350a29215efde02"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 628,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b0ed476eb88955736fdafe3ede4a8d1a63799a544c6ec2c151a346db65117f2d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 633,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "baaf22e10cb62d54325f733730524c86d195c7b2c00debcb6ae6181e29e3cc3b"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 638,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "94b993f741674ee185f0d804ea4f2f4fbbd8fe0bdf294ae464a930533aff546f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 643,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e928fa68aabf022c66c97d8ae012004aa2e4e7d15747b24c539d0eb9fa523f9f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 648,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1d546792094e4d7f28ee02e7b48f3e513e31416a4f85b88f5860bc9b8ca3de73"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 653,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "116d62c63ec45ff6b6262b6542c4e0ae8b7fb55cc4d7fe24f6b13665218aae7f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 658,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a2039815c7f4af61e6da9e604202a614da82e26705bd05bd9533a2fa3b2d8490"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 663,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b3524332599b7052939c8fefd6702b6851b908f4d1757c43345a97cb7e3121e6"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 668,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f8c93b5e030008957ffdb52845b1a307f217db6c4f1cc83ed7bf2ff52320cd79"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 673,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4c247ba3a7da05629478531348e8e7bf545a2cfd38308629a1c95dc1cb68faab"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 678,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b9ed0d72dfcc5bf07062abf77ff22a810c6a88da400aadfe3bb5d53c316c98ad"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 683,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3445b570057160f20594a19c85424825fd316842a77b838e9d372a49fc4c5477"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 688,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "307518775857452b4f172cb74d8361dc067c96eded60f608fcb025c66f8d3faa"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 693,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5a7fb07d4b7200435412ce1c1fe266a54479096d8c2c90ff5748abe82eb1f77c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 698,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "29c8a413b507d6503f45fe7a4f27a44f34742ae4ab855d584d5278b592c5e968"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 703,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8274c8bd51889aa12572eb560e8c1b9a71b7501c26d8f5807cc61a9634a36f55"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 708,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "08423acd08dc8d61cc5ce41a281b8ccb59a02927a6c31c80680bfbaab942b64e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 713,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7d2ebfc3e4c0cbf0cd503c00f3cc107c4fe5c66c8346a44c3a1ba05219ba69db"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 718,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b51c05dbb2ad9b6604f815c36b503e00ac4fa03bd8b19bdff9a710fc6643f9ce"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 723,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ac642c17c439df4f107aa1e6b8978de546a01329155e22eb03c5a787c9d792c3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 728,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "71c78b8c51abb47f1f1cbc8dca64d0d81f2884aa614daf994b3363b6e77e46d7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 733,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "76454cf44ac5be1b980fb76f38c32eb18cb51dca76328ad9865eeeea379805f0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 738,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5817583afb84990454cb7d625dc31c16ed3082186444683d7ebf3f807189f332"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 743,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "162cf498a425be989928b1eee92e1b69a5699a4c807b3d99b6834fbea415a09d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 748,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "97997cb2fa7b5477da6fe77ad36ec7ff59f39a759e1790f06069364e30d48e59"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 753,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2d943a8f3eef6a1717ef6d680cb8aec11ef2e9e117d969d88b4d7014d3bd82d3"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 758,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a3e2ae0f74fc86f8a3d3710f739474c9c81dd92ebb86cb3807c786b6bb48ef00"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 763,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f0df045a467a4c1f9e88ae4d7d95225b143e52f9712e8966ec533f222aac5b64"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 768,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b3def6c18b032a3556273a6cf6487bf91fa9d601c30020f4a6e27274f97a59e8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 773,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "df781756d0c682effa27ee8c89ce6b3b488ae7e4ff3f0cf04584927ce9415768"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 778,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d4285b6069de6779de6965444a8bb030000d4b56e2c6b24a5f4f3eb93a76a9be"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 783,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f6bba9b8c1617f95fd70fc7eb2fc28387d4989f998420f2e5f297a790bd9b4d2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 788,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "65db7c1096e3b306ac539f228787351d284c2aaacf3e538b37e4ced98e440f4f"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 793,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b933e951eeda7aea3c6277678532819935cb061c5f4ad8771b29bd149ba6d9ef"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 798,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7755928bc94f0c852a900df9df51b4b139c2593d18fc5f1990c0b470a2a37981"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 803,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07f210a9827744a479ac780b250ac97c68ca8ae93aaded098ca4c4f517102bad"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 808,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "687ba06e2f9985ae6eaf134c835d1f50e25a408adbd3ec9d3a053c6d91d4f3df"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 813,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 818,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "327cd89a13e88c644c05b94012f9340047ce3cddb149db47b2156c75b5bbd729"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 823,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4a53ca9ea1b3ac929ccdc8ae9a31b58282c1ccc70c787c8bdb504536c0cba049"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 828,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78f87635f2adc988e9b2fb815cfed4f3e0f79f70e7d9eb91c9907fc29aba2307"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 833,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "27bf27d45ec6dac50da350c535daee48269ad351249a08c845840d3eca787f18"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 838,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c604d12715cd8df603ab29da14361439ab4e1b42d8257b7e4862d1cf97258409"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 843,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "df350f30e1244d88c9ce504ee036b018d3bb5f34bb93a5a9eb7ab4afa6834c50"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 848,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "90de9f6d8afb17dccc07868ef438d7862981e30068b24ebf9e20015022a4848a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 853,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "834683200e47f5e29db9a8760492be679dc6518733579682a6cbbd2e6e2c6cbb"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 858,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d21f6bcae75f0f47ca1a6c2fe4df112c76b64dd0b4bca779695c8078f8ebcba0"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 863,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "179c051485d07f1c628cd1748f9f5b4c508a4c8fa8348c29f933c0ad260a32f5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 868,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "45dd617d04aac388e03ff04181b8223509264e4c3980789a0370fb1dff940a37"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 873,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ec675acd4d2924dd9f26634ea1fb3b7ed15afb98a060b50ed85c2151a0d316d1"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 878,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "82d74498d1b6b9c24a78dec5af6b73cfbf214aa57a1780cfcc877e927d58ecb7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 883,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ee1ae3f9545720607a11bcdd814da55b80921d61b5f5ccad2dbeb20f4cc1ec63"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 888,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2c0da8627de0ce5e8938cb513c89280ef4c5cd095ed799f98cd31178f46862af"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 893,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0e2ce411eb0e5d90a9455c50e821911148b529f4d5c451315b4926bfead74fcf"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 898,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cad2380a943e417871105ef46e4a353b7ff75af24aa995dc4dcc41d49deefca2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 903,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "763470630488bd3524e87bca572ddfe52f67943203bbf8e01928158873df8621"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 908,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f5e6c5e87ff7ee61056266e6d728d25db3689054c129a69aa614be14c5c197ea"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 913,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cb3fb8be6da533b703db05c36acd2ddc3ea68363a8eccee8ea30e753421a40cd"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 918,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "76e3791384c6b3cf1cf99798980b6dfba00530957728386715f8d7f9166d3866"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 923,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "31c20865e4770ae2f38526e82f71cb658830913b2640c2fae2c78934f1fbb7b7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 928,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c4e768bd9478fda008adff6aee752bb822a164168c2b0fa9f4576f1a3777ea59"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 933,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "58193afa6e3536de4c94d0a06f9ee07dca12f99d947721e1bef23f09e21626d2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 938,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2022cdfe3af9260b74c8dd30db77b94dfbc6adc0bc7b94f622944d6d89bdd1b8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 943,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 948,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c0b3dc042a43fc0142bc0f92c49985c93ad207298620f0cd9031e8c6df30d097"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 953,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3dae6e1e6b7291adb5874ac7440cfff4bfdc8b373d7207a895d69ae97f228500"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 958,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "69c396cdf33d4058fc52f9006c3785ba5982dfbf3084aaedfc52459302a842d7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 963,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9f536b207669165b5565a5b507a3dc75fa4a19e04ae6c943e8312f45bb302ec6"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 968,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c4cdfab8c74cdf264082368216a29e026e9507bd92ff143136fad744b775eb73"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 973,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "62a3f17668fa51ce2dbfe7fa1d2f66971a632f62a2d4b1f1848d1195be33c8e4"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 978,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "840ecd711b3cc36a358362c9870e38ed4a2b7603a4e314e578a05f2795979b2c"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 983,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acc10126ac0a385e26c3465891dd41128d44f719b99362152c4e74e1fa64e214"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 988,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "87731076bd60d136dcf9f3b545bc9aa39944be772b64f09f260374df278ccfc5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 993,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "765d458aa1ba9cb97ec6a357dbe07e927648a3292a58cf07936beade0b7505d2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 998,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f858e21d32b3d0bedd505e5e9456c015cbf1ca92216ec01aa109fc171b626ae8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1003,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2091e4b4bb7947b5e506bc5f5f3633eb8e626298edc37a2bfcab0aa140cccde5"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1008,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "58eb3de66a61f7cacfe5c5f543ab768554b151be3e8099bb7afeb654d9c86ad2"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1013,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6db6591d54d5240e0aef7e181b616c1fc53ea0b36a94e51ec704321aa2bddceb"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1018,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4730ef40c840d1214562540bdc3ae5a222538b137fa5db58b414f64f991ba7b8"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1023,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89ca158fde3f9393140f2ff49b58170c99529df35403a090bd53c39d0c479514"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1028,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e049a9445b6b165bf26a66d10a98fbffe875338a4df1071e86290a73dbf9c968"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1033,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "825d53ac0021874e814ff20fd8d83f915568aeb26e445f553fdd01088b82969a"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1038,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2f7b9c990712dbb3d1abe3882d74431e9828d3929afc61468f306ffa9b8aa927"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1043,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "73362d5ad3269cc7bcbf09cd56fec833d86e6c40138aa9dad6ceffc1ce5517ac"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1048,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "94c8ab7007f1f2a5402ecfdaf1b71f7ddda03ed0904985de694c91c6b28b916e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1053,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "64ca22743b9fb39b765cc4f971ab140d1491c4a8f1c6aa5aaf399577a5555533"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1058,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5cf543b71bae408059864f905bd88f8ce76e106f3605cb0d64c6f4c085a25c02"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1063,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a3bfe1974aef0acda84471c0f760a0b75d4eacb5f55e0f06d1dcb83a77ee2860"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1068,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7756ced4087cf2714961b5a34ff0dbd440e6b402516ef0287ca0204636f54f01"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1073,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "81d4366c20be07d4215406a34040e719283d8305f688321c7c2feecc69eae04e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1078,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "aa8c14d154ee4425de704f121acc88b26ad4feb40ca9eb38a7409fa8e47bd5ea"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1083,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b144c99ce559db65b3c35dff3a6e29e5a717c17b507eea199c95b322b47ddda6"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1088,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "45bc7c51aea6186ef893d2a2b90228b668ec320d42611d508aa747e6b3f45f6e"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1093,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "24e56af466e3917f9ab6c42b5f86ea5b9060162f7500d3bfb57a1ebdf3bf91c7"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1098,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5516f7967846a2a21d20784781b964e7ee1ff87c34484cae39a1878b21686778"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1103,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "32f92cc89efe201fcff4848036a16ecd94c969a5846aa0248f26c4f5ed90905b"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1108,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "824adf017c50944831e581c03761aa003020f901a63603104c095573419a1e6d"
+    },
+    {
+      "path": "docs/release/rc1/PRODUCT-MANIFEST.json",
+      "line": 1113,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4d8342c01ecfc9c23f73e28046216d1256bfe1fdc811f65809ff90097520578e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 458,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "383eb1cfc5f1eb6da0142ae048faabed138804c56f8a21b90de4c9faa69d15ea"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 463,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7fcc72c46959e113cf005ee0f0e8e79e7ccab4c7a278fb6a9cefb454f82ad57f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 468,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43a872ad8c1f8c0ed6ef2f00421afdfbdc07852c15ed60902effa729868a25e5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 473,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dd897a1b6e467e0dd659651cc2429809f619536a96d6c5ba3464c7abd3592135"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 478,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89b1ce5c538309585ce6803f275980a5e97ace51813460b93551a1f451a34444"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 483,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "badfc1989875fa7dfd756a28c9031b45b3c9a3bee78c0c270f9044755992bdcd"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 488,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "42137144d019f2f314a87a602a03d5a047d078a6913dfc8c2916cd515f09f2c0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 493,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1129ddd5827a20019df6d466ec1123c8737b40037ebbff7dc1f8fa9c20c14191"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 498,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ef56125fe17b75844a1afdd90f5a0e881be91b5f0bea18b822c0d05cecb4c525"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 503,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "252aa6ae49e29daa92d7ff5f571af0f3bd50f0977a38926788dc31a84faa14d9"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 508,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7857eaef98716f60ef8f75199a63abdb3a373b5fea6cd5968a886c770ba44b86"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 513,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b21810313c294f75fa195b447c24f6f2fe7868ea5fbcc9b277009df551999457"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 518,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "09d11ecfceeed273e07119ce155ff32d0d204f615263f45de5ca5189f96bf5b1"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 523,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4cfb64e8ca13ac1b76314cbfb7892227772b415be117336769c79231dfc169d9"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 528,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43b24155f1c03ac44de2d9e24936fee451b0f8a361be9084113f1d6375de4f7c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 533,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6b0ecc63f085d1446d815891e1f06c6403f7612e67685542fee1e609905f51ff"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 538,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "57d3b204e6a2bcb9321681119ddc93a6adddd5b7a2716e9f9756e5e4b6b16391"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 543,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "43d56b13228bd05d2c190d768aa06d69de9822075ce40f627ae4be7e0c1113b3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 548,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6cebe8b1448e1a658c68ffc83419f1260ad470ec1d04f8c93c3564d870d8b840"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 553,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "345b44bd9aa0426df7f760e8406d9488c5d189acfe2ba43ae4b09b286be7f36a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 558,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07b471868b1abd29426fc31b1c9428c10bb10321ea90c07080c098da999abdd4"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 563,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "070360b9a89e20d6e0a23eac2f27da00d0570091cda843d5a0191e07c6dd0fa1"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 568,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "583dbc1462e28e93aca735e120792f532f694bcf159565c5154627ab34ed8527"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 573,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "408e1553b2eba4a122cbfe80b387885cb587a2b479e0de8e2f69b8b2c9754d8d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 578,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7331274572785778c11554d6f8b10d94e7a707dd95aaf2aad2a726a7981b3c5f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 583,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "42f72334986cccfd20c0b93703a344f71e2c01aaba37875a3e1c43cf6556e4bb"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 588,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "db1c7a2115eb3faebfbf2dad0774422252d4aec9693a78f78b3eceddb7c3615e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 593,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "52b31d072e357d8a51e0bbd17330eb9caec33fcdacd7b2c02d126fa42d57c8c4"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 598,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "80926cf0011da4de51e0732e75aaabc3543782fa9838fd9c4ac687d4a3ceac2c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 603,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acb13953080728da4697749f8d4ff579160fbc64ea2dbcf8c6368062bd0359ee"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 608,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d857c7a86c08868449b893476403430005103a5076b1c589f3d2de31f64e801d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 613,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "57e2c2b2f29d4f987857a798a5a94df2bc09e0d65c16aea08bc96eae1891fb9f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 618,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "99dc0721991b92050f529f556563a59cc9508af974f142db8c099bdf3040d0de"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 623,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f1d2a635fa381944bd79e2f2bde6b719e26184b36d46cbcc51112fe6589a19f0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 628,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bf37289a571c9a07e1851d5135c6c4cb94e3858fc18776eb889e66dc315eb646"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 633,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d4a1d366607c31a8cd82b279af21135cc2dde165bd5b613329c9ff9cc044e2d7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 638,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6648dacb671e005b5078246b613e15c08b270d970ccb99d65ae1875a623cdb65"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 643,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0aab9c921649d26aad71e0551eb023994cbe09871d57bc86c037451d91b6f6e4"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 648,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "79aa2ad7e306d5f793f0cdc6347cba2b28f5ff3e4df0cb32b9b52a76e5dc2e0c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 653,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8b3b70b8baf3a67d796e7eeaade2920e7a694dd09f969fd2795d1c48d34b3e30"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 658,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6d95020ad36a8e56f9c87566a425586b70063737b15ece98046de9747079de6a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 663,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9ae6f864358362547eff9d777ef02b57cc640f0261f654e936dc9b4ffa466a01"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 668,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "52e1c0585888059ed789021bc802e75c794cdc92b94100effee0fe43cb137075"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 673,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "49f0dcec18e15feb88ca4ba0aaf6512c809f0e84a95db5eff88c71550df0984e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 678,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4976bf19ee22f6eb70f51d221e4789ac9e353881c0b08cf4d638ba633e3ae534"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 683,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5497bad50bf85036f716c7b0efff3c2a389c2fb5eb13903bfcf771a53d9fcc72"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 688,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e28d99bc7fd97c772b4491c0a88b9e4ee227e1650c254cd5eb16776d45e94611"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 693,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "682f67d0cc3637ed6b7f252362f1f98acd33e1349393306ae8bd72aafbb2d8f4"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 698,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8cf3b6dba3c7946d28df01e29a1c50375f9a9a520fac8001d917d6ea308b97b0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 703,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c9595ef40a4bddb1a983b827693b2becc943a676628443ede91c3576c6a23cc8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 708,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e78c944422b85063080b7a2b4dcdcadebb0b2cd03e60077cf7f68c2161b0b326"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 713,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b119cc6e30645e2db9c7be92f144e6697b0f9d6b692e6672870f1b90c7527fd9"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 718,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c55e982c1dec32430d8fc3d466c671724596ee09b3b2ff46e4614a817a374cc9"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 723,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ff8d0cea02b47f6ff7153f56dba625eb095383b250df2597c6a8c25e63c54bb3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 728,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89be1b673d35683c423d611546142bedf69320be057aaf1ac055c434b21621b2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 733,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "bc38611d99f6a410b9f518e4257e0c6673f4e3c19f65410b654329f80d27c0af"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 738,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "954744ab814aa94b76c191a74f50d1a6cb0a003979cb45d044945466df797845"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 743,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "158be2ebca8fb9c852cf0c582bb7ec2decb14a3c42dee9999afc45acc44689e3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 748,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acc60531dd81062bae7a7e4dcf8cf2472cdd35ccf1a159881c12ebae7adadbed"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 753,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "abb9b324c21c693e8974a94a0f88e596c073fa1be6e2e7248e0cb89862021ed7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 758,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "66b146e1d7757f15ddef0d9f29fd05d751ae40ea2b21c159b4ceff27c9f9eab9"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 763,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b5aa619bebc82a88d4792c10749a26e617511205723091173794950030ec2e80"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 768,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ce5eb6ebe798c4a21320eb5c440ab4d95fc1430d76eb34392a762ab4733612ee"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 773,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "051b959819c6ea8affd6bc29d986c4e1851616c786a4e50f7c44bcba79b7a6cc"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 778,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e09b6731a6bf3701fa8700f890ca6703404c8536d3a5869d6d98c353e4155150"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 783,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07acbe412623f3a280a1db677a98ac729be7ea9116c549e931db4dda7b157b1f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 788,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8465df4b2228e585e5afc32b54b11bc4eac8a1451f594cfea89a67af036f6dc7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 793,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5b5a796e67f187e8d1c049fbe34d9cb86b13286ce6c54d60479a324fb0268a1a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 798,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "573fff1173e1f88e2b8922936715685f91964dffcd183e91f762ede75d140f23"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 803,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a193f93293676e76baefc6d796ecbf27928adc13ffd0a61dc85008ffce15666e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 808,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ad5da7fab840e0f873dc2d3258f08ed5550b190d0915d972959166c8ebeb884f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 813,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1770713ec5a2218a7c66d0b1e38dc2b4b1b3a4ee0e7d2773a895201f64fac4b5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 818,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "03516962365b1fd2422bf469f1971ee7913e2585d68b539989ef3d6d5c76f13f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 823,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "69d4a4b7c74b9753e086250b8213f7fe95e5b981626d80f51f424b084a2c8662"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 828,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "38912cdbc8c28835b0bfbc833e81e890a0525af0d8896d7f70ba440594954c04"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 833,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0b975da77e4ae61e1d174edba4c9b3a3d697e8bbe6dffadd017a4e130e44ad2d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 838,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d77de78ee629aabf94bf5d34103b31f9913f88f8985c8262eb36c0c5e7016e7d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 843,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d274c96dff91c7a88e830d997349731df8a096dcb45dd0473e0963e1bb6ba16c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 848,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3d662336e026fee2fc9246bc8214d6603e1a3cac782d06a9badd4fcbdb70f331"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 853,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2d27aa310dc48d40b466a8d88f5ffb2eb9cb7dae42f3b632e50318f652321148"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 858,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dcaf3e64fad9412e00b70981d271eb9db5cae6807afa905ad4148da27fc1b101"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 863,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6a8f3ecf0e67c17dbfde93f60c18ed2b10a6db2f68dcc65887896f695bb34fcc"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 868,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "dd36095524aedce0b2d29dd4e9f21e044960f0233ce6a7598a7c0815447d032d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 873,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b463befe6947e82fa6ffa32771a2410e5f6fb910b8d52036819877bf18ac5bb5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 878,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "99e6592b7ea25a4a999f510a3d08d4597f4285eb16e0c7d15407d470423672e8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 883,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f067a14e8aed4e3c0d99be83df0248a02d5b037221ff12d7794d36f6e025e627"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 888,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5620acf0af0595c2f82ad09ec8da842f0aac83456520c4b5a155ec594b759313"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 893,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2c5e6969057a522fceb7b13dffd93aa7e67af97cd009cb134b054073f62f0d43"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 898,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4c559b67e8e920d5541bd06ae92b70477b4aa4064cf596ce81883722b9a7dd69"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 903,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ff56ff56c2aa9289375d473406fe7fcdbf03a048f14364c13854e2b01785a2c2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 908,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "589a5650df58fd9b1c0cf9f057dae78172704df929432030177cbe8831d2ed07"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 913,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ad59bed8dc998c596d7ac6d1e48d3404e7380fc6c6df23a09453bf4be8dbecac"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 918,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9da5fe26434019cb74176970d9ad3ab0811e84da8257aadd96d32edc97770374"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 923,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0b3000ef19f2bd3f992beb4934f96aa266c03bc4ddd53e94cc0c1e47fa0cf7dd"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 928,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "64a31bad59dadb6cf18ad0a0dd097e1383ed126a8079ca615109e07b0f81df30"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 933,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "880e626a5709f9b181119b015ed13f08740b94f161906f1327d46d53367a7c8f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 938,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8c40c011a35481703c5c08c2b45c2b09bfeff5ca6d96ab0a12667311b31bd9e3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 943,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a70c65d376d0cc2edfd70e11550f6ca1a9e3f2701aa177c08f0d9efabf411ae6"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 948,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "355f056cb77b06e43433c20b91a1c9faf5b3bb22ee787dd363f9123b9c9eb013"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 953,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "85178b6b207b7d7ed63f00a831ed97953f9def75bd25d2792246780d9570d805"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 958,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "247d42989dd06f049a95703389ec8c644030fc79a495f9dcace0811e6b9a0e8c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 963,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6978191918965204c8c8d03be9372def4db148b688f28f9fe41a283c2bb5f55a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 968,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2b1f972ad1770b005efbf0574dfe88a2cbf520029d6c05a1d8c66ba4e79e7ece"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 973,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "485f3553356e6eea7217c77b64ecf08d3a9296291f4d7ca8c94c7f1d4daee282"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 978,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "370a6bcbc90898c8e6f7fca91e8df1f15e183db9e893a934a4c641bfde4c5162"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 983,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ccc7889a204f388c79960d65cd93da2f3708f63c8314f158285a55d19f08efa8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 988,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "74e30b9db93bbfe8dea220d5e000baeb4fce4c5cb75e1f1e797617dc6722e3e3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 993,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "13fdda73f09b8e0c0b4b0260d786d2cd5c5f6498516017a220ef8fed63a86ea8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 998,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cd624ca190ce018f87efa0d6e39a0ae2065739338d3edf89ac06379bfd761b90"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1003,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c93fe950fcca88244c9440d5f69d4453db88465ac08ff72b5814dd1f59c46b49"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1008,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "fa26af78a961c0a779a9187ba62805ecad2182c5e89c52d3ec18c7a898eecc05"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1013,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a03160d4cd8f7bbf700b384a324e332cc22a7ae390f804fc3c1e32ca7fddbb18"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1018,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "929518a5665fdf88dbb08b586c4f3b28c3b457881da0c112972894c77d04da9c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1023,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "eef26596e3dc0775e21ca8925948806853f23eb1a742a2ebeb73427776622f5b"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1028,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b2082d369fafc6a4c9d52762d24896b2cad6988c098f5e80bd44d81f4f312282"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1033,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "63ef32775133a66b0e2271208042e0aee94d5853fb43e2f2b436f6bffee27da7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1038,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a58c6ba07e0cdefd8d6f0b855004f219401def1282c79cb73b13c737a189a294"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1043,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cafcc7facd7a428a3ae6104a21b63e12ecaaba48d6ee4c4fded8da852a6317fa"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1048,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5f62d690741694635279b59efa14a2ff64f9a00ba4edc747d8832a03eb9b434a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1053,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "36d3292c1a513621104d3e7591c5af584203b73deed5d235480edef4bcc80be0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1058,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "86c3f91d05eea1692d7d764e9cfa72b2489008731941c4547fbec420ee19b53a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1063,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "85eedcaa67e38d95fddeb4019d0a4e37605c1e0e4a872a4faae3914950d39a70"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1068,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d5d55dfd7ef1aa85e3916e74a512aba2756bf3d0129410b4ba28ad46da21a707"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1073,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "825283f18acb30adce158028691d1ee0062ef55db828e319c8b527a781c2bc9d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1078,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "73decc443455f7dc7f90196c652938e3fad1bd751abe31dc1350a29215efde02"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1083,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b0ed476eb88955736fdafe3ede4a8d1a63799a544c6ec2c151a346db65117f2d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1088,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "baaf22e10cb62d54325f733730524c86d195c7b2c00debcb6ae6181e29e3cc3b"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1093,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "94b993f741674ee185f0d804ea4f2f4fbbd8fe0bdf294ae464a930533aff546f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1098,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e928fa68aabf022c66c97d8ae012004aa2e4e7d15747b24c539d0eb9fa523f9f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1103,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "1d546792094e4d7f28ee02e7b48f3e513e31416a4f85b88f5860bc9b8ca3de73"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1108,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "116d62c63ec45ff6b6262b6542c4e0ae8b7fb55cc4d7fe24f6b13665218aae7f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1113,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a2039815c7f4af61e6da9e604202a614da82e26705bd05bd9533a2fa3b2d8490"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1118,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b3524332599b7052939c8fefd6702b6851b908f4d1757c43345a97cb7e3121e6"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1123,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f8c93b5e030008957ffdb52845b1a307f217db6c4f1cc83ed7bf2ff52320cd79"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1128,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4c247ba3a7da05629478531348e8e7bf545a2cfd38308629a1c95dc1cb68faab"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1133,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b9ed0d72dfcc5bf07062abf77ff22a810c6a88da400aadfe3bb5d53c316c98ad"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1138,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3445b570057160f20594a19c85424825fd316842a77b838e9d372a49fc4c5477"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1143,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "307518775857452b4f172cb74d8361dc067c96eded60f608fcb025c66f8d3faa"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1148,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5a7fb07d4b7200435412ce1c1fe266a54479096d8c2c90ff5748abe82eb1f77c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1153,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "29c8a413b507d6503f45fe7a4f27a44f34742ae4ab855d584d5278b592c5e968"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1158,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "8274c8bd51889aa12572eb560e8c1b9a71b7501c26d8f5807cc61a9634a36f55"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1163,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "08423acd08dc8d61cc5ce41a281b8ccb59a02927a6c31c80680bfbaab942b64e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1168,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7d2ebfc3e4c0cbf0cd503c00f3cc107c4fe5c66c8346a44c3a1ba05219ba69db"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1173,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b51c05dbb2ad9b6604f815c36b503e00ac4fa03bd8b19bdff9a710fc6643f9ce"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1178,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ac642c17c439df4f107aa1e6b8978de546a01329155e22eb03c5a787c9d792c3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1183,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "71c78b8c51abb47f1f1cbc8dca64d0d81f2884aa614daf994b3363b6e77e46d7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1188,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "76454cf44ac5be1b980fb76f38c32eb18cb51dca76328ad9865eeeea379805f0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1193,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5817583afb84990454cb7d625dc31c16ed3082186444683d7ebf3f807189f332"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1198,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "162cf498a425be989928b1eee92e1b69a5699a4c807b3d99b6834fbea415a09d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1203,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "97997cb2fa7b5477da6fe77ad36ec7ff59f39a759e1790f06069364e30d48e59"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1208,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2d943a8f3eef6a1717ef6d680cb8aec11ef2e9e117d969d88b4d7014d3bd82d3"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1213,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a3e2ae0f74fc86f8a3d3710f739474c9c81dd92ebb86cb3807c786b6bb48ef00"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1218,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f0df045a467a4c1f9e88ae4d7d95225b143e52f9712e8966ec533f222aac5b64"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1223,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b3def6c18b032a3556273a6cf6487bf91fa9d601c30020f4a6e27274f97a59e8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1228,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "df781756d0c682effa27ee8c89ce6b3b488ae7e4ff3f0cf04584927ce9415768"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1233,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d4285b6069de6779de6965444a8bb030000d4b56e2c6b24a5f4f3eb93a76a9be"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1238,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f6bba9b8c1617f95fd70fc7eb2fc28387d4989f998420f2e5f297a790bd9b4d2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1243,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "65db7c1096e3b306ac539f228787351d284c2aaacf3e538b37e4ced98e440f4f"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1248,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b933e951eeda7aea3c6277678532819935cb061c5f4ad8771b29bd149ba6d9ef"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1253,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7755928bc94f0c852a900df9df51b4b139c2593d18fc5f1990c0b470a2a37981"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1258,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "07f210a9827744a479ac780b250ac97c68ca8ae93aaded098ca4c4f517102bad"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1263,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "687ba06e2f9985ae6eaf134c835d1f50e25a408adbd3ec9d3a053c6d91d4f3df"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1268,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "050355b90b515cb12bc770af64041cc6f9d450e454716e457d71323efc801534"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1273,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "327cd89a13e88c644c05b94012f9340047ce3cddb149db47b2156c75b5bbd729"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1278,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4a53ca9ea1b3ac929ccdc8ae9a31b58282c1ccc70c787c8bdb504536c0cba049"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1283,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "78f87635f2adc988e9b2fb815cfed4f3e0f79f70e7d9eb91c9907fc29aba2307"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1288,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "27bf27d45ec6dac50da350c535daee48269ad351249a08c845840d3eca787f18"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1293,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c604d12715cd8df603ab29da14361439ab4e1b42d8257b7e4862d1cf97258409"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1298,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "df350f30e1244d88c9ce504ee036b018d3bb5f34bb93a5a9eb7ab4afa6834c50"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1303,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "90de9f6d8afb17dccc07868ef438d7862981e30068b24ebf9e20015022a4848a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1308,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "834683200e47f5e29db9a8760492be679dc6518733579682a6cbbd2e6e2c6cbb"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1313,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "d21f6bcae75f0f47ca1a6c2fe4df112c76b64dd0b4bca779695c8078f8ebcba0"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1318,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "179c051485d07f1c628cd1748f9f5b4c508a4c8fa8348c29f933c0ad260a32f5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1323,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "45dd617d04aac388e03ff04181b8223509264e4c3980789a0370fb1dff940a37"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1328,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ec675acd4d2924dd9f26634ea1fb3b7ed15afb98a060b50ed85c2151a0d316d1"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1333,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "82d74498d1b6b9c24a78dec5af6b73cfbf214aa57a1780cfcc877e927d58ecb7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1338,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "ee1ae3f9545720607a11bcdd814da55b80921d61b5f5ccad2dbeb20f4cc1ec63"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1343,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2c0da8627de0ce5e8938cb513c89280ef4c5cd095ed799f98cd31178f46862af"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1348,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "0e2ce411eb0e5d90a9455c50e821911148b529f4d5c451315b4926bfead74fcf"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1353,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cad2380a943e417871105ef46e4a353b7ff75af24aa995dc4dcc41d49deefca2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1358,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "763470630488bd3524e87bca572ddfe52f67943203bbf8e01928158873df8621"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1363,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f5e6c5e87ff7ee61056266e6d728d25db3689054c129a69aa614be14c5c197ea"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1368,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "cb3fb8be6da533b703db05c36acd2ddc3ea68363a8eccee8ea30e753421a40cd"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1373,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "76e3791384c6b3cf1cf99798980b6dfba00530957728386715f8d7f9166d3866"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1378,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "31c20865e4770ae2f38526e82f71cb658830913b2640c2fae2c78934f1fbb7b7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1383,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c4e768bd9478fda008adff6aee752bb822a164168c2b0fa9f4576f1a3777ea59"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1388,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "58193afa6e3536de4c94d0a06f9ee07dca12f99d947721e1bef23f09e21626d2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1393,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2022cdfe3af9260b74c8dd30db77b94dfbc6adc0bc7b94f622944d6d89bdd1b8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1398,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "59031191ddaeef3fd95b0d00e9c829527828abc8d68ff31227b8efafebc38953"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1403,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c0b3dc042a43fc0142bc0f92c49985c93ad207298620f0cd9031e8c6df30d097"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1408,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "3dae6e1e6b7291adb5874ac7440cfff4bfdc8b373d7207a895d69ae97f228500"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1413,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "69c396cdf33d4058fc52f9006c3785ba5982dfbf3084aaedfc52459302a842d7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1418,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "9f536b207669165b5565a5b507a3dc75fa4a19e04ae6c943e8312f45bb302ec6"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1423,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "c4cdfab8c74cdf264082368216a29e026e9507bd92ff143136fad744b775eb73"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1428,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "62a3f17668fa51ce2dbfe7fa1d2f66971a632f62a2d4b1f1848d1195be33c8e4"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1433,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "840ecd711b3cc36a358362c9870e38ed4a2b7603a4e314e578a05f2795979b2c"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1438,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "acc10126ac0a385e26c3465891dd41128d44f719b99362152c4e74e1fa64e214"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1443,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "87731076bd60d136dcf9f3b545bc9aa39944be772b64f09f260374df278ccfc5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1448,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "765d458aa1ba9cb97ec6a357dbe07e927648a3292a58cf07936beade0b7505d2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1453,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "f858e21d32b3d0bedd505e5e9456c015cbf1ca92216ec01aa109fc171b626ae8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1458,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2091e4b4bb7947b5e506bc5f5f3633eb8e626298edc37a2bfcab0aa140cccde5"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1463,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "58eb3de66a61f7cacfe5c5f543ab768554b151be3e8099bb7afeb654d9c86ad2"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1468,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "6db6591d54d5240e0aef7e181b616c1fc53ea0b36a94e51ec704321aa2bddceb"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1473,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4730ef40c840d1214562540bdc3ae5a222538b137fa5db58b414f64f991ba7b8"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1478,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "89ca158fde3f9393140f2ff49b58170c99529df35403a090bd53c39d0c479514"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1483,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "e049a9445b6b165bf26a66d10a98fbffe875338a4df1071e86290a73dbf9c968"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1488,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "825d53ac0021874e814ff20fd8d83f915568aeb26e445f553fdd01088b82969a"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1493,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "2f7b9c990712dbb3d1abe3882d74431e9828d3929afc61468f306ffa9b8aa927"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1498,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "73362d5ad3269cc7bcbf09cd56fec833d86e6c40138aa9dad6ceffc1ce5517ac"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1503,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "94c8ab7007f1f2a5402ecfdaf1b71f7ddda03ed0904985de694c91c6b28b916e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1508,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "64ca22743b9fb39b765cc4f971ab140d1491c4a8f1c6aa5aaf399577a5555533"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1513,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5cf543b71bae408059864f905bd88f8ce76e106f3605cb0d64c6f4c085a25c02"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1518,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "a3bfe1974aef0acda84471c0f760a0b75d4eacb5f55e0f06d1dcb83a77ee2860"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1523,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "7756ced4087cf2714961b5a34ff0dbd440e6b402516ef0287ca0204636f54f01"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1528,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "81d4366c20be07d4215406a34040e719283d8305f688321c7c2feecc69eae04e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1533,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "aa8c14d154ee4425de704f121acc88b26ad4feb40ca9eb38a7409fa8e47bd5ea"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1538,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "b144c99ce559db65b3c35dff3a6e29e5a717c17b507eea199c95b322b47ddda6"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1543,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "45bc7c51aea6186ef893d2a2b90228b668ec320d42611d508aa747e6b3f45f6e"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1548,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "24e56af466e3917f9ab6c42b5f86ea5b9060162f7500d3bfb57a1ebdf3bf91c7"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1553,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "5516f7967846a2a21d20784781b964e7ee1ff87c34484cae39a1878b21686778"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1558,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "32f92cc89efe201fcff4848036a16ecd94c969a5846aa0248f26c4f5ed90905b"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1563,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "824adf017c50944831e581c03761aa003020f901a63603104c095573419a1e6d"
+    },
+    {
+      "path": "docs/release/rc1/PUBLIC-SOURCE-MANIFEST.json",
+      "line": 1568,
+      "column": 21,
+      "category": "F",
+      "reason": "immutable RC1 provenance copy/report",
+      "line_sha256": "4d8342c01ecfc9c23f73e28046216d1256bfe1fdc811f65809ff90097520578e"
+    },
+    {
+      "path": "docs/upgrading.md",
+      "line": 5,
+      "column": 13,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "e5b8d63b1a00361c6adb94966f4581565261f2ade678de75fba041177d24187f"
+    },
+    {
+      "path": "scripts/check_identity.py",
+      "line": 30,
+      "column": 34,
+      "category": "C",
+      "reason": "old/invalid-name detector or fail-closed negative test",
+      "line_sha256": "bfa4ef2601ef45e192724b58ef2ffe3a7c26e5b326e3e548942fd2fb8006dc88"
+    },
+    {
+      "path": "scripts/check_identity.py",
+      "line": 30,
+      "column": 60,
+      "category": "C",
+      "reason": "old/invalid-name detector or fail-closed negative test",
+      "line_sha256": "bfa4ef2601ef45e192724b58ef2ffe3a7c26e5b326e3e548942fd2fb8006dc88"
+    },
+    {
+      "path": "scripts/check_identity.py",
+      "line": 30,
+      "column": 78,
+      "category": "C",
+      "reason": "old/invalid-name detector or fail-closed negative test",
+      "line_sha256": "bfa4ef2601ef45e192724b58ef2ffe3a7c26e5b326e3e548942fd2fb8006dc88"
+    },
+    {
+      "path": "tests/test_component_coexistence.php",
+      "line": 10,
+      "column": 31,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "4b36e258fce0925a789492bb5fc484b10e47825d06d6c9579b94bac39aef4dd1"
+    },
+    {
+      "path": "tests/test_component_coexistence.php",
+      "line": 33,
+      "column": 21,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "5c6dc8bc0cc10d85196efe25db1cb1f89a360b00f5caceb3a6ae72716c0f6d57"
+    },
+    {
+      "path": "tests/test_component_coexistence.php",
+      "line": 35,
+      "column": 38,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "c58429a2679f9942019de1d6c2182f90ce6933da3f0238e228e803e6f31e7c4b"
+    },
+    {
+      "path": "tests/test_component_coexistence.php",
+      "line": 38,
+      "column": 25,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "97793eab42d409c96c915f21b17d626f6dcd42bfafe49f68dd47dd082563370c"
+    },
+    {
+      "path": "tests/test_component_coexistence.php",
+      "line": 39,
+      "column": 51,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "c274bf70fd1dca5d912c987959ec91178a91c4b9feffb2142ea03c14aa8fd417"
+    },
+    {
+      "path": "tests/test_release.py",
+      "line": 55,
+      "column": 48,
+      "category": "F",
+      "reason": "explicit RC1 predecessor coexistence fixture assertion",
+      "line_sha256": "0b00eb240c4102bd5a7431b0370dae98f8df3bb9cbeb8690f6c9e8bd46e52d14"
+    }
+  ],
+  "invalid_name_occurrences": [
+    {
+      "path": "docs/development/RC2-IDENTITY-AUDIT.md",
+      "line": 8,
+      "column": 40,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "3b131a0d9034ca8862d47f2ff7beae1cba4909c4761c0586cbd8ff2870828ef0"
+    },
+    {
+      "path": "docs/development/rc2/BLOCKER-RESULTS.md",
+      "line": 4,
+      "column": 16,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "7faff1d650d03b6e59aac95a3937967d7198e0f43bc957b054de10851037ad67"
+    },
+    {
+      "path": "docs/development/rc2/BLOCKER-RESULTS.md",
+      "line": 47,
+      "column": 35,
+      "category": "F",
+      "reason": "explicit historical identity, audit, coexistence or migration documentation",
+      "line_sha256": "9be970d4cd166a26ab0f46aa124600965a4668138464fb9806f1392fb53b8fe3"
+    },
+    {
+      "path": "tests/test_rc2_identity.py",
+      "line": 20,
+      "column": 63,
+      "category": "C",
+      "reason": "old/invalid-name detector or fail-closed negative test",
+      "line_sha256": "d226faf842097d5551b0ab313c8c7b83ca4a040b724a6a1f56fb4662072aef8e"
+    }
+  ],
+  "current_product_branding_remainders": 0,
+  "status": "Classified final Local scan; no current old product branding"
+}

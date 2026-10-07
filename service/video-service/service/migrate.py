@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Explicit deployment command; never run migrations inside an HTTP request."""
 from pathlib import Path
 from .db import transaction

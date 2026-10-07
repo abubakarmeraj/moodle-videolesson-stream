@@ -1,12 +1,12 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Authenticated setup protocol. Only sanitized, bounded readiness data leaves service."""
 import json
 from . import config, storage
 from .db import transaction
 from .hardening import redis_client
 
-PROTOCOL_VERSION = 1
+PROTOCOL_VERSION = 2
 EXPECTED_SCHEMA = [1, 2, 3, 4, 5]
 
 def describe():

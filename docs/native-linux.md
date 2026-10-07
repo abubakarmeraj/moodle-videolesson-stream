@@ -15,7 +15,7 @@ sudo bash deploy/installer/install.sh --config /protected/operator-policy.json
 sudo /opt/video-lesson/current/.venv/bin/python deploy/installer/check.py
 ```
 
-The installer verifies the RC1 service manifest, installs dependencies and locked
+The installer verifies the RC2 service manifest, installs dependencies and locked
 Python requirements, creates separate runtime/migrator users, restricted Redis
 ACLs and service DB accounts, runs migrations 001–005, and creates systemd roles
 and a 15-minute janitor timer. Storage secrets use systemd LoadCredential.

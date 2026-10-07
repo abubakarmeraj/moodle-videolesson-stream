@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Explicit public-source inventory, reproducible source archives and safety checks."""
 import argparse
 import gzip
@@ -36,7 +36,7 @@ def write(path, value):
 
 def source_paths():
     raw = subprocess.check_output(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT)
-    result = sorted(set(raw.decode().strip('\0').split('\0')) - {''})
+    result = sorted(n for n in set(raw.decode().strip('\0').split('\0')) - {''} if (ROOT / n).exists())
     for name in result:
         p = ROOT / name
         if set(PurePosixPath(name).parts) & SKIP or p.is_symlink() or not p.is_file():
@@ -81,17 +81,17 @@ def safe(name):
 
 def snapshot():
     names = source_paths()
-    product = inventory(n for n in names if n.startswith(('plugin/mod_videolesson/', 'service/video-service/')))
+    product = inventory(n for n in names if n.startswith(('plugin/mod_videolessonstream/', 'service/video-service/')))
     service = [r for r in product if r['path'].startswith('service/video-service/')]
     write(ROOT / 'docs/release/PRODUCT-MANIFEST.json', product)
     write(ROOT / 'docs/release/SERVICE-MANIFEST.json', service)
-    identity = {'plugin_component': 'mod_videolesson', 'plugin_version': 2026100701,
-                'plugin_release': 'CodeFortex 3.1.0-rc1', 'service_version': '0.5.0-rc1',
-                'service_package_version': '0.5.0rc1', 'protocol': 1,
+    identity = {'plugin_component': 'mod_videolessonstream', 'plugin_version': 2026100702,
+                'plugin_release': 'ValeLMS 3.1.0-rc2', 'service_version': '0.5.0-rc2',
+                'service_package_version': '0.5.0rc2', 'protocol': 2,
                 'schema_migrations': ['001', '002', '003', '004', '005'],
                 'moodle_line': '5.2', 'license': 'GPL-3.0-or-later',
                 'product_manifest_sha256': sha(json_bytes(product)), 'service_manifest_sha256': sha(json_bytes(service)),
-                'status': 'prepared RC1; not published; final artifact smoke pending'}
+                'status': 'Private RC2 Local qualification candidate; not published; Deployment qualification required'}
     write(ROOT / 'docs/release/IDENTITY.json', identity)
     # Re-list newly generated public metadata; exclude only the self-referential index.
     records = inventory(n for n in source_paths() if n != PUBLIC_MANIFEST)
@@ -132,17 +132,29 @@ def verify_archive(path):
         raise ValueError('Incorrect archive root')
     prefix = next(iter(roots)) + '/'
     release = json.loads(payload.pop(prefix + 'RELEASE-MANIFEST.json'))
+    expected_root = {'plugin': 'videolessonstream/', 'service': 'video-lesson/'}.get(release.get('component'))
+    if prefix != expected_root or release.get('plugin_component') != 'mod_videolessonstream':
+        raise ValueError('Incorrect component/package layout')
     actual = [{'path': n.removeprefix(prefix), 'sha256': sha(b), 'bytes': len(b)} for n, b in sorted(payload.items())]
     if actual != release['files']:
         raise ValueError('Embedded release inventory differs')
     scan(payload)
     if payload[prefix + 'LICENSE'] != (ROOT / 'LICENSE').read_bytes():
         raise ValueError('GPL license missing or differs')
+    if release['component'] == 'plugin':
+        version = payload[prefix + 'version.php'].decode()
+        if "$plugin->component = 'mod_videolessonstream';" not in version or '$plugin->version = 2026100702;' not in version:
+            raise ValueError('Packaged Moodle identity differs')
+    elif payload[prefix + 'service/video-service/VERSION'].decode().strip() != release['service_version']:
+        raise ValueError('Packaged service identity differs')
     return release
 
 
 def build(output):
     identity, names = verify_source()
+    # Activity plugin names have stricter rules than other Moodle plugin types.
+    if not re.fullmatch(r'mod_[a-z][a-z0-9]*', identity['plugin_component']):
+        raise ValueError('Moodle activity name invalid; never package an undiscoverable component')
     # Build only from the exact committed public tree; no experimental source adoption.
     if subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT).strip():
         raise ValueError('Public tree must be clean before build')
@@ -154,16 +166,16 @@ def build(output):
     output.mkdir(parents=True, exist_ok=True)
     results = []
     for kind, prefix, filename in (
-        ('plugin', 'videolesson/', 'mod_videolesson-3.1.0-rc1.zip'),
-        ('service', 'video-lesson/', 'codefortex-video-service-0.5.0-rc1.tar.gz')):
+        ('plugin', 'videolessonstream/', 'mod_videolessonstream-3.1.0-rc2.zip'),
+        ('service', 'video-lesson/', 'valelms-video-service-0.5.0-rc2.tar.gz')):
         if kind == 'plugin':
-            chosen = [n for n in names if n.startswith('plugin/mod_videolesson/')]
-            payload = {prefix + n.removeprefix('plugin/mod_videolesson/'): (ROOT / n).read_bytes() for n in chosen}
+            chosen = [n for n in names if n.startswith('plugin/mod_videolessonstream/')]
+            payload = {prefix + n.removeprefix('plugin/mod_videolessonstream/'): (ROOT / n).read_bytes() for n in chosen}
             payload.update({prefix + n: (ROOT / n).read_bytes() for n in names
                             if n.startswith('docs/licenses/') and '/python/' not in n})
         else:
             chosen = [n for n in names if n.startswith(('service/', 'deploy/', 'docs/'))
-                      and not n.startswith('docs/development/')]
+                      and not n.startswith(('docs/development/', 'docs/release/rc1/'))]
             payload = {prefix + n: (ROOT / n).read_bytes() for n in chosen}
             # The complete source index is repository-only, not a promise that this
             # component tarball contains the entire plugin/tests repository.

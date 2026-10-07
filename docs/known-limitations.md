@@ -1,8 +1,11 @@
 # Known qualification limits
 
-- First public source candidate is RC1, not a stable release.
+- RC1 is a published prerelease. RC2 is a private qualification candidate, not stable
+  software or an automatic in-place RC1 migration.
 - Ubuntu24.04 under WSL2 is qualified; an ordinary Ubuntu VM/server run is pending.
-- Fresh Moodle5.2.2/PHP8.3.6 and short synthetic-media lifecycle are qualified.
+- RC2 Local fresh discovery/install and signed setup passed on Moodle5.2.2/PHP8.3.6.
+  Short synthetic-media lifecycle evidence below belongs to RC1 until Deployment
+  qualifies the matched RC2 artifacts.
 - Chromium completed generic-S3 multipart upload; Firefox/WebKit decoded playback
   and seeking passed, but their multipart upload was not separately repeated.
 - Six-hour endurance, multi-GiB stress and full-disk endurance are not qualified.
@@ -13,7 +16,7 @@
   automatic native changed-source upgrades are not implemented.
 - TLS routing, object-storage provisioning, monitoring/backups and capacity sizing
   are operator responsibilities. MinIO/server images are not bundled.
-- Public vulnerability-reporting contact still needs owner selection before publication.
+- Security contact remains the owner's approved temporary address in SECURITY.md.
 
 These are honest boundaries, not newly discovered defects. Source preparation
-does not replace the final short RC1 artifact verification or publication approval.
+does not replace the focused RC2 Deployment smoke or publication approval.

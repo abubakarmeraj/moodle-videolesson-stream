@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Explicit local janitor. Only assigned development objects; referenced/held outputs fail closed."""
 import json
 import time

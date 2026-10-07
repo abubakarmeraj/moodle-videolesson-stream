@@ -1,4 +1,4 @@
-# RC1 licensing closure
+# RC2 licensing and notice continuity
 
 2026-10-07. The project owner approved GPL-3.0-or-later for project-owned plugin,
 service, installer/deployment and repository tooling code, and replacement of all
@@ -10,7 +10,7 @@ modifying the license text. Component LICENSE files remain canonical GPL text.
 New SVG/PNG artwork is entirely geometric and newly authored for this project;
 see ARTWORK-PROVENANCE.md. Prior artwork is absent from the public tree and archives.
 Inherited GPL PHP copyrights remain intact; upstream helpers are not relabeled
-as CodeFortex-authored. Python/runtime and project tooling receive concise SPDX
+as ValeLMS-authored. Python/runtime and project tooling receive concise SPDX
 headers. Existing Moodle GPL3-or-later headers remain valid. No blanket ownership
 claim over copied Moodle APIs or vendor GPL code is made.
 
@@ -21,7 +21,13 @@ Moodle metadata/readme_moodle files follow the [upstream inclusion guidance](htt
 
 No source/artwork license blocker remains under the explicit owner authorization.
 This is an engineering provenance inventory, not independent legal certification
-of every contributor's chain of title. The owner must select a private vulnerability
-reporting contact before publication. Future binary/container-image publication
+of every contributor's chain of title. The owner-approved temporary security contact
+is abubakar.meraj11@gmail.com. Future binary/container-image publication
 requires its own runtime source/notices review; no images or MinIO binaries are bundled.
 Historical private qualification reports/manifests are preserved outside the public surface.
+
+RC1 copies remain under rc1/. New project-owned notices use the owner-approved
+ValeLMS contributors form; inherited BitKea/MooPlugins/Moodle and dependency
+copyrights are not treated as branding. Bundled library bytes and canonical GPL
+texts are unchanged. Geometric PNG bytes are unchanged; SVG metadata and the
+project-owned controls filename are neutralized, without redesigning artwork.

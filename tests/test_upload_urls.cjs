@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright 2026 CodeFortex
+// Copyright 2026 ValeLMS contributors
 // Exercise the real compiled uploader through its authenticated part-plan flow.
 // Synthetic URLs and in-memory DOM/XHR doubles only; no network or secrets.
 const assert = require('node:assert/strict');
@@ -7,7 +7,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const {webcrypto} = require('node:crypto');
-const source = fs.readFileSync(path.join(__dirname, '../plugin/mod_videolesson/amd/build/upload.min.js'), 'utf8');
+const source = fs.readFileSync(path.join(__dirname, '../plugin/mod_videolessonstream/amd/build/upload.min.js'), 'utf8');
 
 async function scenario({url, authorized = true, injected = false}) {
     const nodes = new Map();
@@ -23,7 +23,7 @@ async function scenario({url, authorized = true, injected = false}) {
     };
     const values = new Map();
     if (injected) {
-        values.set('cf-upload-https://moodle.example.invalid-42', JSON.stringify({
+        values.set('vls-upload-https://moodle.example.invalid-42', JSON.stringify({
             url: 'https://unexpected.example.invalid/stolen', upload: 'untrusted-input',
             key: 'bad', sha256: 'different', size: file.size,
         }));
@@ -42,7 +42,7 @@ async function scenario({url, authorized = true, injected = false}) {
                 set src(value) { queueMicrotask(() => this.onloadedmetadata?.()); }};
         }},
         fetch: async(endpoint, options) => {
-            assert.equal(endpoint, 'https://moodle.example.invalid/mod/videolesson/upload.php?sesskey=synthetic-session');
+            assert.equal(endpoint, 'https://moodle.example.invalid/mod/videolessonstream/upload.php?sesskey=synthetic-session');
             assert.equal(options.method, 'POST');
             const request = JSON.parse(options.body);
             controls.push(request);
@@ -75,7 +75,7 @@ async function scenario({url, authorized = true, injected = false}) {
             abort() { this.onabort?.(); }
         },
         define(name, dependencies, factory) {
-            assert.equal(name, 'mod_videolesson/upload');
+            assert.equal(name, 'mod_videolessonstream/upload');
             module = {};
             factory(module, {get_string: async(key) => key}, {hashFile: async() => 'a'.repeat(64)});
         },
@@ -83,7 +83,7 @@ async function scenario({url, authorized = true, injected = false}) {
     vm.runInContext(source, context);
     await module.init({cmid: 42, maxbytes: 512 * 1024**2, url: 'https://unexpected.example.invalid/config'});
     await new Promise(resolve => setImmediate(resolve));
-    await node('cf-upload-start').handlers.click();
+    await node('vls-upload-start').handlers.click();
     return {submitted, controls};
 }
 

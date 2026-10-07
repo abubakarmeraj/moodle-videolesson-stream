@@ -13,7 +13,7 @@ configure the separately deployed service and protect its secrets.
 | HLS segment duration (`hlssegmentseconds`) | 4 seconds; 2/4/6 | Future job snapshot, not rewriting ready media |
 | Raw source retention (`rawretentiondays`) | 1 day cap | Verified completed upload cleanup, subject to safe references/holds/work |
 
-**Video storage** is an admin page within the same `mod_videolesson` plugin, not a
+**Video storage** is an admin page within the same `mod_videolessonstream` plugin, not a
 second plugin. Video Service configuration accepts a protected local handoff path
 and exposes Test Connection, not permanent object-storage keys to teachers.
 

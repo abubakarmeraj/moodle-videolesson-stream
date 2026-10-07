@@ -1,6 +1,6 @@
 # Operational contract
 
-Video Service0.5.0-rc1; protocol1, migrations001–005. Roles remain separate:
+Video Service0.5.0-rc2; protocol2, migrations001–005. Roles remain separate:
 api, gateway, dispatcher, worker, janitor and migrate. Compose/native setup is
 documented in the distribution's docs/docker.md and docs/native-linux.md.
 

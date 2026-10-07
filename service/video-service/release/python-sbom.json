@@ -1,5 +1,5 @@
 {
-  "format": "CodeFortex dependency inventory v1",
+  "format": "ValeLMS dependency inventory v1",
   "source": "https://pypi.org",
   "packages": [
     {

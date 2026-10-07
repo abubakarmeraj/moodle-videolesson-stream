@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Operator-only bounded status; no user identities, secrets or object/grant URLs."""
 import json
 import shutil

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Fast, offline release regression; never connects to an LMS or object store."""
 import ast
 import importlib.util
@@ -49,14 +49,25 @@ def main():
     xml = [n for n in names if n.endswith('.xml')]
     for n in xml:
         ET.parse(ROOT / n)
+    svg = [n for n in names if n.endswith('.svg')]
+    for n in svg:
+        text = (ROOT / n).read_text()
+        root = ET.fromstring(text)
+        if root.tag != '{http://www.w3.org/2000/svg}svg' or '<!DOCTYPE' in text or '\\n' in text:
+            raise RuntimeError('Invalid or unsafe SVG: ' + n)
+        for element in root.iter():
+            for key, value in element.attrib.items():
+                if (key == 'href' or key.endswith('}href')) and not value.startswith('#'):
+                    raise RuntimeError('Non-local SVG asset: ' + n)
     with tempfile.TemporaryDirectory() as directory:
         run([node, 'scripts/build_upload_amd.cjs', directory])
-        for filename in ('upload.min.js', 'upload.min.js.map'):
-            if (Path(directory) / filename).read_bytes() != (ROOT / 'plugin/mod_videolesson/amd/build' / filename).read_bytes():
+        for filename in sorted(p.name for p in Path(directory).iterdir()):
+            if (Path(directory) / filename).read_bytes() != (ROOT / 'plugin/mod_videolessonstream/amd/build' / filename).read_bytes():
                 raise RuntimeError('AMD output differs')
     result = {'result': 'PASS', 'plugin_version': identity['plugin_version'],
               'service_version': identity['service_version'], 'php_files': len(phpfiles),
               'js_files': len(js), 'xml_files': len(xml),
+              'svg_files': len(svg),
               'python_tests': int(re.search(r'Ran (\d+) tests', python_tests).group(1)),
               'amd': 'reproduced exact bytes/map',
               'compatibility': compatibility.strip(), 'uploader': uploader.strip(),
@@ -64,7 +75,7 @@ def main():
               'node': run([node, '--version']).strip(), 'phpcs_available': bool(shutil.which('phpcs')),
               'public_scan': release.scan({n: (ROOT / n).read_bytes() for n in names}),
               'media_matrix_repeated': False}
-    target = ROOT / '.lab/evidence/development/public-rc1/FAST-REGRESSIONS.json'
+    target = ROOT / '.lab/evidence/development/rc2-identity/FAST-REGRESSIONS.json'
     release.write(target, result)
     print(json.dumps(result, indent=2))
 

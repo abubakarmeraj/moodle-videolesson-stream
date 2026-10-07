@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """DB -> Redis outbox. Redis loss causes re-publication, never loss of durable jobs."""
 import json
 import os

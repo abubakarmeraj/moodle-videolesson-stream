@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Bounded ASGI ingress and shared fail-closed rate limiting; never log request URLs."""
 import asyncio
 import hashlib

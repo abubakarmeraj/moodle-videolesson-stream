@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.1.0-rc2 — unreleased qualification candidate
+
+- Owner-approved distinct Moodle activity `mod_videolessonstream` (2026100702),
+  ValeLMS Video Lesson Stream. Moodle names cannot contain an internal underscore;
+  the original requested spelling was rejected and is not shipped.
+- Isolated component-owned tables, capabilities, config, files, callbacks,
+  scheduled tasks, backup/restore, templates and rebuilt AMD modules.
+- ValeLMS Video Service0.5.0-rc2 with neutral authenticated protocol2; temporary
+  explicit protocol1 aliases retain HMAC and replay protection.
+- First-class R2 documentation and dedicated synthetic client regressions;
+  generic S3/MinIO remains supported. No new live-cloud qualification claimed.
+- This is not an automatic RC1 data migration. RC1 remains immutable; see
+  [transition guidance](docs/rc1-to-rc2.md). Deployment qualification and separate
+  publication review are required; no public RC2 release has been created.
+
 ## 3.1.0-rc1 — 2026-10-07 (prepared, not published)
 
 Coordinated with Video Service0.5.0-rc1, protocol1, migrations001–005.

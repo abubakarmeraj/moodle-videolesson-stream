@@ -1,15 +1,24 @@
-# CodeFortex Video Lesson
+# ValeLMS Video Lesson Stream
+
+> RC2 is an unpublished qualification candidate. The owner approved
+> `mod_videolessonstream`: Moodle activity names cannot contain underscores.
+> See [identity audit](docs/development/RC2-IDENTITY-AUDIT.md). RC1 remains immutable.
 
 A Moodle video lesson/activity plugin plus a self-hosted processing service.
 Teachers upload directly to private object storage; students watch authorized
 adaptive video in Moodle, with course-controlled progress and completion.
 
-**Release candidate:** plugin **3.1.0-rc1** (2026100701), Video Service
-**0.5.0-rc1**. This is not a stable release. No CodeFortex-hosted account is needed.
+Distinct Moodle activity: **`mod_videolessonstream`**, installed under
+`mod/videolessonstream`. It is not the original `mod_videolesson` plugin.
+RC1 users: read the [breaking identity transition](docs/rc1-to-rc2.md) first;
+RC2 does not automatically upgrade or migrate RC1 activities.
+
+**Release candidate:** plugin **3.1.0-rc2** (2026100702), Video Service
+**0.5.0-rc2**. This is not a stable release. No ValeLMS-hosted account is needed.
 
 ## Quick start
 
-1. Install `mod_videolesson-3.1.0-rc1.zip` through Moodle's plugin installer.
+1. Install `mod_videolessonstream-3.1.0-rc2.zip` through Moodle's plugin installer.
 2. Install the separate Video Service using [Docker Compose](docs/docker.md),
    with private S3-compatible storage and trusted HTTPS endpoints.
 3. Place the generated protected connection handoff on the Moodle server and
@@ -38,14 +47,25 @@ qualification, not bundled. Local-filesystem storage is not implemented.
 - Durable processing status, recycle/recovery and retention cleanup.
 - Signed service setup/readiness checks, role-separated worker/dispatcher/gateway/janitor.
 
+## Storage
+
+**Cloudflare R2 — first-class supported backend:** dedicated R2 configuration,
+private raw/processed buckets, direct browser multipart upload with short-lived
+signed parts, and private processed HLS media. No public bucket is required.
+
+**Generic S3-compatible storage — supported:** MinIO was used for independent
+qualification; compatibility varies by provider. R2's dedicated compatibility
+regressions are separate from live disposable-cloud qualification. See
+[storage setup, TLS, CORS and permissions](docs/storage.md).
+
 ## Project
 
-`plugin/mod_videolesson/` is the Moodle component; `service/video-service/` is the
+`plugin/mod_videolessonstream/` is the Moodle component; `service/video-service/` is the
 separate service. `deploy/` supplies Compose/native tooling; `tests/` and `scripts/`
 are developer checks. See [architecture](docs/architecture.md),
 [contributing](CONTRIBUTING.md), [security](SECURITY.md) and [changelog](CHANGELOG.md).
 
-Project-owned code is **GPL-3.0-or-later**; original CodeFortex artwork uses the
+Project-owned code is **GPL-3.0-or-later**; original ValeLMS artwork uses the
 same license. Upstream copyrights and dependency licenses remain intact. See
 [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 

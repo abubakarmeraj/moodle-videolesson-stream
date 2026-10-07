@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Generate protected Compose configuration from explicit operator policy."""
 import argparse, importlib.util, json, os, secrets
 from pathlib import Path

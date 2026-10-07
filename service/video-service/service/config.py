@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Deployment-owned configuration; values never logged."""
 import os
 import ipaddress
@@ -99,7 +99,11 @@ ALLOWED_HOSTS = setting('ALLOWED_HOSTS', '127.0.0.1,localhost' if ENVIRONMENT=='
 if not all(re.fullmatch(r'[a-zA-Z0-9.-]+', x) for x in ALLOWED_HOSTS):
     raise RuntimeError('Explicit allowed hosts required')
 REDIS_URL = required('REDIS_URL')
-REDIS_NAMESPACE = setting('REDIS_NAMESPACE', 'codefortex:video:' + TENANT)
+legacy_protocol = setting('SERVICE_ALLOW_LEGACY_PROTOCOL', 'true')
+if legacy_protocol not in ('true', 'false'):
+    raise RuntimeError('Invalid legacy protocol opt-in')
+ALLOW_LEGACY_PROTOCOL = legacy_protocol == 'true'
+REDIS_NAMESPACE = setting('REDIS_NAMESPACE', 'videolesson-stream:' + TENANT)
 if not re.fullmatch(r'[a-zA-Z0-9:_-]{8,120}', REDIS_NAMESPACE):
     raise RuntimeError('Invalid Redis namespace')
 STREAM = REDIS_NAMESPACE + ':jobs'

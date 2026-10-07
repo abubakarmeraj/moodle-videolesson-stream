@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """One non-root encoder, fenced DB lease and immutable attempt outputs. At-least-once, not exactly-once."""
 import hashlib
 import json

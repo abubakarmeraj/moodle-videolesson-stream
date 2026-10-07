@@ -15,7 +15,7 @@ Investigation/disclosure will be coordinated; RC1 implies no response-time guara
 
 ## Supported line
 
-3.1.0-rc1/plugin plus0.5.0-rc1/service is the prepared supported candidate tuple.
+3.1.0-rc2/plugin plus0.5.0-rc2/service is the prepared supported candidate tuple.
 There is not yet a stable release or guaranteed maintenance window.
 
 ## Model

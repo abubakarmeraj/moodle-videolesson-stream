@@ -1,10 +1,10 @@
 <?php
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright 2026 CodeFortex. Offline classification only; no Moodle/network access.
+// Copyright 2026 ValeLMS contributors. Offline classification only; no Moodle/network access.
 define('MOODLE_INTERNAL', true);
-require(__DIR__ . '/../plugin/mod_videolesson/classes/local/service_setup.php');
-use mod_videolesson\local\service_setup;
-$base = ['protocol_version' => 1, 'service_version' => '0.5.0-rc1',
+require(__DIR__ . '/../plugin/mod_videolessonstream/classes/local/service_setup.php');
+use mod_videolessonstream\local\service_setup;
+$base = ['protocol_version' => 2, 'service_version' => '0.5.0-rc2',
     'schema_ready' => true, 'schema_versions' => [1, 2, 3, 4, 5],
     'storage_config_valid' => true, 'raw_reachable' => true,
     'processed_reachable' => true, 'redis_ready' => true, 'worker_capacity_ready' => true,

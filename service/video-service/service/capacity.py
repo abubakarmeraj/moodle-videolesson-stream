@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright 2026 CodeFortex
+# Copyright 2026 ValeLMS contributors
 """Worker-local staging heartbeat, early admission estimate, and immutable multipart policy."""
 import json,math,shutil,tempfile
 from . import config
