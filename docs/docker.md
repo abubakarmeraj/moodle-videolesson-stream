@@ -1,22 +1,21 @@
 # Docker Compose installation
 
 Run on Linux with Docker Engine, the Docker Compose plugin and Python 3.12. Extract
-`valelms-video-service-0.5.0-rc2.tar.gz`; commands below run from its
+`valelms-video-service-0.5.0.tar.gz`; commands below run from its
 `video-lesson/` root. No Moodle, MinIO or TLS-certificate service is bundled.
 
 ## Prepare
 
-Development tooling requires **Compose >= 2.30** (v5 is also supported) for raw
+Use **Compose >= 2.30** (v5 is also supported) for raw
 environment-file values: literal `$`/quotes in storage credentials must not be
 interpolated or changed. Do not print `docker compose config`, which resolves
-secrets. Published RC2 keeps its historical Compose file/qualification boundary.
+secrets.
 
-Published RC2 uses the manual policy procedure below. The unreleased development
-branch adds `sudo python3 deploy/setup.py --directory /etc/valelms-video`, which
-guides the same policy/secret generation and calls this same `prepare.py`.
-Its runtime directory is `/etc/valelms-video/runtime`; substitute that for
-`/etc/video-lesson-compose` below. See [preflight](preflight.md)
-and the [complete proxy/storage example](installation-examples.md).
+Recommended: `sudo python3 deploy/setup.py --directory /etc/valelms-video`.
+It guides the same policy/secret generation and invokes the manifest-guarded
+preparer. Its runtime directory is `/etc/valelms-video/runtime`; substitute that
+for `/etc/video-lesson-compose` below. The manual advanced-policy option follows.
+See [preflight](preflight.md) and [proxy/storage examples](installation-examples.md).
 
 Provision separate private raw and processed buckets and restricted credentials
 for API/gateway/worker/janitor. Set exact Moodle, API and gateway HTTPS origins.
@@ -50,7 +49,7 @@ network is deliberately dependency-only and cannot serve remote object storage.
 Worker initially has 2 CPUs/2 GiB memory, sequential renditions and one job;
 size private staging and limits for the host before accepting larger uploads.
 
-Build first: `valelms-video-service:0.5.0-rc2` is a **local build tag**, not a public
+Build first: `valelms-video-service:0.5.0` is a **local build tag**, not a public
 image to pull. This avoids the initial pull-access-denied detour from starting an
 unbuilt stack. Dependency images still require registry availability.
 
@@ -82,3 +81,17 @@ Rerun `up -d` with the same protected configuration for startup. Do not run `dow
 as routine uninstall: it destroys the service database. See [upgrading](upgrading.md)
 and [uninstall](uninstall.md). Failed first-time dependency setup can be retried
 without regenerating tenant/credentials.
+
+## A second independent stack
+
+Use a distinct `-p` project, protected `VIDEO_CONFIG`, tenant/reference authority,
+DB/data volumes and HTTPS names. Loopback defaults are 28090/28091; override with
+`VIDEO_API_PORT` / `VIDEO_GATEWAY_PORT` (for example 28190/28191). Database/Redis
+ports remain unpublished. Match the HTTPS reverse-proxy upstreams to these values.
+See the [complete two-stack example](installation-examples.md#two-independent-compose-stacks).
+
+Before **first** startup, `deploy/preflight.py --check-ports --api-port 28190
+--gateway-port 28191` checks that pair is distinct and unused (also supply the
+normal config/staging arguments). After startup, omit `--check-ports`: your own
+running stack is expected to occupy its ports. A collision is not permission to
+stop the other stack. Choose unused ports or identify a stale stack with its owner.

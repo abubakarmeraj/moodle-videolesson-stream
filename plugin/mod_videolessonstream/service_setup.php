@@ -33,8 +33,13 @@ echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('cfservicesetup', 'mod_videolessonstream'));
 echo html_writer::tag('h3', get_string('cfsetupheading', 'mod_videolessonstream'));
 echo html_writer::start_tag('ol');
+$guides = ['install' => 'docker.md', 'storage' => 'storage.md', 'handoff' => 'configuration.md',
+    'test' => 'troubleshooting.md', 'smoke' => 'quick-start.md'];
 foreach (['install', 'storage', 'handoff', 'test', 'smoke'] as $step) {
-    echo html_writer::tag('li', get_string('cfsetupstep_' . $step, 'mod_videolessonstream'));
+    $url = new moodle_url('https://github.com/abubakarmeraj/moodle-videolesson-stream/blob/main/docs/' . $guides[$step]);
+    echo html_writer::tag('li', get_string('cfsetupstep_' . $step, 'mod_videolessonstream') . ' ' .
+        html_writer::link($url, get_string('cfsetupguide_' . $step, 'mod_videolessonstream'),
+            ['target' => '_blank', 'rel' => 'noopener noreferrer']));
 }
 echo html_writer::end_tag('ol');
 echo html_writer::tag('p', get_string('cfsetupinstructions', 'mod_videolessonstream'));

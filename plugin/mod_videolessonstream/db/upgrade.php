@@ -34,5 +34,9 @@ function xmldb_videolessonstream_upgrade($oldversion) {
         // Installation guidance and uploader diagnostics only; no schema/data changes.
         upgrade_mod_savepoint(true, 2026101200, 'videolessonstream');
     }
+    if ($oldversion < 2026101201) {
+        // Stable identity and final UX only; no schema/data migration.
+        upgrade_mod_savepoint(true, 2026101201, 'videolessonstream');
+    }
     return true;
 }

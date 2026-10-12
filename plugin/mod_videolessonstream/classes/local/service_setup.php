@@ -6,7 +6,7 @@ defined('MOODLE_INTERNAL') || die();
 /** Protected installer handoff and safe setup diagnostics. */
 final class service_setup {
     public const PROTOCOL_VERSION = 2;
-    public const TESTED_SERVICE = '0.5.0-rc2';
+    public const TESTED_SERVICE = '0.5.0';
     public const MAX_DURATION = 21600;
 
     public static function configuration(): array {

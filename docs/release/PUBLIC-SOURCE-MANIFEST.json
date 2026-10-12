@@ -46,18 +46,18 @@
   },
   {
     "path": ".gitignore",
-    "sha256": "f08594953968c18d972ab33fbff77fc03784c5f04daef4f76a9551eb45ff205a",
-    "bytes": 1480
+    "sha256": "a91c8bedd9b3d345a92c7fc6f51749435cbbd4abe1afc21e152208388f0da46f",
+    "bytes": 1512
   },
   {
     "path": "AGENTS.md",
-    "sha256": "47bc0792404bcbc693f414c36aed5b48e4263b8b61696a737220bea554d41530",
-    "bytes": 1105
+    "sha256": "243483eb16e379ad655d7d6b957d6bf3a0b07430b4ae4e31f73bf5624778e09c",
+    "bytes": 1188
   },
   {
     "path": "CHANGELOG.md",
-    "sha256": "bfdd46c3d6da4a3ed5b19278f48dea0e198bc3f014ef9e4c5870a9ad4303efff",
-    "bytes": 2568
+    "sha256": "30c4d1c3a1dc5fd24bf9331f7bcf53ecd916a1e3f1fd47f40ff722b6a0932b5c",
+    "bytes": 3568
   },
   {
     "path": "CODE_OF_CONDUCT.md",
@@ -76,8 +76,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "4e47ea9a8a1d048771296197b5bbd9792425ead2a4eb9bbf5ae537f059a85109",
-    "bytes": 5798
+    "sha256": "ff3f1d15d96a14f5b123a7eecdcacc6ed72e3d3b84dee721ad9ada6eef8a58e9",
+    "bytes": 5267
   },
   {
     "path": "SECURITY.md",
@@ -96,8 +96,8 @@
   },
   {
     "path": "deploy/docker/.env.example",
-    "sha256": "09513448061d0df62cbb5cc294b907d6d0a4577325febf93e7c41c5859591a6b",
-    "bytes": 190
+    "sha256": "ea4e00772eca69bd4210a724b4692fd8b2ae52972a921845db6af3d8ec0c5004",
+    "bytes": 381
   },
   {
     "path": "deploy/docker/Dockerfile",
@@ -106,13 +106,13 @@
   },
   {
     "path": "deploy/docker/README.md",
-    "sha256": "e95754c786d9985a9cc14319a8374891a9e3ef1c3d4819018d55b7b6dbe1b098",
-    "bytes": 535
+    "sha256": "fb1e355c47c4fa540bf93e1e0896e1db4380464787dd86624994f64a0049ea07",
+    "bytes": 531
   },
   {
     "path": "deploy/docker/compose.yaml",
-    "sha256": "f02997f902f3e8ed11a911eb84c40097a46547ef56a0b71a36701180a756bbd2",
-    "bytes": 3247
+    "sha256": "32b8cc835a8efe54a8440cc02a70a547402e7a84580a8b47cf34a9c3a85ea546",
+    "bytes": 3285
   },
   {
     "path": "deploy/docker/nginx.conf",
@@ -136,18 +136,18 @@
   },
   {
     "path": "deploy/installer/README.md",
-    "sha256": "5d88fb0c2a58615f98d07e7acdb0914f3e5731636c9a8cc1d7d25197fdd512c8",
-    "bytes": 568
+    "sha256": "a4e05ed406f878a29b6b8303e601692f099eaf850a6a9bf6710220d442ddd78f",
+    "bytes": 560
   },
   {
     "path": "deploy/installer/check.py",
-    "sha256": "46cf0b987785d6afa6a037e9e75ed5ee990ed8ae555349beede86737d80a5003",
-    "bytes": 2931
+    "sha256": "19f4138b8cdc3c8b66fd0acd673f3c184b9d67e39a9caba38e0f50f8c73482d9",
+    "bytes": 2927
   },
   {
     "path": "deploy/installer/install.py",
-    "sha256": "ef0ff7cffff4f20b35f2c68c883f460d4abe399b7f90d241b968554adb484ce1",
-    "bytes": 16365
+    "sha256": "79d368e6281b1fd1b564dfaa0ba033d5dd24c04992c16c662f145dcc54402159",
+    "bytes": 16361
   },
   {
     "path": "deploy/installer/install.sh",
@@ -171,8 +171,8 @@
   },
   {
     "path": "deploy/preflight.py",
-    "sha256": "7126ec7c3a8397c6dc9d1415fb80777bbcbd7d47b0b962355a8ebde0285cd8bc",
-    "bytes": 13928
+    "sha256": "870d4881f1534ad42b0d89f53326a11cd012f43102b2789a35d7c0f347793f7f",
+    "bytes": 14972
   },
   {
     "path": "deploy/setup.py",
@@ -181,8 +181,8 @@
   },
   {
     "path": "docs/ai-installation.md",
-    "sha256": "adebdb62532a0773d3477f4ace872252e9a5d90256a162465cfdf4a49caaaaf1",
-    "bytes": 4293
+    "sha256": "856354e9462d4aee451ac0f0b1e0a27ae4fd8dd4b2680b6f6e6c7715b80c3074",
+    "bytes": 4585
   },
   {
     "path": "docs/architecture.md",
@@ -231,8 +231,8 @@
   },
   {
     "path": "docs/development/README.md",
-    "sha256": "bf9117f52b1d619ea02ab0a64d9de87584f68d30af792c5b7469994ba573baa4",
-    "bytes": 960
+    "sha256": "397f1cb3cff41ce877fac423e8950b6dd9603d41722d1636b09dad6708f37eea",
+    "bytes": 1194
   },
   {
     "path": "docs/development/installation-ux/CHANGE-INVENTORY.md",
@@ -300,24 +300,29 @@
     "bytes": 119839
   },
   {
+    "path": "docs/development/stable-3.1.0/PREPARATION.md",
+    "sha256": "65837922d459163541e8f07d278e60dfa9a3b064a9b921706cdfc4f48feefa61",
+    "bytes": 6260
+  },
+  {
     "path": "docs/docker.md",
-    "sha256": "64375318576d60e491990b41a71547daa4734c9796a73071421dcf041bc3b430",
-    "bytes": 4411
+    "sha256": "765bf09719ca97d8d8ed5221aa7e904c063127e80e43c8a4e451c6f1776be8bf",
+    "bytes": 5122
   },
   {
     "path": "docs/installation-examples.md",
-    "sha256": "1380486ec2c1fb520b4253b389202563a45534f045093b8be2b19cc19149dd73",
-    "bytes": 8509
+    "sha256": "19a177580017808b82f853716d6ae1ac474f04b3953b3577d2d862bc1d55228a",
+    "bytes": 11287
   },
   {
     "path": "docs/installation.md",
-    "sha256": "2bc94e09de7acb45e48184a75596968ed213979687ed86ddbcc2672b7e8a8af7",
-    "bytes": 2631
+    "sha256": "50c7c946bb208641e783d5e14ef4d1db44167e3697cf6353935c8367d42dabb7",
+    "bytes": 2633
   },
   {
     "path": "docs/known-limitations.md",
-    "sha256": "bab905963a1d4722433b37c19cacfc8e5b9c74b5fec0ee46a4fdd26e6827a6d5",
-    "bytes": 3066
+    "sha256": "132e4559fc4456ea6efdf56f8f8a7d9c33f5ca6c9416c433252ddca6ab5fcf55",
+    "bytes": 3777
   },
   {
     "path": "docs/licenses/Apache-2.0.txt",
@@ -511,13 +516,18 @@
   },
   {
     "path": "docs/native-linux.md",
-    "sha256": "797739855fe2170ea545eaa5175aa1253953f812d4f02946ed51a63f877282e8",
-    "bytes": 2042
+    "sha256": "5da5b8af967a365e83d19152771def95e3d0fc6cadd3a387367c46a8586438a0",
+    "bytes": 2047
   },
   {
     "path": "docs/preflight.md",
-    "sha256": "b03d57f1a2913dd29f7850db461e999156146db33ef0c7cab4628c3752cbc261",
-    "bytes": 4657
+    "sha256": "b6c0aaed6a4f488bfd1d71e02d5a671cb864d2345773fc57d686d87b3a12c912",
+    "bytes": 4934
+  },
+  {
+    "path": "docs/qualification-installation-ux.md",
+    "sha256": "fc0a863a862c26730589b22cc8f46279204d6c9775a1edd45bf5909d526d0c11",
+    "bytes": 2928
   },
   {
     "path": "docs/qualification-ubuntu-arm64.md",
@@ -526,8 +536,8 @@
   },
   {
     "path": "docs/quick-start.md",
-    "sha256": "6061ac46451d099314ec1f106b592603e5a606df0c3f35d6c91d77e28c86a24a",
-    "bytes": 3345
+    "sha256": "3143b4aaa376079ee5d0a3965b695f3f1730aaf24c1316c7d447f4ae6651d619",
+    "bytes": 3341
   },
   {
     "path": "docs/rc1-to-rc2.md",
@@ -536,18 +546,18 @@
   },
   {
     "path": "docs/release/IDENTITY.json",
-    "sha256": "3d7d4564b87cc91a3aa69e32b2cd7f541cb0ad7b1a1d2809b3269290e11b8637",
-    "bytes": 663
+    "sha256": "eef4140a5a32108e0666e879ec26fa67062ad27c7b006ee11d97cd78986cc88f",
+    "bytes": 650
   },
   {
     "path": "docs/release/PRODUCT-MANIFEST.json",
-    "sha256": "6a0f6aa438f7fcfa5c2b01a74a2dd6bae0cd9a2dca2266b7587c3b7b3fe4f3dc",
-    "bytes": 45943
+    "sha256": "dca9384dc198dbba5fddc55b72ff4a56719991441559cfa03100888d7f440222",
+    "bytes": 45942
   },
   {
     "path": "docs/release/SERVICE-MANIFEST.json",
-    "sha256": "deebb636977118d3ac8dbf2c7ced697703db2fa7bffcce59c3dae5d7ca788620",
-    "bytes": 5434
+    "sha256": "a7a4b4b266a38e7008ec7e7d6a3937473adca6b7f7308fbab127fa701981fb45",
+    "bytes": 5433
   },
   {
     "path": "docs/release/rc1/COLLISION-SCHEMA.xml",
@@ -575,14 +585,24 @@
     "bytes": 5434
   },
   {
+    "path": "docs/release/stable-3.1.0/QUALIFICATION-HANDOFF.md",
+    "sha256": "26010f3c90c916088ab834e93f87aeaa3b273164e4319d6b6a3f9c13df6d1ce1",
+    "bytes": 3933
+  },
+  {
+    "path": "docs/release/stable-3.1.0/RELEASE-NOTES.md",
+    "sha256": "53f2a990384c2605f28f424408a619c5d92096e17155c61308b4c2eedf776320",
+    "bytes": 2611
+  },
+  {
     "path": "docs/storage.md",
     "sha256": "46d8acbc25c7e95f05bad6710e4aab13891bb964ebf2e1f88580b19e0ecc2bc6",
     "bytes": 5333
   },
   {
     "path": "docs/troubleshooting.md",
-    "sha256": "e70002c083b6a3b26b3ff063650413b55e9af5acde5c20465b612ff3ffc968e5",
-    "bytes": 2985
+    "sha256": "18c98375ed75ec497c6c86e01ebc59011011c2a0e2b051c82aec3d5e9b5cfc74",
+    "bytes": 3851
   },
   {
     "path": "docs/uninstall.md",
@@ -591,8 +611,8 @@
   },
   {
     "path": "docs/upgrading.md",
-    "sha256": "6afcc1a9179aa06c126157bc313db4f9024dd614d36b6909d640e9f436f9b80b",
-    "bytes": 2187
+    "sha256": "608f1b77aed0bf0372a855d9822cdba8706b147782c6bfc7125a723ffbfea6ad",
+    "bytes": 3977
   },
   {
     "path": "plugin/mod_videolessonstream/CHANGES.md",
@@ -606,8 +626,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/README.md",
-    "sha256": "91c5a966a28f8cf130308cb41486eeeec90079e74d35ca83f93f0e17c88ced03",
-    "bytes": 1252
+    "sha256": "b79f54ed211e49fb512829566c850a256c831477bed450a012e890b8adb4c03b",
+    "bytes": 1359
   },
   {
     "path": "plugin/mod_videolessonstream/ajax.php",
@@ -746,13 +766,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js",
-    "sha256": "e6a2a92f6432365542822940ac8ed7dce34e9bd8b46a6ddcf1ff8691f1301d36",
-    "bytes": 6985
+    "sha256": "dc48fdad90c45a0ba303e1076bc09a22904ddd1686a649663e15ff5e009c62fb",
+    "bytes": 7266
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js.map",
-    "sha256": "7d6770b75d52d9d87b67bedbfb6c10735dd11562590576e53827b49dd98e1613",
-    "bytes": 24678
+    "sha256": "5c17f12253726e3540135f4bb3445946066f5272e0626fbde6f371d8cf5a91fa",
+    "bytes": 25764
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/vplyr.min.js",
@@ -831,8 +851,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/upload.js",
-    "sha256": "06c7b84b82ac8b41b686806d35fd72013222b4d62f720ad608b9520c91a8915f",
-    "bytes": 15308
+    "sha256": "27519f4eacedde0d2ae702d586b3c2a1a342ba1aba42ac4eae556b0b3f0ba4de",
+    "bytes": 16074
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/vplyr.js",
@@ -1171,8 +1191,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/classes/local/service_setup.php",
-    "sha256": "570929f597b63c3744a4468126392808ec0b11c0873f54ff68a23cc8ef016e81",
-    "bytes": 4614
+    "sha256": "42ccafb40d2bd7773265f95c604c2a9408756810de5651174fde5b9f51394f7b",
+    "bytes": 4610
   },
   {
     "path": "plugin/mod_videolessonstream/classes/local/services/conversion_status_service.php",
@@ -1361,8 +1381,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/db/upgrade.php",
-    "sha256": "7d0f3de2689d2f59f6b3a034900f956308e4acc124547af5263c78cf3bbec3f7",
-    "bytes": 1520
+    "sha256": "0ca64de2648023bc7d4e1de49a08dc9f59ecd1f20c7bcc1dc7a46a50efe154a7",
+    "bytes": 1704
   },
   {
     "path": "plugin/mod_videolessonstream/index.php",
@@ -1371,8 +1391,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/lang/en/videolessonstream.php",
-    "sha256": "c08094197a37f673b8dd980b8d8bc512465af8c5ffcb97ebb77f462dc2625329",
-    "bytes": 75730
+    "sha256": "9269dc5cec781fc468452f7f4e1bf89ecd49d9c40cb02f562c2ee3203e3f1a7b",
+    "bytes": 76101
   },
   {
     "path": "plugin/mod_videolessonstream/lib.php",
@@ -1501,13 +1521,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/service_setup.php",
-    "sha256": "7f91fc0d26d1f8351119534727a5ae376b3fa02c44da27c2618151044145fff1",
-    "bytes": 4508
+    "sha256": "8307f8641db5ed8721edc0130cf95e792f9d2f2b99ae83100cdeb1e67b1f9158",
+    "bytes": 4963
   },
   {
     "path": "plugin/mod_videolessonstream/settings.php",
-    "sha256": "d5f1216a4af7046282dc0e42efbca26aadcf46209e50a60518d3ad2530bfdc0f",
-    "bytes": 3845
+    "sha256": "b2e97afc68c0ba5c489cd2f3aa070d2b11868ea1717512409d43b387cfbcbbf7",
+    "bytes": 4009
   },
   {
     "path": "plugin/mod_videolessonstream/setup.css",
@@ -1701,8 +1721,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/version.php",
-    "sha256": "9cc59cf0284fd17e05a22869f72873deac3907a532e5d7b61eba478f13663cee",
-    "bytes": 1142
+    "sha256": "e55f8ba0c0e9cdc8a829d0eaaa684bafee7ef2caaa72dfc45714fdf15806686e",
+    "bytes": 1137
   },
   {
     "path": "plugin/mod_videolessonstream/view.php",
@@ -1731,13 +1751,13 @@
   },
   {
     "path": "scripts/check_release.py",
-    "sha256": "bd3153738a29805d69844b3360aca5542e31eb7a2990e749f8724ecc93a27c50",
-    "bytes": 3968
+    "sha256": "fcaf56bf8d2e63c36e0a347b693649c8671b7bd6751afff34dba3eb7bd3cc9d4",
+    "bytes": 3965
   },
   {
     "path": "scripts/public_release.py",
-    "sha256": "58c94d62ea22974fe4636d7064f9ff2a7fd16c6f2202ea0ffc189fe5f84ae56e",
-    "bytes": 13031
+    "sha256": "bab54b191730a16eb654b8cc5fa71fedf34fd3fdec16b02d09784f528b38204d",
+    "bytes": 13010
   },
   {
     "path": "scripts/render_artwork.py",
@@ -1756,18 +1776,18 @@
   },
   {
     "path": "service/video-service/README.md",
-    "sha256": "10082cd9186ee71f7f36643a3ac041136f1090b8b8e0a5f821b95e0355e96e1c",
+    "sha256": "061f5a7740d985c77834e1fa18bd0b644ce56fe559134a766cf1ea24ef8b91f5",
     "bytes": 1354
   },
   {
     "path": "service/video-service/VERSION",
-    "sha256": "5e1fdd3c8cab7b1472e64ad85ee87b12c3985769d1beedfbf09bc573cae795f1",
-    "bytes": 10
+    "sha256": "a0ad50640139a524f86591157145bf1d4674ea9c065bfea21558f0f7b04430c8",
+    "bytes": 6
   },
   {
     "path": "service/video-service/deployment/OPERATIONS.md",
-    "sha256": "8528874bad5029aab1c2c20d3bd289c4fde4d7b1f5eec6eaf59d6a2208b5d4db",
-    "bytes": 2032
+    "sha256": "e3dd4fb7e8ccf93c49478a8ec6fdde6b659b9671bca22e203a8a7978cf65f771",
+    "bytes": 2028
   },
   {
     "path": "service/video-service/deployment/environment.example",
@@ -1801,8 +1821,8 @@
   },
   {
     "path": "service/video-service/pyproject.toml",
-    "sha256": "8d37e5e6a98b5d554b76b192b98826374d4598553cb0470c5776657407599676",
-    "bytes": 383
+    "sha256": "ca51b8dffe7cc42d7ea9290fd083e11e9aa3349d3fc0451765c2379844a4d546",
+    "bytes": 370
   },
   {
     "path": "service/video-service/release/python-sbom.json",
@@ -1916,8 +1936,8 @@
   },
   {
     "path": "tests/test_compatibility.php",
-    "sha256": "858b93220aecb7592fe498b7c3632bce7b3463f52667366cb94a42959ee22cb5",
-    "bytes": 1210
+    "sha256": "7d80c03d707b20dba687b36676b980df0a7be08ad7ecce40ab2f33fcfe2978c4",
+    "bytes": 1204
   },
   {
     "path": "tests/test_component_coexistence.php",
@@ -1931,13 +1951,13 @@
   },
   {
     "path": "tests/test_installation_guidance.php",
-    "sha256": "6b9e4e5372ccd92dad8c254f33c3af56e5fdae193ceb846099994f0aff3cc2c3",
-    "bytes": 1598
+    "sha256": "3b09eb2903a78ae3efeeb91e3d7fdb78e63f631abadbc105877775eef9476089",
+    "bytes": 2564
   },
   {
     "path": "tests/test_installation_ux.py",
-    "sha256": "a23e6e74cad323488f6f178b7a5c5d1e7d568401becb26f0ebfb228692a5744b",
-    "bytes": 14914
+    "sha256": "f7b7a067071302f67fb553d82cd44a064993f76b0bb6d16f16217bffef2f9ad3",
+    "bytes": 16295
   },
   {
     "path": "tests/test_moodle_setup.php",
@@ -1946,8 +1966,8 @@
   },
   {
     "path": "tests/test_os1_baseline.py",
-    "sha256": "55e391c1ab67f83ba52ac83cd1bca144a188a72019c3cf3dabd924eb94c2c5e2",
-    "bytes": 3974
+    "sha256": "294d87ccc756872a33c13ca92a543589ec4a2c69547561560e6c22b2230bc58a",
+    "bytes": 3970
   },
   {
     "path": "tests/test_os2_storage.py",
@@ -1971,17 +1991,17 @@
   },
   {
     "path": "tests/test_release.py",
-    "sha256": "a31009448fb8dbb0d345ebafc43d7e83836b30638cab12969fb35fa586ef2b6f",
-    "bytes": 3642
+    "sha256": "202bee85425d062643cd6c0f6508bf1b9187fcb268ca73447c386aaf42ff09e1",
+    "bytes": 3692
   },
   {
     "path": "tests/test_upload_errors.cjs",
-    "sha256": "e6f10bfe40836d154a3d79e3b2d10827c7de2612b9ac466c803900ae77143bf1",
-    "bytes": 2472
+    "sha256": "142a481638b2ee0784593cf0a3ab26ba0d8d836e7e2fdc2634da4dce0f607f32",
+    "bytes": 3392
   },
   {
     "path": "tests/test_upload_urls.cjs",
-    "sha256": "48fcb1016ab82a94a383dddbdbc770d1ff036da8130ae01df5f1f616b1826a67",
-    "bytes": 7480
+    "sha256": "c3a2e5ec37a148fcbf1ae9867888b17920c6f09491373e68b8585c793f806338",
+    "bytes": 7604
   }
 ]

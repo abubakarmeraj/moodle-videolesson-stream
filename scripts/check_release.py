@@ -78,7 +78,7 @@ def main():
               'node': run([node, '--version']).strip(), 'phpcs_available': bool(shutil.which('phpcs')),
               'public_scan': release.scan({n: (ROOT / n).read_bytes() for n in names}),
               'media_matrix_repeated': False}
-    target = ROOT / '.lab/evidence/development/installation-ux/FAST-REGRESSIONS.json'
+    target = ROOT / '.lab/evidence/development/stable-3.1.0/FAST-REGRESSIONS.json'
     release.write(target, result)
     print(json.dumps(result, indent=2))
 

@@ -12,3 +12,7 @@ Source fingerprints live in `docs/release/`; immutable RC1 copies remain under r
 Unreleased installation-experience work: [results](installation-ux/RESULTS.md),
 [review handoff](installation-ux/HANDOFF.md), [watch-credit observation plan](installation-ux/watch-progress-plan.md).
 The shared human/AI installation entry point is [docs/quick-start.md](../quick-start.md).
+
+Current stable preparation: [results](stable-3.1.0/PREPARATION.md),
+[artifact-native handoff](../release/stable-3.1.0/QUALIFICATION-HANDOFF.md).
+Earlier dev.3/RC2 reports remain historical evidence, not the current package identity.

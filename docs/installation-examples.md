@@ -17,6 +17,58 @@ handoff to a root:PHP-group 0640 file under a 0750 directory outside webroot.
 
 ## Trusted HTTPS reverse proxy
 
+### Two independent Compose stacks
+
+Use this from the same verified service source root. Separate configuration
+generation supplies independent tenant/RPC/subject/DB/Redis identities; never
+clone a writable tenant authority or reuse the same config directory.
+
+| Item | Stack A | Stack B |
+|---|---|---|
+| Compose project | valelms-a | valelms-b |
+| Protected config | /etc/valelms-a/runtime | /etc/valelms-b/runtime |
+| API loopback | 127.0.0.1:28090 | 127.0.0.1:28190 |
+| Gateway loopback | 127.0.0.1:28091 | 127.0.0.1:28191 |
+| External HTTPS | api-a/media-a.example.invalid | api-b/media-b.example.invalid |
+| Storage | Dedicated private A raw/processed | Dedicated private B raw/processed |
+| DB volumes | valelms-a_db | valelms-b_db |
+
+Generate A and B separately with `deploy/setup.py --directory /etc/valelms-a`
+and `--directory /etc/valelms-b`, each with its own exact Moodle origin/storage
+role keys. Check unused ports before startup:
+
+```sh
+sudo python3 deploy/preflight.py --config /etc/valelms-b/policy.json \
+  --staging /etc/valelms-b/runtime/staging --check-ports --api-port 28190 --gateway-port 28191
+```
+
+Build the shared **same-version** image once, then start each named project:
+
+```sh
+sudo env VIDEO_CONFIG=/etc/valelms-a/runtime docker compose -p valelms-a \
+  -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml build migrate
+sudo env VIDEO_CONFIG=/etc/valelms-a/runtime VIDEO_API_PORT=28090 VIDEO_GATEWAY_PORT=28091 \
+  docker compose -p valelms-a -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml up -d --no-build
+sudo env VIDEO_CONFIG=/etc/valelms-b/runtime VIDEO_API_PORT=28190 VIDEO_GATEWAY_PORT=28191 \
+  docker compose -p valelms-b -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml up -d --no-build
+```
+
+If A already exists, **leave its code/config/ports/image unchanged**; only create B
+using its verified package. Different service releases need their own image tags.
+Persist the selected port variables in a protected, non-secret Compose env file
+(start from `deploy/docker/.env.example`) or repeat them on every invocation;
+do not accidentally revert B to defaults on restart. Do not print resolved config.
+No service DB/Redis port is exposed by these settings. `--check-ports` only checks
+at that instant; another process can still take a port before startup.
+
+For Stack B, copy the TLS proxy blocks below using api-b/media-b DNS/certificates
+and **28190/28191** upstreams. Connect Moodle B only to B's generated handoff.
+Use `-p valelms-b` and B's config/ports for lifecycle commands; never routine
+`down -v`. Two independent workers can consume more shared CPU/memory/disk;
+qualify capacity and avoid concurrent encode loads on a small shared test host.
+
+### Single-stack HTTPS routing
+
 The Compose proxy binds API `127.0.0.1:28090`, gateway `127.0.0.1:28091`.
 This operator Nginx example assumes you have already provisioned valid certificates.
 Use separate server blocks for the storage endpoint. Do not proxy binary uploads

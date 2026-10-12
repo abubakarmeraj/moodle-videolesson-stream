@@ -117,7 +117,7 @@ def main():
         raise RuntimeError('Failure injection is restricted to qualification mode')
     source = Path(__file__).resolve().parents[2] / 'service/video-service'
     version = (source / 'VERSION').read_text().strip()
-    if version != '0.5.0-rc2':
+    if version != '0.5.0':
         raise RuntimeError('Service version outside reviewed installer contract')
     import importlib.util
     spec = importlib.util.spec_from_file_location('release_manifest', Path(__file__).with_name('manifest.py'))

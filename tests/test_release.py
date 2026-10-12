@@ -15,13 +15,14 @@ ROOT = Path(__file__).resolve().parents[1]
 class ReleaseContract(unittest.TestCase):
     def test_identity(self):
         version = (ROOT / 'plugin/mod_videolessonstream/version.php').read_text()
-        self.assertIn('$plugin->version = 2026101200;', version)
-        self.assertIn("$plugin->release = 'ValeLMS 3.1.0-dev.3';", version)
-        self.assertEqual((ROOT / 'service/video-service/VERSION').read_text().strip(), '0.5.0-rc2')
+        self.assertIn('$plugin->version = 2026101201;', version)
+        self.assertIn("$plugin->release = 'ValeLMS 3.1.0';", version)
+        self.assertIn('$plugin->maturity = MATURITY_STABLE;', version)
+        self.assertEqual((ROOT / 'service/video-service/VERSION').read_text().strip(), '0.5.0')
         metadata = tomllib.loads((ROOT / 'service/video-service/pyproject.toml').read_text())
-        self.assertEqual(metadata['project']['version'], '0.5.0rc2')
+        self.assertEqual(metadata['project']['version'], '0.5.0')
         self.assertEqual(metadata['project']['license'], 'GPL-3.0-or-later')
-        self.assertIn("TESTED_SERVICE = '0.5.0-rc2'", (ROOT / 'plugin/mod_videolessonstream/classes/local/service_setup.php').read_text())
+        self.assertIn("TESTED_SERVICE = '0.5.0'", (ROOT / 'plugin/mod_videolessonstream/classes/local/service_setup.php').read_text())
         self.assertEqual([p.name for p in sorted((ROOT / 'service/video-service/migrations').glob('*.sql'))],
                          ['001.sql', '002.sql', '003.sql', '004.sql', '005.sql'])
 
@@ -59,7 +60,7 @@ class ReleaseContract(unittest.TestCase):
         spec = importlib.util.spec_from_file_location('guard', ROOT / 'deploy/installer/manifest.py')
         guard = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(guard)
-        self.assertEqual(guard.verify(ROOT)['service_version'], '0.5.0-rc2')
+        self.assertEqual(guard.verify(ROOT)['service_version'], '0.5.0')
         with self.assertRaises(RuntimeError):
             guard.verify(ROOT, expected='0' * 64)
 

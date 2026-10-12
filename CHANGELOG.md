@@ -1,5 +1,22 @@
 # Changelog
 
+## 3.1.0 — stable candidate, not yet published
+
+Plugin 2026101201 / ValeLMS 3.1.0; Video Service 0.5.0; protocol 2,
+migrations 001–005. Private artifact verification and human publication approval
+are still required. RC1/RC2 tags and published assets remain immutable.
+
+- First-install Moodle New settings now includes the setup entry, with clickable
+  guide links on the protected five-step page.
+- Terminal upload failures show Status: Failed; pause/retry/resume and sanitized
+  causal messages are preserved, including during status polling.
+- Independent Compose stacks support explicit alternate loopback ports, with
+  prestart collision checks and a complete two-stack/proxy example.
+- Clearer stable front door and matched human/AI instructions; independent
+  Ubuntu ARM64 UX qualification is recorded separately from WSL2 evidence.
+- Savepoint only, no new Moodle schema or service migration006. No encoder,
+  player, storage, authorization, quota/recycle or completion-policy redesign.
+
 ## 3.1.0-dev.3 — unreleased installation experience
 
 - Distinguish upload pause from storage, transport, authorization and service

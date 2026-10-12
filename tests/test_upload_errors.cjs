@@ -22,6 +22,10 @@ const url = 'https://storage.example.invalid/raw/synthetic-part';
     ]) {
         const result = await scenario({url, ...options, pollAfter: label !== 'complete'});
         assert.equal(result.message, 'cfupload' + label, name);
+        if (label !== 'complete') {
+            assert.equal(result.status, 'cfstate: cfstatus' + (label === 'paused' ? 'paused' : 'failed'), name);
+            assert.equal(result.progress, 0, 'poll reflects zero server-confirmed bytes on this failed/paused trial');
+        }
         if (count !== null) { assert.equal(result.submitted.length, count, name); }
         assert.equal(result.controls.some(c => c.action === 'abort'), false, name);
         assert.equal(result.controls.some(c => c.action === 'complete'), label === 'complete', name);
@@ -33,5 +37,12 @@ const url = 'https://storage.example.invalid/raw/synthetic-part';
     assert.equal(resumed.submitted.length, 0);
     assert.equal(resumed.message, 'cfuploadcomplete');
     results.push('server-confirmed completed parts are not re-uploaded');
+    const uploading = await scenario({url, outcomes: [500], serverStage: 'uploading', pollAfter: true});
+    assert.equal(uploading.status, 'cfstate: cfstatusfailed', 'durable upload session does not erase terminal headline');
+    results.push('uploading server poll retains failed headline');
+    const reload = await scenario({url, resumeParts: [{number: 1, size: 15}], serverStage: 'uploading'});
+    assert.equal(reload.message, 'cfuploadcomplete', 'fresh page may resume despite prior local failure');
+    assert.equal(reload.submitted.length, 0);
+    results.push('fresh reload recovers server-confirmed upload without duplicate PUT');
     console.log(JSON.stringify({cases: results.length, pass: results}));
 })().catch(error => { console.error(error.message); process.exitCode = 1; });

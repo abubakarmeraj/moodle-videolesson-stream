@@ -17,7 +17,7 @@ def main():
         c.execute('SELECT version FROM schema_version ORDER BY version')
         versions=[r['version'] for r in c.fetchall()]
     version=config.VERSION
-    compatibility='compatible' if version=='0.5.0-rc2' else 'too_old_or_new_untested'
+    compatibility='compatible' if version=='0.5.0' else 'too_old_or_new_untested'
     if versions!=[1,2,3,4,5]:compatibility='migration_incomplete_or_untested'
     health={str(p):json.load(urllib.request.urlopen(f'http://127.0.0.1:{p}/health',timeout=5)).get('ready',False) for p in (18090,18091)}
     redis=redis_client()

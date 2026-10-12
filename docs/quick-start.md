@@ -4,14 +4,15 @@ ValeLMS needs a Moodle plugin **and** a Linux Video Service. You do not need a
 ValeLMS account. You do need private S3-compatible storage, role credentials,
 DNS/trusted HTTPS and enough private processing disk. [Requirements](installation.md).
 
-Published RC2 is a prerelease: plugin 2026100702, service 0.5.0-rc2, protocol 2.
-Verify both downloads against the [release checksums](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2).
-This branch's guided commands are **unreleased**; RC2 keeps its original manual
-`prepare.py --config` procedure. Do not manually patch a deployed RC2 with these files.
+Use one matched **3.1.0** package pair: plugin 2026101201 and service 0.5.0,
+protocol 2, migrations 001–005. Verify the supplied `SHA256SUMS` before extracting.
+During stable preparation these packages are private candidates, not a published
+release. Existing installations: read [upgrading](upgrading.md); do not mix files
+or manually patch an older distribution.
 
 ## 1. Install the plugin normally
 
-Install `mod_videolessonstream-3.1.0-rc2.zip` through Moodle and complete its normal
+Install `mod_videolessonstream-3.1.0.zip` through Moodle and complete its normal
 upgrade screen/CLI. It adds **ValeLMS Video Lesson Stream**, not the older
 `mod_videolesson`. [RC1 transition](rc1-to-rc2.md).
 
@@ -21,12 +22,12 @@ Use [Docker Compose on the existing Moodle host or a separate Linux server](dock
 Provision private storage and trusted HTTPS first; [examples](installation-examples.md)
 cover generic S3/SeaweedFS, role permissions and the reverse proxy.
 
-In an approved development checkout, the new guided configuration is:
+Extract `valelms-video-service-0.5.0.tar.gz`; from its `video-lesson/` root:
 
 ```sh
 sudo python3 deploy/setup.py --directory /etc/valelms-video
 sudo python3 deploy/preflight.py --config /etc/valelms-video/policy.json \
-  --staging /etc/valelms-video/runtime/staging
+  --staging /etc/valelms-video/runtime/staging --check-ports
 ```
 
 The guide asks for four HTTPS origins, backend, two bucket names and four pairs

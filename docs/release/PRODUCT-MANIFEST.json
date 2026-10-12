@@ -11,8 +11,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/README.md",
-    "sha256": "91c5a966a28f8cf130308cb41486eeeec90079e74d35ca83f93f0e17c88ced03",
-    "bytes": 1252
+    "sha256": "b79f54ed211e49fb512829566c850a256c831477bed450a012e890b8adb4c03b",
+    "bytes": 1359
   },
   {
     "path": "plugin/mod_videolessonstream/ajax.php",
@@ -151,13 +151,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js",
-    "sha256": "e6a2a92f6432365542822940ac8ed7dce34e9bd8b46a6ddcf1ff8691f1301d36",
-    "bytes": 6985
+    "sha256": "dc48fdad90c45a0ba303e1076bc09a22904ddd1686a649663e15ff5e009c62fb",
+    "bytes": 7266
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js.map",
-    "sha256": "7d6770b75d52d9d87b67bedbfb6c10735dd11562590576e53827b49dd98e1613",
-    "bytes": 24678
+    "sha256": "5c17f12253726e3540135f4bb3445946066f5272e0626fbde6f371d8cf5a91fa",
+    "bytes": 25764
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/vplyr.min.js",
@@ -236,8 +236,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/upload.js",
-    "sha256": "06c7b84b82ac8b41b686806d35fd72013222b4d62f720ad608b9520c91a8915f",
-    "bytes": 15308
+    "sha256": "27519f4eacedde0d2ae702d586b3c2a1a342ba1aba42ac4eae556b0b3f0ba4de",
+    "bytes": 16074
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/vplyr.js",
@@ -576,8 +576,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/classes/local/service_setup.php",
-    "sha256": "570929f597b63c3744a4468126392808ec0b11c0873f54ff68a23cc8ef016e81",
-    "bytes": 4614
+    "sha256": "42ccafb40d2bd7773265f95c604c2a9408756810de5651174fde5b9f51394f7b",
+    "bytes": 4610
   },
   {
     "path": "plugin/mod_videolessonstream/classes/local/services/conversion_status_service.php",
@@ -766,8 +766,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/db/upgrade.php",
-    "sha256": "7d0f3de2689d2f59f6b3a034900f956308e4acc124547af5263c78cf3bbec3f7",
-    "bytes": 1520
+    "sha256": "0ca64de2648023bc7d4e1de49a08dc9f59ecd1f20c7bcc1dc7a46a50efe154a7",
+    "bytes": 1704
   },
   {
     "path": "plugin/mod_videolessonstream/index.php",
@@ -776,8 +776,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/lang/en/videolessonstream.php",
-    "sha256": "c08094197a37f673b8dd980b8d8bc512465af8c5ffcb97ebb77f462dc2625329",
-    "bytes": 75730
+    "sha256": "9269dc5cec781fc468452f7f4e1bf89ecd49d9c40cb02f562c2ee3203e3f1a7b",
+    "bytes": 76101
   },
   {
     "path": "plugin/mod_videolessonstream/lib.php",
@@ -906,13 +906,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/service_setup.php",
-    "sha256": "7f91fc0d26d1f8351119534727a5ae376b3fa02c44da27c2618151044145fff1",
-    "bytes": 4508
+    "sha256": "8307f8641db5ed8721edc0130cf95e792f9d2f2b99ae83100cdeb1e67b1f9158",
+    "bytes": 4963
   },
   {
     "path": "plugin/mod_videolessonstream/settings.php",
-    "sha256": "d5f1216a4af7046282dc0e42efbca26aadcf46209e50a60518d3ad2530bfdc0f",
-    "bytes": 3845
+    "sha256": "b2e97afc68c0ba5c489cd2f3aa070d2b11868ea1717512409d43b387cfbcbbf7",
+    "bytes": 4009
   },
   {
     "path": "plugin/mod_videolessonstream/setup.css",
@@ -1106,8 +1106,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/version.php",
-    "sha256": "9cc59cf0284fd17e05a22869f72873deac3907a532e5d7b61eba478f13663cee",
-    "bytes": 1142
+    "sha256": "e55f8ba0c0e9cdc8a829d0eaaa684bafee7ef2caaa72dfc45714fdf15806686e",
+    "bytes": 1137
   },
   {
     "path": "plugin/mod_videolessonstream/view.php",
@@ -1126,18 +1126,18 @@
   },
   {
     "path": "service/video-service/README.md",
-    "sha256": "10082cd9186ee71f7f36643a3ac041136f1090b8b8e0a5f821b95e0355e96e1c",
+    "sha256": "061f5a7740d985c77834e1fa18bd0b644ce56fe559134a766cf1ea24ef8b91f5",
     "bytes": 1354
   },
   {
     "path": "service/video-service/VERSION",
-    "sha256": "5e1fdd3c8cab7b1472e64ad85ee87b12c3985769d1beedfbf09bc573cae795f1",
-    "bytes": 10
+    "sha256": "a0ad50640139a524f86591157145bf1d4674ea9c065bfea21558f0f7b04430c8",
+    "bytes": 6
   },
   {
     "path": "service/video-service/deployment/OPERATIONS.md",
-    "sha256": "8528874bad5029aab1c2c20d3bd289c4fde4d7b1f5eec6eaf59d6a2208b5d4db",
-    "bytes": 2032
+    "sha256": "e3dd4fb7e8ccf93c49478a8ec6fdde6b659b9671bca22e203a8a7978cf65f771",
+    "bytes": 2028
   },
   {
     "path": "service/video-service/deployment/environment.example",
@@ -1171,8 +1171,8 @@
   },
   {
     "path": "service/video-service/pyproject.toml",
-    "sha256": "8d37e5e6a98b5d554b76b192b98826374d4598553cb0470c5776657407599676",
-    "bytes": 383
+    "sha256": "ca51b8dffe7cc42d7ea9290fd083e11e9aa3349d3fc0451765c2379844a4d546",
+    "bytes": 370
   },
   {
     "path": "service/video-service/release/python-sbom.json",

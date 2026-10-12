@@ -85,13 +85,13 @@ def snapshot():
     service = [r for r in product if r['path'].startswith('service/video-service/')]
     write(ROOT / 'docs/release/PRODUCT-MANIFEST.json', product)
     write(ROOT / 'docs/release/SERVICE-MANIFEST.json', service)
-    identity = {'plugin_component': 'mod_videolessonstream', 'plugin_version': 2026101200,
-                'plugin_release': 'ValeLMS 3.1.0-dev.3', 'service_version': '0.5.0-rc2',
-                'service_package_version': '0.5.0rc2', 'protocol': 2,
+    identity = {'plugin_component': 'mod_videolessonstream', 'plugin_version': 2026101201,
+                'plugin_release': 'ValeLMS 3.1.0', 'service_version': '0.5.0',
+                'service_package_version': '0.5.0', 'protocol': 2,
                 'schema_migrations': ['001', '002', '003', '004', '005'],
                 'moodle_line': '5.2', 'license': 'GPL-3.0-or-later',
                 'product_manifest_sha256': sha(json_bytes(product)), 'service_manifest_sha256': sha(json_bytes(service)),
-                'status': 'Unreleased installation-experience development; not an RC2 artifact; publication not authorized'}
+                'status': 'Stable preparation candidate; private artifact verification pending; publication not authorized'}
     write(ROOT / 'docs/release/IDENTITY.json', identity)
     # Re-list newly generated public metadata; exclude only the self-referential index.
     records = inventory(n for n in source_paths() if n != PUBLIC_MANIFEST)
@@ -169,8 +169,8 @@ def build(output):
     output.mkdir(parents=True, exist_ok=True)
     results = []
     for kind, prefix, filename in (
-        ('plugin', 'videolessonstream/', 'mod_videolessonstream-3.1.0-rc2.zip'),
-        ('service', 'video-lesson/', 'valelms-video-service-0.5.0-rc2.tar.gz')):
+        ('plugin', 'videolessonstream/', 'mod_videolessonstream-3.1.0.zip'),
+        ('service', 'video-lesson/', 'valelms-video-service-0.5.0.tar.gz')):
         if kind == 'plugin':
             chosen = [n for n in names if n.startswith('plugin/mod_videolessonstream/')]
             payload = {prefix + n.removeprefix('plugin/mod_videolessonstream/'): (ROOT / n).read_bytes() for n in chosen}

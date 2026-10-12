@@ -167,10 +167,11 @@ class InstallationUX(unittest.TestCase):
         handoff = self.root / 'connection.json'
         setup.write_new(handoff, json.dumps({'endpoint': 'https://video.example.invalid', 'tenant': 'synthetic-tenant',
             'keyid': 'installation-1', 'key': 'synthetic-key-not-real'}))
-        ready = dict(protocol_version=2, service_version='0.5.0-rc2', schema_versions=[1, 2, 3, 4, 5],
+        ready = dict(protocol_version=2, service_version='0.5.0', schema_versions=[1, 2, 3, 4, 5],
             max_duration_seconds=21600, schema_ready=True, storage_config_valid=True,
             raw_reachable=True, processed_reachable=True, redis_ready=True, worker_capacity_ready=True)
-        for delta, expected in [({}, True), ({'protocol_version': 1}, False), ({'raw_reachable': False}, False),
+        for delta, expected in [({}, True), ({'service_version': '0.5.0-rc2'}, False),
+                                ({'protocol_version': 1}, False), ({'raw_reachable': False}, False),
                                 ({'worker_capacity_ready': False}, False), ({'max_duration_seconds': 43200}, False)]:
             def http(url, **kwargs):
                 self.assertEqual(url, 'https://video.example.invalid/v2/rpc')
@@ -222,6 +223,17 @@ class InstallationUX(unittest.TestCase):
         rendered_secret = json.loads(rendered.stdout)['services']['api']['environment']['R2_SECRET_KEY']
         self.assertEqual(rendered_secret, canary.replace('$', '$$'))
         self.assertEqual((ROOT / 'deploy/docker/compose.yaml').read_text().count('format: raw'), 6)
+        alternate = subprocess.run(['docker', 'compose', '-p', 'valelms-b', '-f',
+            str(ROOT / 'deploy/docker/compose.yaml'), 'config', '--format', 'json'],
+            env={**os.environ, 'VIDEO_CONFIG': str(directory), 'VIDEO_API_PORT': '28190', 'VIDEO_GATEWAY_PORT': '28191'},
+            capture_output=True, text=True)
+        self.assertEqual(alternate.returncode, 0, 'Second-stack model did not parse')
+        model = json.loads(alternate.stdout)
+        self.assertEqual([(p['host_ip'], p['published']) for p in model['services']['proxy']['ports']],
+                         [('127.0.0.1', '28190'), ('127.0.0.1', '28191')])
+        self.assertNotIn('ports', model['services']['db'])
+        self.assertNotIn('ports', model['services']['redis'])
+        self.assertEqual(model['volumes']['db']['name'], 'valelms-b_db')
         before = {p.name: p.read_bytes() for p in directory.iterdir() if p.is_file()}
         self.assertEqual(len(before), 12, 'existing preparer generates twelve runtime files')
         again = subprocess.run(command, capture_output=True, text=True)
@@ -260,6 +272,16 @@ class InstallationUX(unittest.TestCase):
         self.root.chmod(0o755)
         self.assertFalse(preflight.staging_ready(self.root))
         self.root.chmod(0o700)
+
+    def test_loopback_port_collision_and_bounds(self):
+        import socket
+        with socket.socket() as occupied:
+            occupied.bind(('127.0.0.1', 0))
+            port = occupied.getsockname()[1]
+            self.assertFalse(preflight.ports_available(port, 28191))
+        self.assertFalse(preflight.ports_available(28190, 28190))
+        self.assertFalse(preflight.ports_available(80, 28191))
+        self.assertFalse(preflight.ports_available(65536, 28191))
 
 
 if __name__ == '__main__':

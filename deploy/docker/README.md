@@ -1,7 +1,7 @@
 # Compose deployment
 
 Follow [Docker installation](../../docs/docker.md).
-Video Service0.5.0-rc2, protocol2, schema001–005. The shipped service manifest
+Video Service0.5.0, protocol2, schema001–005. The shipped service manifest
 replaces historical development guard inputs. Preparation creates protected
 independent identities and never overwrites existing configuration.
 

@@ -1,7 +1,7 @@
-# Guided setup and non-destructive preflight (unreleased)
+# Guided setup and non-destructive preflight
 
-These tools are development source, not additions to the published RC2 archives.
-Use a reviewed successor package when released; do not copy patches onto RC2.
+These tools ship in the coordinated 3.1.0 / service 0.5.0 candidate; older
+published RC2 archives remain immutable. Install matched verified packages.
 Compose >= 2.30 is required for raw env-file secret preservation. See
 [Docker's format contract](https://docs.docker.com/reference/compose-file/services/#format).
 
@@ -80,6 +80,10 @@ change IAM/CORS or delete other objects. Interrupted execution may leave a tiny
 probe object/upload; use normal approved storage administration to review only
 that prefix. Failure to clean up is a FAIL, not hidden success. Bucket versioning
 or legal holds can retain deleted versions; this tool never purges them.
+
+Before first startup add `--check-ports`, with `--api-port`/`--gateway-port` if
+overriding defaults. This makes a collision actionable without stopping another
+stack. Omit this check once your own stack is running. See [two-stack example](installation-examples.md#two-independent-compose-stacks).
 
 JSON output contains only allowlisted check names/status/guidance; no exception
 body, URL, key or signature. Exit 1 = a failed check; exit 0 means selected checks

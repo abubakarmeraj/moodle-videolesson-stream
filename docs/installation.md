@@ -1,6 +1,6 @@
 # Requirements and installation
 
-RC2 targets **Moodle 5.2**, plugin requires build version 2026042000 or newer.
+ValeLMS 3.1.0 targets **Moodle 5.2**, plugin requires build version 2026042000 or newer.
 Fresh Moodle **5.2.2**, PHP **8.3.6**, MariaDB **10.11.14** and Ubuntu **24.04**
 under WSL2 were qualified. This does not certify every PHP release, Moodle version
 or arbitrary Linux VM. A later independent **Ubuntu 24.04.5 ARM64 VM**, Moodle
@@ -16,7 +16,7 @@ the reviewed Compose worker uses **5.1.9**. The container uses pinned Python/Deb
 MariaDB, Redis 7.2 and Nginx image inputs; no images are published by this repository.
 
 The qualified Docker environment used Engine **29.1.3**, Compose v2 **2.40.3**.
-Use a supported Docker Engine/Compose v2 installation and review compatibility when
+Use Docker Compose **>= 2.30** (including v5) and review compatibility when
 changing pinned images/packages. There is no supplied Moodle or storage-server container.
 
 1. Install the Moodle ZIP normally. Component is `mod_videolessonstream`, installed at

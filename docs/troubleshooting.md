@@ -6,7 +6,7 @@ Start with **Test Connection**, not screenshots of secrets or `/health` alone.
 |---|---|
 | SERVICE_UNREACHABLE | Exact HTTPS origin, DNS/TLS trust, private routing, API role |
 | AUTHENTICATION_FAILED | Correct protected six-field file, matched stable tenant/keyid/key, time synchronization |
-| SERVICE_TOO_OLD / SERVICE_NEWER_UNTESTED | RC2 plugin 2026100702 + service 0.5.0-rc2, protocol 2 (also used by unreleased dev.3); do not suppress the compatibility guard |
+| SERVICE_TOO_OLD / SERVICE_NEWER_UNTESTED | Stable plugin 2026101201 + service 0.5.0, protocol 2; upgrade the matched pair, never suppress compatibility guards |
 | SCHEMA_NOT_READY | Explicit migrator and001–005; retain DB, do not repair rows manually |
 | STORAGE_NOT_READY | Private bucket access, endpoint/region/addressing, role keys, TLS trust |
 | NO_WORKER_CAPACITY | Worker heartbeat, private staging space, configured limits and active job |
@@ -18,7 +18,7 @@ sanitized job status, actual media codec/duration, disk and lease state. A highe
 upload setting cannot overcome insufficient staging. Reconciliation is idempotent;
 do not manually delete a referenced video to clear an error.
 
-## Upload messages (unreleased diagnostic improvement)
+## Upload messages
 
 Only pressing **Pause** should report an intentional pause. A terminal storage
 HTTP 500 is now a storage-transfer failure, not “Upload paused.” Temporary
@@ -27,6 +27,21 @@ after that, select the **same file** to resume committed parts. Storage 401/403
 means authorization expired **or denied**; HTTP status alone cannot distinguish
 expiry from incorrect IAM. Moodle/service request failures are separate. Never
 display raw provider response text or full presigned URLs.
+
+After terminal failure the headline becomes **Status: Failed**, with the useful
+sanitized message retained across polling. Intentional Pause has its own paused
+headline. Reload reconstructs the durable server upload and permits same-file
+resume; a local transfer failure does not destroy the multipart session.
+
+## Compose port collision
+
+Run preflight `--check-ports` before first startup. Default API/gateway loopback
+ports are 28090/28091; a second stack can use 28190/28191 through
+`VIDEO_API_PORT`/`VIDEO_GATEWAY_PORT`. Match preflight arguments and HTTPS upstreams.
+Use a distinct Compose project and protected configuration; keep MariaDB/Redis
+unpublished. See [the concrete example](installation-examples.md#two-independent-compose-stacks).
+An already-running own stack is expected to occupy its ports: omit the prestart
+check after startup. Never stop another application or delete a volume to proceed.
 
 A successful PUT without a browser-readable ETag requires storage CORS correction.
 Network errors can also hide a CORS failure: inspect sanitized status/header

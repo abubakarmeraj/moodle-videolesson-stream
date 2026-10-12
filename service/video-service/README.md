@@ -1,6 +1,6 @@
-# ValeLMS Video Service 0.5.0-rc2
+# ValeLMS Video Service 0.5.0
 
-Separate media processing/delivery service for Video Lesson3.1.0-rc2.
+Separate media processing/delivery service for Video Lesson Stream 3.1.0.
 Protocol2; MariaDB migrations001–005. Project-owned source is GPL-3.0-or-later;
 third-party libraries retain their own licenses. LICENSE and notices are supplied.
 

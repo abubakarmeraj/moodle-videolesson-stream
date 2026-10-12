@@ -18,11 +18,12 @@ Do not use a production/cloud account merely because credentials are available.
 
 ## Choose and verify one matched version
 
-Verify source/archive manifests and checksums before extraction. RC2 is plugin
-2026100702 / 3.1.0-rc2 + service 0.5.0-rc2, protocol **2**, migrations 001–005.
-It is not stable and does not migrate RC1 activities. Current dev.3 is **unreleased**
-and adds tools not present inside RC2 downloads. Never silently mix branch files
-with frozen assets or bypass version guards to follow stale troubleshooting.
+Verify source/archive manifests and checksums before extraction. The coordinated
+stable candidate is plugin **2026101201 / 3.1.0** + service **0.5.0**, protocol
+**2**, migrations **001–005**. Candidate packages stay private until artifact
+verification and human publication approval. Never mix branch files with frozen
+assets or bypass version guards. RC1 component migration is not automatic;
+read [upgrading](upgrading.md) for existing prerelease installations.
 Use a supported Moodle patch/PHP/DB combination and record what you actually run.
 
 ## Use the documented workflow
@@ -32,12 +33,16 @@ Use a supported Moodle patch/PHP/DB combination and record what you actually run
    browser-reachable trusted HTTPS storage/API/gateway, exact-origin CORS/ETag.
    Check storage distribution availability; MinIO is not bundled. SeaweedFS has
    a separately verified example, not automatic provisioning.
-3. For the reviewed development tools, run `deploy/setup.py` once with a **new**
+3. Run `deploy/setup.py` once with a **new**
    private directory; hidden prompts or a protected policy are supported. It
-   invokes the existing preparer. For RC2 use its manual protected-policy procedure.
+   invokes the existing preparer.
    Preserve the generated tenant/subject key and all config on retries.
 4. Run local preflight, build the shared local image, start Compose and configure
    the reviewed HTTPS proxy. No changes to unrelated Moodle/DB/firewall/IAM.
+   Before startup use `--check-ports`; for another stack follow the explicit
+   [project/config/loopback-port example](installation-examples.md#two-independent-compose-stacks).
+   Pass the same port variables on every Compose invocation and to preflight.
+   Do not stop an existing application to resolve a collision.
 5. Run explicit online/authenticated preflight and the tiny scoped write probe.
    HEAD/health alone are insufficient. Resolve actual-role permissions and storage
    volume capacity failures, not source-patch them. Do not log signed URLs.

@@ -29,7 +29,7 @@ class ConfigTests(unittest.TestCase):
         c = configuration()
         self.assertEqual((c.MAX_SIZE, c.MAX_DURATION, c.ENCODE_TIMEOUT, c.UPLOAD_TTL),
                          (256 * 1024**3, 21600, 172800, 259200))
-        self.assertEqual(c.VERSION, '0.5.0-rc2')
+        self.assertEqual(c.VERSION, '0.5.0')
         self.assertEqual(c.FFMPEG_THREADS, 2)
 
     def test_maximum_and_integer_enforcement(self):

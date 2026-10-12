@@ -14,5 +14,6 @@ JS changes. Keep generated source maps and reviewed manifests in sync. Evidence
 belongs under ignored .lab/evidence, not product source. Historical release tags,
 assets and qualification reports are immutable. No publication without approval.
 
-The installation-experience branch is unreleased development, NOT the exact RC2
-distribution. Do not broadly requalify media or change watch-credit policy here.
+The stable-preparation branch is a PRIVATE candidate, not permission to publish.
+Do not broadly requalify media or change watch-credit policy in this scoped phase.
+The next step is one focused artifact-native verification, then human approval.

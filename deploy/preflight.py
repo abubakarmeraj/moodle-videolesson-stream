@@ -135,7 +135,7 @@ def capabilities(handoff, http=request):
     status, _, result = http(data['endpoint'] + '/v2/rpc', data=body, headers={'Content-Type': 'application/json',
         'X-VL-Key': data['keyid'], 'X-VL-Time': timestamp, 'X-VL-Nonce': nonce, 'X-VL-Signature': signature})
     response = json.loads(result)['data']
-    return (status == 200 and response.get('protocol_version') == 2 and response.get('service_version') == '0.5.0-rc2' and
+    return (status == 200 and response.get('protocol_version') == 2 and response.get('service_version') == '0.5.0' and
         type(response.get('max_duration_seconds')) is int and 60 <= response['max_duration_seconds'] <= 21600 and
         response.get('schema_versions') == [1, 2, 3, 4, 5] and all(response.get(k) is True for k in
         ('schema_ready', 'storage_config_valid', 'raw_reachable', 'processed_reachable', 'redis_ready', 'worker_capacity_ready')))
@@ -162,6 +162,23 @@ def staging_ready(path):
     return shutil.disk_usage(path).free >= 1024**3
 
 
+def ports_available(api, gateway):
+    if api == gateway or any(not 1024 <= p <= 65535 for p in (api, gateway)):
+        return False
+    sockets = []
+    try:
+        for port in (api, gateway):
+            sock = socket.socket()
+            sockets.append(sock)
+            sock.bind(('127.0.0.1', port))
+        return True
+    except OSError:
+        return False
+    finally:
+        for sock in sockets:
+            sock.close()
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config', type=Path, required=True)
@@ -169,6 +186,9 @@ def main(argv=None):
     parser.add_argument('--online', action='store_true', help='DNS/TLS/health checks of explicit operator origins')
     parser.add_argument('--handoff', type=Path, help='Protected connection file for authenticated readiness')
     parser.add_argument('--storage-probe', action='store_true', help='Explicitly create/delete tiny synthetic objects and multipart uploads')
+    parser.add_argument('--check-ports', action='store_true', help='Before first startup, check selected loopback bindings are unused')
+    parser.add_argument('--api-port', type=int, default=28090)
+    parser.add_argument('--gateway-port', type=int, default=28091)
     args = parser.parse_args(argv)
     if (args.storage_probe or args.handoff) and not args.online:
         parser.error('--storage-probe/--handoff require --online')
@@ -192,6 +212,9 @@ def main(argv=None):
           'Install/start Docker Engine; grant appropriate operator access. Preflight does not start it.')
     check('Compose plugin >= 2.30', compose_supported,
           'Install Compose >= 2.30 (including v5) for raw env-file secret preservation; do not print compose config output.')
+    if args.check_ports:
+        check('Unused API/gateway loopback ports', lambda: ports_available(args.api_port, args.gateway_port),
+              'Select distinct unused ports via VIDEO_API_PORT/VIDEO_GATEWAY_PORT; pass the same values to preflight and update HTTPS upstreams. Do not stop another stack. Omit --check-ports after startup.')
     check('Private staging disk', lambda: staging_ready(args.staging),
           'Provide mode-0700 disk-backed (not tmpfs/ramfs) staging with at least 1 GiB free for a short smoke. This is NOT large-video admission.')
     try:
@@ -217,7 +240,7 @@ def main(argv=None):
                   'Build/start the correct Compose roles and trusted HTTPS proxy. Health is not storage write readiness.')
         if args.handoff:
             check('Authenticated protocol/schema/storage/Redis/capacity', lambda: capabilities(args.handoff),
-                  'Use matched RC2 service/protocol 2, migrations 001-005, protected handoff, role permissions and a fresh worker heartbeat. Run Moodle Test Connection.')
+                  'Use matched service 0.5.0/protocol 2, migrations 001-005, protected handoff, role permissions and a fresh worker heartbeat. Run Moodle Test Connection.')
         else:
             results.append({'check': 'Authenticated readiness', 'result': 'PENDING', 'guidance': 'After startup add --handoff runtime/moodle-connection.json and --online.'})
         if args.storage_probe:

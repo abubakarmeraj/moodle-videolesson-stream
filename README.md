@@ -1,11 +1,5 @@
 # ValeLMS Video Lesson Stream
 
-> RC2 is a release candidate, not stable software or an in-place RC1 upgrade.
-> Its exact distributions passed focused installation and media qualification
-> on Ubuntu 24.04 WSL2, then an independent Ubuntu 24.04.5 ARM64 VM installation
-> with Moodle 5.2.4 and SeaweedFS. See the [RC2 release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
-> for verified assets, qualification scope and known limits. RC1 remains immutable.
-
 Add private, adaptive video lessons to Moodle. Teachers upload a video; students
 watch it inside their course with saved progress and completion. Your own Linux
 Video Service processes the upload—no ValeLMS-hosted subscription is required.
@@ -14,23 +8,24 @@ You install **two pieces**: a normal Moodle plugin ZIP and a separate Video
 Service. You also need private S3-compatible storage and trusted HTTPS. The ZIP
 alone cannot encode or host videos. [Start the installation here](docs/quick-start.md).
 
-Distinct Moodle activity: **`mod_videolessonstream`**, installed under
-`mod/videolessonstream`. It is not the original `mod_videolesson` plugin.
-RC1 users: read the [breaking identity transition](docs/rc1-to-rc2.md) first;
-RC2 does not automatically upgrade or migrate RC1 activities.
+## Features
 
-**Release candidate:** plugin **3.1.0-rc2** (2026100702), Video Service
-**0.5.0-rc2**. This is not a stable release. No ValeLMS-hosted account is needed.
+- Private direct multipart/resumable uploads, independent upload limits and tenant quota.
+- FFmpeg HLS processing, no-upscale administrator-owned renditions, 4-second default segments.
+- Adaptive/manual quality, speed controls and renewable playback authorization.
+- Moodle-controlled access, watch progress and completion; safe reusable references.
+- Durable processing status, recycle/recovery and retention cleanup.
+- Guided protected setup, preflight storage write checks and Moodle Test Connection.
 
-This development branch contains unreleased **3.1.0-dev.3** (2026101200)
-installation improvements. Service runtime remains **0.5.0-rc2** / protocol 2.
-New setup/preflight commands below are development source, not retroactively
-included in the immutable RC2 download. Do not mix development and release files
-on a live installation; await a reviewed successor distribution.
+**3.1.0 stable candidate:** plugin **2026101201 / ValeLMS 3.1.0**, Video Service
+**0.5.0**, protocol **2**. Private packages are prepared for final artifact-native
+verification; stable publication still requires human approval. Core functionality
+is supported within the [documented environment/qualification limits](docs/known-limitations.md),
+not a certification of every Linux distribution, S3 provider or workload.
 
 ## Quick start
 
-1. Install `mod_videolessonstream-3.1.0-rc2.zip` through Moodle's plugin installer.
+1. Install the verified `mod_videolessonstream-3.1.0.zip` through Moodle's plugin installer.
 2. Install the separate Video Service using [Docker Compose](docs/docker.md),
    with private S3-compatible storage and trusted HTTPS endpoints.
 3. Place the generated protected connection handoff on the Moodle server and
@@ -51,14 +46,12 @@ Cloudflare R2 and generic S3-compatible storage are supported. MinIO (WSL2) and
 SeaweedFS 4.48 (ARM64 VM) were used for separate qualification runs, not bundled.
 Local-filesystem storage is not implemented. [AI installation agents start here](docs/ai-installation.md).
 
-## Features
+## Existing installations
 
-- Private direct multipart/resumable uploads, independent upload limits and tenant quota.
-- FFmpeg HLS processing, no-upscale administrator-owned rendition policy, 4-second default segments.
-- Bundled player libraries, adaptive/manual quality, speed controls and renewable authorization.
-- Moodle-owned access, watch progress and completion; safe reusable references and relinking.
-- Durable processing status, recycle/recovery and retention cleanup.
-- Signed service setup/readiness checks, role-separated worker/dispatcher/gateway/janitor.
+The Moodle component is **`mod_videolessonstream`**, installed under
+`mod/videolessonstream`. Existing prerelease users must read [upgrading](docs/upgrading.md).
+RC1 used a different component: [the RC1 identity/data boundary](docs/rc1-to-rc2.md)
+is not an automatic migration. Published RC1/RC2 tags and assets remain immutable.
 
 ## Storage
 

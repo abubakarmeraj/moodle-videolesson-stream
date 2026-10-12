@@ -11,18 +11,18 @@
   },
   {
     "path": "service/video-service/README.md",
-    "sha256": "10082cd9186ee71f7f36643a3ac041136f1090b8b8e0a5f821b95e0355e96e1c",
+    "sha256": "061f5a7740d985c77834e1fa18bd0b644ce56fe559134a766cf1ea24ef8b91f5",
     "bytes": 1354
   },
   {
     "path": "service/video-service/VERSION",
-    "sha256": "5e1fdd3c8cab7b1472e64ad85ee87b12c3985769d1beedfbf09bc573cae795f1",
-    "bytes": 10
+    "sha256": "a0ad50640139a524f86591157145bf1d4674ea9c065bfea21558f0f7b04430c8",
+    "bytes": 6
   },
   {
     "path": "service/video-service/deployment/OPERATIONS.md",
-    "sha256": "8528874bad5029aab1c2c20d3bd289c4fde4d7b1f5eec6eaf59d6a2208b5d4db",
-    "bytes": 2032
+    "sha256": "e3dd4fb7e8ccf93c49478a8ec6fdde6b659b9671bca22e203a8a7978cf65f771",
+    "bytes": 2028
   },
   {
     "path": "service/video-service/deployment/environment.example",
@@ -56,8 +56,8 @@
   },
   {
     "path": "service/video-service/pyproject.toml",
-    "sha256": "8d37e5e6a98b5d554b76b192b98826374d4598553cb0470c5776657407599676",
-    "bytes": 383
+    "sha256": "ca51b8dffe7cc42d7ea9290fd083e11e9aa3349d3fc0451765c2379844a4d546",
+    "bytes": 370
   },
   {
     "path": "service/video-service/release/python-sbom.json",

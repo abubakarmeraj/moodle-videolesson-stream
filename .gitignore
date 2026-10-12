@@ -35,6 +35,7 @@ docs/development/*
 !docs/development/rc1/
 !docs/development/rc2/
 !docs/development/installation-ux/
+!docs/development/stable-3.1.0/
 !docs/development/ORIGINAL-PLUGIN-COEXISTENCE.md
 !docs/development/RC2-IDENTITY-AUDIT.md
 !docs/development/RC2-QUALIFICATION-HANDOFF.md

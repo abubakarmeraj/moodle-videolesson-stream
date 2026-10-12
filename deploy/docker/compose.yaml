@@ -2,7 +2,7 @@
 # Copyright 2026 ValeLMS contributors
 name: video-lesson
 x-service: &service
-  image: valelms-video-service:0.5.0-rc2
+  image: valelms-video-service:0.5.0
   read_only: true
   cap_drop: [ALL]
   security_opt: [no-new-privileges:true]
@@ -75,7 +75,7 @@ services:
     image: nginx:1.28-bookworm@sha256:552e7481ca93ffccd046aa658dbbed22caefbc09c66fa7cd247cbb90b8a5c609
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-    ports: ["127.0.0.1:28090:8090", "127.0.0.1:28091:8091"]
+    ports: ["127.0.0.1:${VIDEO_API_PORT:-28090}:8090", "127.0.0.1:${VIDEO_GATEWAY_PORT:-28091}:8091"]
     networks: [private, edge]
     depends_on: [api, gateway]
     restart: unless-stopped

@@ -11,7 +11,7 @@ const source = fs.readFileSync(process.env.VALELMS_UPLOAD_AMD ||
     path.join(__dirname, '../plugin/mod_videolessonstream/amd/build/upload.min.js'), 'utf8');
 
 async function scenario({url, authorized = true, injected = false, outcomes = [], rpcFailure, pause = false,
-    resumeParts = [], multi = false, pollAfter = false}) {
+    resumeParts = [], multi = false, pollAfter = false, serverStage = 'draft'}) {
     const nodes = new Map();
     const file = new Blob(['synthetic video'], {type: 'video/mp4'});
     const submitted = [];
@@ -61,7 +61,7 @@ async function scenario({url, authorized = true, injected = false, outcomes = []
             }
             let data;
             if (request.action === 'video') {
-                data = {state: 'draft', can_upload: true, maxbytes: 512 * 1024**2, stage: 'draft', progress: 0};
+                data = {state: serverStage, can_upload: true, maxbytes: 512 * 1024**2, stage: serverStage, progress: 0};
                 videoPolls++;
             } else if (request.action === 'start') {
                 data = {upload: 'service-session', state: 'uploading', parts: resumeParts,
@@ -108,7 +108,8 @@ async function scenario({url, authorized = true, injected = false, outcomes = []
     await new Promise(resolve => setImmediate(resolve));
     await node('vls-upload-start').handlers.click();
     if (pollAfter) { await timers.shift()?.(); }
-    return {submitted, controls, message: node('vls-upload-message').textContent, values, videoPolls};
+    return {submitted, controls, message: node('vls-upload-message').textContent,
+        status: node('vls-status').textContent, progress: node('vls-upload-progress').value, values, videoPolls};
 }
 
 async function main() {

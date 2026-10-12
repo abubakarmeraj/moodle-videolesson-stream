@@ -1,5 +1,14 @@
 # Known qualification limits
 
+ValeLMS 3.1.0 / service 0.5.0 is a **stable preparation candidate**, pending one
+focused artifact-native verification and human publication approval. Supported
+core functionality does not certify every OS, S3 implementation or workload.
+The independent installation-UX baseline passed on real Ubuntu ARM64/Moodle 5.2.4,
+including faults/retries, pause/reload/resume, upload/processing/playback and
+persisted student completion. See [that separate evidence](qualification-installation-ux.md).
+The stable patch is limited to the final UX/ports/version corrections; it does
+not claim a fresh full media or cross-browser/endurance matrix.
+
 - RC1 and RC2 are prereleases, not stable software. RC2 is a distinct Moodle
   component and does not automatically migrate RC1 activities, media or data.
 - Ubuntu 24.04 WSL2 and a separate real Ubuntu 24.04.5 ARM64 VM **Compose**
@@ -35,7 +44,8 @@ The unreleased [watch-progress follow-up plan](development/installation-ux/watch
 records a separate unresolved observation:
 the ARM64 tester observed about 81% credit while backgrounded, then persisted
 100% after visible replay. Cause is not established; no watch-credit code changed.
-Installation-experience dev.3 has focused tests, not a new broad media matrix.
+The later independent dev.3 visible-playback check persisted 100%; it did not
+investigate the background-credit hypothesis or change watch-credit policy.
 
 See the [RC2 release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
 for the exact immutable distributions and accepted scope. Earlier Local-stage

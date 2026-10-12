@@ -44,7 +44,7 @@ export const init = async(config) => {
     }
     const states = {};
     for (const state of ['draft', 'uploading', 'verifying', 'queued', 'processing', 'finalizing', 'ready',
-        'failed', 'aborted', 'unavailable']) {
+        'failed', 'aborted', 'paused', 'unavailable']) {
         states[state] = await getString('cfstatus' + state, 'mod_videolessonstream');
     }
     const statusLabel = await getString('cfstate', 'mod_videolessonstream');
@@ -95,6 +95,7 @@ export const init = async(config) => {
         outcome = 'paused';
         requests.forEach(xhr => xhr.abort());
         message.textContent = labels.paused;
+        status.textContent = statusLabel + ': ' + states.paused;
     };
     document.getElementById('vls-upload-pause').addEventListener('click', pause);
     document.getElementById('vls-upload-abort').addEventListener('click', async() => {
@@ -108,9 +109,11 @@ export const init = async(config) => {
             }
             localStorage.removeItem(key);
             message.textContent = labels.aborted;
+            status.textContent = statusLabel + ': ' + states.aborted;
         } catch {
             outcome = 'failed';
             message.textContent = labels.failed;
+            status.textContent = statusLabel + ': ' + states.failed;
         }
     });
     const transfer = (url, blob, notify) => new Promise((resolve, reject) => {
@@ -274,6 +277,8 @@ export const init = async(config) => {
                 error.message === 'storage_full' ? storageFull :
                 error.message === 'upload_capacity' ? capacityError :
                     error.message === 'format' ? formatError : labels[outcome];
+            status.textContent = statusLabel + ': ' + (outcome === 'paused' || outcome === 'aborted' ?
+                states[outcome] : states.failed);
         } finally {
             running = false;
             button.disabled = !uploadable;
@@ -298,6 +303,11 @@ export const init = async(config) => {
                 progress.value = video.progress;
                 const state = video.stage === 'upload-aborted' ? 'aborted' : video.stage;
                 let label = states[state] || states.unavailable;
+                // A live multipart session is resumable after a terminal browser
+                // failure, not still uploading. Do not let polling contradict it.
+                if (outcome && ['draft', 'uploading', 'failed', 'upload-aborted'].includes(video.state)) {
+                    label = outcome === 'paused' || outcome === 'aborted' ? states[outcome] : states.failed;
+                }
                 if (state === 'processing' && video.qualities?.length) {
                     const heights = video.qualities.filter(h => Number.isInteger(h) && h > 0 && h <= 2160);
                     if (heights.length) {

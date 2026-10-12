@@ -1,4 +1,32 @@
-# Upgrading and the RC2 identity boundary
+# Upgrading to ValeLMS 3.1.0
+
+Use the coordinated **plugin 2026101201 / ValeLMS 3.1.0 + service 0.5.0**
+packages. This source is a private stable candidate until focused artifact-native
+verification and human approval. Never manually patch or overwrite published
+RC1/RC2 assets. Keep matched backups of Moodle DB/moodledata, service DB, protected
+identity/configuration and storage before an approved upgrade.
+
+From `mod_videolessonstream` RC2 (2026100702) or dev.3 (2026101200), normal Moodle
+upgrade records the supported savepoint(s) through **2026101201**. No table,
+column or data migration is introduced. Do not lower a recorded version. The
+setup entry uses a normal empty Moodle config setting, not a schema table.
+
+Service 0.5.0 changes release metadata only relative to the accepted 0.5.0-rc2
+runtime; schema remains **001–005**, dependency lock unchanged, **no migration006**.
+Replace the coordinated packages in one controlled maintenance window: gracefully
+drain/stop old service roles, preserve tenant/subject/RPC/grant keys, DB/Redis
+identity/namespace and explicit storage configuration, build the new local image,
+then restart the same Compose project/config/port choices. Do not run setup.py
+again to regenerate an existing installation. Native changed-source replacement
+still needs its explicit upgrade procedure, not deletion/reinstall of the database.
+
+Stable plugin Test Connection intentionally requires service **0.5.0 / protocol 2**;
+an RC2-only service is SERVICE_TOO_OLD. Install the matched pair, not plugin-only.
+Existing ready media, references and watch credit are not rewritten/retranscoded.
+Purge Moodle caches, Test Connection, then a short upload/playback/completion smoke.
+Do not treat this Local preparation as permission to modify a hosted site.
+
+## Historical RC1 → RC2 identity boundary
 
 RC2 coordinates **mod_videolessonstream2026100702 / ValeLMS3.1.0-rc2** with
 **ValeLMS Video Service0.5.0-rc2**, protocol2/schema001–005. RC1 was a different
