@@ -29,6 +29,11 @@ $ADMIN->add('modsettings', new admin_externalpage('videolessonstreamservice',
 $ADMIN->add('modsettings', new admin_externalpage('videolessonstreamstorage',
     get_string('cfstorage', 'mod_videolessonstream'), new moodle_url('/mod/videolessonstream/storage.php'), 'moodle/site:config'));
 if ($ADMIN->fulltree) {
+    $settings->add(new admin_setting_heading('mod_videolessonstream/setupsteps',
+        get_string('cfsetupheading', 'mod_videolessonstream'),
+        get_string('cfsetupsummary', 'mod_videolessonstream') . ' ' .
+        html_writer::link(new moodle_url('/mod/videolessonstream/service_setup.php'),
+            get_string('cfservicesetup', 'mod_videolessonstream'))));
     $settings->add(new \mod_videolessonstream\local\quota_setting('mod_videolessonstream/storagequotamib',
         get_string('cfstoragequota', 'mod_videolessonstream'), get_string('cfstoragequotadesc', 'mod_videolessonstream'), 0, PARAM_RAW));
     $settings->add(new admin_setting_configselect('mod_videolessonstream/recoverydays',

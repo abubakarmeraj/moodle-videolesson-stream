@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 $plugin->component = 'mod_videolessonstream';
-$plugin->release = 'ValeLMS 3.1.0-rc2';
-$plugin->version = 2026100702;
+$plugin->release = 'ValeLMS 3.1.0-dev.3';
+$plugin->version = 2026101200;
 $plugin->requires = 2026042000;
-$plugin->maturity = MATURITY_RC;
+$plugin->maturity = MATURITY_ALPHA;

@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 class ReleaseContract(unittest.TestCase):
     def test_identity(self):
         version = (ROOT / 'plugin/mod_videolessonstream/version.php').read_text()
-        self.assertIn('$plugin->version = 2026100702;', version)
-        self.assertIn("$plugin->release = 'ValeLMS 3.1.0-rc2';", version)
+        self.assertIn('$plugin->version = 2026101200;', version)
+        self.assertIn("$plugin->release = 'ValeLMS 3.1.0-dev.3';", version)
         self.assertEqual((ROOT / 'service/video-service/VERSION').read_text().strip(), '0.5.0-rc2')
         metadata = tomllib.loads((ROOT / 'service/video-service/pyproject.toml').read_text())
         self.assertEqual(metadata['project']['version'], '0.5.0rc2')

@@ -1,6 +1,17 @@
 # Changelog
 
-## 3.1.0-rc2 — unreleased qualification candidate
+## 3.1.0-dev.3 — unreleased installation experience
+
+- Distinguish upload pause from storage, transport, authorization and service
+  request failures; preserve multipart resume and sanitize all displayed errors.
+- Guided protected Compose policy generation and opt-in preflight/write probes;
+  clearer Moodle onboarding, proxy/storage examples and human/AI install guides.
+- Record separate real Ubuntu ARM64/SeaweedFS RC2 evidence and an unproven
+  background watch-credit observation. No watch-policy or service runtime change.
+- Plugin savepoint 2026101200 only; no schema/data migration. Published releases
+  and assets remain immutable; no new release is authorized here.
+
+## 3.1.0-rc2 — published prerelease
 
 - Owner-approved distinct Moodle activity `mod_videolessonstream` (2026100702),
   ValeLMS Video Lesson Stream. Moodle names cannot contain an internal underscore;
@@ -13,9 +24,9 @@
   generic S3/MinIO remains supported. No new live-cloud qualification claimed.
 - This is not an automatic RC1 data migration. RC1 remains immutable; see
   [transition guidance](docs/rc1-to-rc2.md). Deployment qualification and separate
-  publication review are required; no public RC2 release has been created.
+  publication review were completed for the immutable RC2 distributions.
 
-## 3.1.0-rc1 — 2026-10-07 (prepared, not published)
+## 3.1.0-rc1 — 2026-10-07 (published prerelease)
 
 Coordinated with Video Service0.5.0-rc1, protocol1, migrations001–005.
 

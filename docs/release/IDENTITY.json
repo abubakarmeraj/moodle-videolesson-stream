@@ -1,7 +1,7 @@
 {
   "plugin_component": "mod_videolessonstream",
-  "plugin_version": 2026100702,
-  "plugin_release": "ValeLMS 3.1.0-rc2",
+  "plugin_version": 2026101200,
+  "plugin_release": "ValeLMS 3.1.0-dev.3",
   "service_version": "0.5.0-rc2",
   "service_package_version": "0.5.0rc2",
   "protocol": 2,
@@ -14,7 +14,7 @@
   ],
   "moodle_line": "5.2",
   "license": "GPL-3.0-or-later",
-  "product_manifest_sha256": "cebb73585a870ef30b0461c18654279f2561d46824d799d8b7a53653b3c71ecc",
+  "product_manifest_sha256": "6a0f6aa438f7fcfa5c2b01a74a2dd6bae0cd9a2dca2266b7587c3b7b3fe4f3dc",
   "service_manifest_sha256": "deebb636977118d3ac8dbf2c7ced697703db2fa7bffcce59c3dae5d7ca788620",
-  "status": "Private RC2 Local qualification candidate; not published; Deployment qualification required"
+  "status": "Unreleased installation-experience development; not an RC2 artifact; publication not authorized"
 }

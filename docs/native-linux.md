@@ -1,7 +1,9 @@
 # Advanced native/systemd installation
 
 Use a **clean dedicated Ubuntu 24.04** host with systemd PID 1, sudo/root and
-Python 3.12. WSL2 was qualified; an ordinary Ubuntu VM/server run remains pending.
+Python 3.12. Native/systemd was qualified under WSL2; the later ordinary Ubuntu
+ARM64 VM used **Compose**, not this native installer. Do not transfer that claim
+to an ordinary-server native installation.
 The installer intentionally refuses an unowned existing MariaDB installation,
 application directories or role accounts. On an existing Moodle host use Compose
 or a separate service host; never delete the existing DB to bypass this refusal.

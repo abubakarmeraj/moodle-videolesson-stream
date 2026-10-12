@@ -38,7 +38,8 @@ export const init = async(config) => {
     const status = document.getElementById('vls-status');
     const key = 'vls-upload-' + M.cfg.wwwroot + '-' + config.cmid;
     const labels = {};
-    for (const label of ['preparing', 'paused', 'failed', 'complete', 'aborted']) {
+    for (const label of ['preparing', 'paused', 'failed', 'complete', 'aborted', 'transport',
+        'storage', 'authorization', 'server', 'cors', 'retrying']) {
         labels[label] = await getString('cfupload' + label, 'mod_videolessonstream');
     }
     const states = {};
@@ -51,6 +52,9 @@ export const init = async(config) => {
     const capacityError = await getString('cfuploadcapacity', 'mod_videolessonstream');
     const formatError = await getString('cfuploadformat', 'mod_videolessonstream');
     let stopped = false;
+    // Cancellation stops sibling transfers; it does not mean the user pressed Pause.
+    let outcome = null;
+    let transferError = null;
     let running = false;
     let destroyed = false;
     let session;
@@ -60,24 +64,42 @@ export const init = async(config) => {
     let maximum = config.maxbytes;
     const requests = new Set();
     const call = async(action, values = {}) => {
-        const response = await fetch(M.cfg.wwwroot + '/mod/videolessonstream/upload.php?sesskey=' + M.cfg.sesskey, {
-            method: 'POST', headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({cmid: config.cmid, action, ...values}),
-        });
-        const data = await response.json();
+        let response;
+        try {
+            response = await fetch(M.cfg.wwwroot + '/mod/videolessonstream/upload.php?sesskey=' + M.cfg.sesskey, {
+                method: 'POST', headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({cmid: config.cmid, action, ...values}),
+            });
+        } catch {
+            throw new Error('transport');
+        }
+        if (response.status === 401 || response.status === 403) {
+            throw new Error('authorization');
+        }
+        if (response.status >= 500) {
+            throw new Error('server');
+        }
+        let data;
+        try {
+            data = await response.json();
+        } catch {
+            throw new Error('server');
+        }
         if (!response.ok || !data.ok) {
-            throw new Error(['storage_full', 'upload_capacity'].includes(data.error) ? data.error : 'Upload request rejected');
+            throw new Error(['storage_full', 'upload_capacity'].includes(data.error) ? data.error : 'server');
         }
         return data.data;
     };
     const pause = () => {
         stopped = true;
+        outcome = 'paused';
         requests.forEach(xhr => xhr.abort());
         message.textContent = labels.paused;
     };
     document.getElementById('vls-upload-pause').addEventListener('click', pause);
     document.getElementById('vls-upload-abort').addEventListener('click', async() => {
         pause();
+        outcome = 'aborted';
         try {
             const saved = JSON.parse(localStorage.getItem(key) || 'null');
             const upload = session?.upload || resumable?.upload || saved?.upload;
@@ -87,16 +109,23 @@ export const init = async(config) => {
             localStorage.removeItem(key);
             message.textContent = labels.aborted;
         } catch {
+            outcome = 'failed';
             message.textContent = labels.failed;
         }
     });
     const transfer = (url, blob, notify) => new Promise((resolve, reject) => {
-        const target = new URL(url);
+        let target;
+        try {
+            target = new URL(url);
+        } catch {
+            reject(new Error('authorization'));
+            return;
+        }
         // The authenticated Moodle upload endpoint supplies the operator-configured
         // storage URL. Do not hard-code a vendor suffix: generic S3 uses that same
         // exact-part signed flow. Never accept insecure or userinfo-bearing URLs.
         if (target.protocol !== 'https:' || target.username || target.password || target.hash) {
-            reject(new Error('Unexpected upload origin'));
+            reject(new Error('authorization'));
             return;
         }
         const xhr = new XMLHttpRequest();
@@ -109,12 +138,18 @@ export const init = async(config) => {
             if (xhr.status === 200 && xhr.getResponseHeader('ETag')) {
                 resolve();
             } else {
-                reject(new Error('Upload part rejected'));
+                // HTTP 403 can mean expiry OR denied signing permissions; do not guess which.
+                reject(new Error(xhr.status === 401 || xhr.status === 403 ? 'authorization' :
+                    xhr.status === 200 ? 'cors' : 'storage'));
             }
         };
-        xhr.onerror = xhr.ontimeout = xhr.onabort = () => {
+        xhr.onerror = xhr.ontimeout = () => {
             requests.delete(xhr);
-            reject(new Error('Upload part interrupted'));
+            reject(new Error('transport'));
+        };
+        xhr.onabort = () => {
+            requests.delete(xhr);
+            reject(new Error('cancelled'));
         };
         xhr.send(blob);
     });
@@ -129,6 +164,8 @@ export const init = async(config) => {
         }
         running = true;
         stopped = false;
+        outcome = null;
+        transferError = null;
         button.disabled = true;
         try {
             message.textContent = labels.preparing;
@@ -194,11 +231,13 @@ export const init = async(config) => {
                                 completed.set(part, blob.size);
                                 render();
                                 break;
-                            } catch {
+                            } catch (error) {
                                 loaded.delete(part);
-                                if (stopped || attempt === 2) {
-                                    throw new Error('Part interrupted');
+                                if (stopped || attempt === 2 ||
+                                        !['transport', 'storage', 'authorization', 'server'].includes(error.message)) {
+                                    throw error;
                                 }
+                                message.textContent = labels.retrying;
                                 await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
                             }
                         }
@@ -209,6 +248,8 @@ export const init = async(config) => {
                     try {
                         await consume();
                     } catch (error) {
+                        // Preserve the first causal error, not a later sibling XHR abort.
+                        transferError = transferError || error;
                         stopped = true;
                         requests.forEach(xhr => xhr.abort());
                         throw error;
@@ -216,7 +257,7 @@ export const init = async(config) => {
                 };
                 const results = await Promise.allSettled([consumeSafely(), consumeSafely(), consumeSafely()]);
                 if (results.some(result => result.status === 'rejected')) {
-                    throw new Error('Upload interrupted; safe to resume');
+                    throw transferError;
                 }
                 if (stopped) {
                     throw new Error('Paused');
@@ -227,9 +268,12 @@ export const init = async(config) => {
             message.textContent = labels.complete;
         } catch (error) {
             requests.forEach(xhr => xhr.abort());
-            message.textContent = error.message === 'storage_full' ? storageFull :
+            outcome = outcome || (['transport', 'storage', 'authorization', 'server', 'cors'].includes(error.message) ?
+                error.message : 'failed');
+            message.textContent = outcome === 'paused' || outcome === 'aborted' ? labels[outcome] :
+                error.message === 'storage_full' ? storageFull :
                 error.message === 'upload_capacity' ? capacityError :
-                    error.message === 'format' ? formatError : (stopped ? labels.paused : labels.failed);
+                    error.message === 'format' ? formatError : labels[outcome];
         } finally {
             running = false;
             button.disabled = !uploadable;
@@ -261,7 +305,7 @@ export const init = async(config) => {
                     }
                 }
                 status.textContent = statusLabel + ': ' + label;
-                if (!stopped) {
+                if (!outcome) {
                     message.textContent = Math.floor(video.progress) + '%';
                 }
                 if (video.state === 'ready') {

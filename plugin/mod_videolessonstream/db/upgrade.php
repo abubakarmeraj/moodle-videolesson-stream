@@ -30,5 +30,9 @@ function xmldb_videolessonstream_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2026100702, 'videolessonstream');
     }
     // Never claim, rename, read or drop another component's RC1 tables here.
+    if ($oldversion < 2026101200) {
+        // Installation guidance and uploader diagnostics only; no schema/data changes.
+        upgrade_mod_savepoint(true, 2026101200, 'videolessonstream');
+    }
     return true;
 }

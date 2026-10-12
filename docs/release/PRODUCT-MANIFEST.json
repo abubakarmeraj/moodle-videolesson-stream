@@ -11,8 +11,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/README.md",
-    "sha256": "884f3bb4ae05b40b1f2f61503358f06946eec2981ac7f03e2838dce5b91a81f4",
-    "bytes": 1203
+    "sha256": "91c5a966a28f8cf130308cb41486eeeec90079e74d35ca83f93f0e17c88ced03",
+    "bytes": 1252
   },
   {
     "path": "plugin/mod_videolessonstream/ajax.php",
@@ -151,13 +151,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js",
-    "sha256": "045a33e23c332a057cdfafd40bafafdcf324b842942b538876a996ab799ab488",
-    "bytes": 6409
+    "sha256": "e6a2a92f6432365542822940ac8ed7dce34e9bd8b46a6ddcf1ff8691f1301d36",
+    "bytes": 6985
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/upload.min.js.map",
-    "sha256": "18cfd1d3c2aa5e62cd45e5f7bd661644b645f8728ba5b1956f16f3d430917584",
-    "bytes": 22222
+    "sha256": "7d6770b75d52d9d87b67bedbfb6c10735dd11562590576e53827b49dd98e1613",
+    "bytes": 24678
   },
   {
     "path": "plugin/mod_videolessonstream/amd/build/vplyr.min.js",
@@ -236,8 +236,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/upload.js",
-    "sha256": "e3bcd956f32276017d03ae90705e675177ae9709399d0b5c6c29c92cc5b31d02",
-    "bytes": 13625
+    "sha256": "06c7b84b82ac8b41b686806d35fd72013222b4d62f720ad608b9520c91a8915f",
+    "bytes": 15308
   },
   {
     "path": "plugin/mod_videolessonstream/amd/src/vplyr.js",
@@ -766,8 +766,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/db/upgrade.php",
-    "sha256": "50e7b15f62ee0a6938bdcbd989fd50132fc12b0278245343c23f46d115dfd3f1",
-    "bytes": 1320
+    "sha256": "7d0f3de2689d2f59f6b3a034900f956308e4acc124547af5263c78cf3bbec3f7",
+    "bytes": 1520
   },
   {
     "path": "plugin/mod_videolessonstream/index.php",
@@ -776,8 +776,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/lang/en/videolessonstream.php",
-    "sha256": "3f53261b2b51304a26b920234b513afb9a32758d1f8be7d985991f0b396b267d",
-    "bytes": 73422
+    "sha256": "c08094197a37f673b8dd980b8d8bc512465af8c5ffcb97ebb77f462dc2625329",
+    "bytes": 75730
   },
   {
     "path": "plugin/mod_videolessonstream/lib.php",
@@ -906,13 +906,13 @@
   },
   {
     "path": "plugin/mod_videolessonstream/service_setup.php",
-    "sha256": "ce829496c9b2154250fcb9d939c39bd48c73c0560307c3463aa3e7cf1e0001c7",
-    "bytes": 4188
+    "sha256": "7f91fc0d26d1f8351119534727a5ae376b3fa02c44da27c2618151044145fff1",
+    "bytes": 4508
   },
   {
     "path": "plugin/mod_videolessonstream/settings.php",
-    "sha256": "5e9522c7532522390d35cca53226723ce537b1854a36916e91ee68931a0a4e8d",
-    "bytes": 3475
+    "sha256": "d5f1216a4af7046282dc0e42efbca26aadcf46209e50a60518d3ad2530bfdc0f",
+    "bytes": 3845
   },
   {
     "path": "plugin/mod_videolessonstream/setup.css",
@@ -1106,8 +1106,8 @@
   },
   {
     "path": "plugin/mod_videolessonstream/version.php",
-    "sha256": "5dd9568a4502076c10f6215467b4aefcc3b1124d80c6c74ff7f52b20d06da033",
-    "bytes": 1137
+    "sha256": "9cc59cf0284fd17e05a22869f72873deac3907a532e5d7b61eba478f13663cee",
+    "bytes": 1142
   },
   {
     "path": "plugin/mod_videolessonstream/view.php",

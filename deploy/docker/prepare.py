@@ -2,8 +2,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # Copyright 2026 ValeLMS contributors
 """Generate protected Compose configuration from explicit operator policy."""
-import argparse, importlib.util, json, os, secrets
+import argparse, importlib.util, json, os, secrets, sys
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'installer'))
+import policy as operator_policy
 p=argparse.ArgumentParser()
 p.add_argument('--directory',type=Path,required=True)
 p.add_argument('--qualification-only',action='store_true')
@@ -12,12 +14,17 @@ p.add_argument('--product-manifest',type=Path,help='Explicit reviewed successor 
 p.add_argument('--manifest-sha256',help='Required expected digest with --product-manifest')
 args=p.parse_args()
 if os.geteuid()!=0: raise SystemExit('Run as root inside disposable Linux')
+if any(p.is_symlink() for p in [args.directory,*args.directory.parents]):
+ raise SystemExit('Use a new non-symlink configuration directory')
 dest=args.directory.resolve()
 if dest.exists(): raise SystemExit('Configuration already exists: reuse it; no credentials overwritten')
 spec=importlib.util.spec_from_file_location('native',Path(__file__).parents[1]/'installer/install.py')
 native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
 if not args.qualification_only and not args.config: raise SystemExit('Provide --config or explicit --qualification-only')
-policy=json.loads(args.config.read_text()) if args.config else None
+try:
+ policy=operator_policy.load(args.config) if args.config else None
+except (ValueError,OSError):
+ raise SystemExit('Invalid protected policy: check HTTPS origins, distinct buckets and role secret-file permissions') from None
 s=dict(qualification=args.qualification_only,tenant='vl_'+secrets.token_hex(12),rpc=secrets.token_hex(32),
  grant=secrets.token_hex(32),subject=secrets.token_hex(32),
  db={r:secrets.token_hex(32) for r in native.ROLES},redis={r:secrets.token_hex(32) for r in native.ROLES},

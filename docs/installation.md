@@ -3,7 +3,10 @@
 RC2 targets **Moodle 5.2**, plugin requires build version 2026042000 or newer.
 Fresh Moodle **5.2.2**, PHP **8.3.6**, MariaDB **10.11.14** and Ubuntu **24.04**
 under WSL2 were qualified. This does not certify every PHP release, Moodle version
-or ordinary Linux VM. Moodle retains its own supported database configuration.
+or arbitrary Linux VM. A later independent **Ubuntu 24.04.5 ARM64 VM**, Moodle
+**5.2.4**, PHP **8.3.6**, MariaDB **10.11.14**, Docker **29.9.0** / Compose **5.6.0**
+passed installation and short media workflow using SeaweedFS 4.48. These are
+separate evidence lanes, not one combined matrix. Moodle retains its own supported database configuration.
 
 The service needs Python **3.12**, its locked dependencies, a separate MariaDB
 10.11 schema, Redis, private S3-compatible storage, trusted HTTPS API/gateway/storage
@@ -30,5 +33,6 @@ The exact RC2 distributions passed fresh Moodle 5.2.2 installation and a focused
 Chromium/HTTPS MinIO upload → FFmpeg → HLS → progress/completion → recycle/recovery
 smoke on Ubuntu 24.04 WSL2. Native/systemd installation and Compose passed their
 respective checks; the full browser media lifecycle used Compose. An ordinary
-Ubuntu VM/server and a complete new cross-browser/endurance matrix remain
-unqualified. Existing RC1 sites must read [transition](rc1-to-rc2.md).
+Ubuntu ARM64 Compose installation subsequently passed a separate short workflow;
+ordinary-server native/systemd and a complete new cross-browser/endurance matrix
+remain unqualified. Existing RC1 sites must read [transition](rc1-to-rc2.md).

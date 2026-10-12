@@ -1,10 +1,22 @@
 # Docker Compose installation
 
-Run on Linux with Docker Engine, Compose v2 and Python 3.12. Extract
+Run on Linux with Docker Engine, the Docker Compose plugin and Python 3.12. Extract
 `valelms-video-service-0.5.0-rc2.tar.gz`; commands below run from its
 `video-lesson/` root. No Moodle, MinIO or TLS-certificate service is bundled.
 
 ## Prepare
+
+Development tooling requires **Compose >= 2.30** (v5 is also supported) for raw
+environment-file values: literal `$`/quotes in storage credentials must not be
+interpolated or changed. Do not print `docker compose config`, which resolves
+secrets. Published RC2 keeps its historical Compose file/qualification boundary.
+
+Published RC2 uses the manual policy procedure below. The unreleased development
+branch adds `sudo python3 deploy/setup.py --directory /etc/valelms-video`, which
+guides the same policy/secret generation and calls this same `prepare.py`.
+Its runtime directory is `/etc/valelms-video/runtime`; substitute that for
+`/etc/video-lesson-compose` below. See [preflight](preflight.md)
+and the [complete proxy/storage example](installation-examples.md).
 
 Provision separate private raw and processed buckets and restricted credentials
 for API/gateway/worker/janitor. Set exact Moodle, API and gateway HTTPS origins.
@@ -26,7 +38,9 @@ a root-only parent. Individually mounted DB/ACL files must never be made public.
 
 ```sh
 sudo VIDEO_CONFIG=/etc/video-lesson-compose docker compose \
-  -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml up -d --build
+  -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml build migrate
+sudo VIDEO_CONFIG=/etc/video-lesson-compose docker compose \
+  -f deploy/docker/compose.yaml -f deploy/docker/storage-network.yaml up -d --no-build
 ```
 
 The storage-network overlay enables outbound access to operator-configured HTTPS
@@ -35,6 +49,10 @@ It does **not** publish MariaDB/Redis ports. Without the overlay, the base inter
 network is deliberately dependency-only and cannot serve remote object storage.
 Worker initially has 2 CPUs/2 GiB memory, sequential renditions and one job;
 size private staging and limits for the host before accepting larger uploads.
+
+Build first: `valelms-video-service:0.5.0-rc2` is a **local build tag**, not a public
+image to pull. This avoids the initial pull-access-denied detour from starting an
+unbuilt stack. Dependency images still require registry availability.
 
 An administrator-managed trusted TLS reverse proxy must map API and gateway to
 loopback **28090** and **28091** respectively. The included fixed-upstream proxy

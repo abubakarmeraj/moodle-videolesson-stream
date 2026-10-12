@@ -1,17 +1,63 @@
-# Quick start
+# Install ValeLMS: plugin, service, then a test video
 
-Use [requirements](installation.md) and [Docker installation](docker.md) before these steps.
+ValeLMS needs a Moodle plugin **and** a Linux Video Service. You do not need a
+ValeLMS account. You do need private S3-compatible storage, role credentials,
+DNS/trusted HTTPS and enough private processing disk. [Requirements](installation.md).
 
-1. Install `mod_videolessonstream-3.1.0-rc2.zip` in Moodle; complete its normal upgrade screen/CLI.
-2. On the service host, extract the service archive, provision private raw/processed
-   buckets and HTTPS routing, then prepare the protected operator policy and run Compose.
-3. Copy only `moodle-connection.json` securely to an outside-webroot file on the
-   Moodle host (root:PHP-runtime group, directory 0750/file 0640). Save that local
-   path in **Video Service configuration**. Never paste keys into URLs or public logs.
-4. Test Connection: require **COMPATIBLE**, schema 001–005, storage/Redis ready and
-   available worker capacity. `/health` alone is not this check.
-5. Create a ValeLMS Video Lesson Stream activity, choose Save and display, upload short synthetic media,
-   wait for Ready, and verify student playback/completion.
+Published RC2 is a prerelease: plugin 2026100702, service 0.5.0-rc2, protocol 2.
+Verify both downloads against the [release checksums](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2).
+This branch's guided commands are **unreleased**; RC2 keeps its original manual
+`prepare.py --config` procedure. Do not manually patch a deployed RC2 with these files.
 
-The separate service is required. This is not a ZIP-only Linux installer.
-Use [troubleshooting](troubleshooting.md) for setup/readiness failures.
+## 1. Install the plugin normally
+
+Install `mod_videolessonstream-3.1.0-rc2.zip` through Moodle and complete its normal
+upgrade screen/CLI. It adds **ValeLMS Video Lesson Stream**, not the older
+`mod_videolesson`. [RC1 transition](rc1-to-rc2.md).
+
+## 2. Install the separate service
+
+Use [Docker Compose on the existing Moodle host or a separate Linux server](docker.md).
+Provision private storage and trusted HTTPS first; [examples](installation-examples.md)
+cover generic S3/SeaweedFS, role permissions and the reverse proxy.
+
+In an approved development checkout, the new guided configuration is:
+
+```sh
+sudo python3 deploy/setup.py --directory /etc/valelms-video
+sudo python3 deploy/preflight.py --config /etc/valelms-video/policy.json \
+  --staging /etc/valelms-video/runtime/staging
+```
+
+The guide asks for four HTTPS origins, backend, two bucket names and four pairs
+of role credentials (hidden input). It creates protected files; no IAM, buckets,
+Moodle, firewall or services are changed. Existing config is never overwritten.
+For a non-default region/addressing/private CA, supply the protected operator
+policy instead. Run the documented Compose **build**, then **start**, commands.
+
+After startup and HTTPS routing, run the full explicit checks using the service's
+locked Python environment (see [preflight](preflight.md)):
+
+```sh
+sudo /opt/valelms-tools/bin/python deploy/preflight.py \
+  --config /etc/valelms-video/policy.json --staging /etc/valelms-video/runtime/staging \
+  --online --handoff /etc/valelms-video/runtime/moodle-connection.json --storage-probe
+```
+
+`--storage-probe` briefly creates/deletes tiny random synthetic objects. It never
+changes bucket policy or deletes existing media. Fix FAIL results; do not treat
+PENDING checks as verified. The local-only run can precede service startup.
+
+## 3. Connect Moodle and upload a short video
+
+Securely copy only `runtime/moodle-connection.json` to the Moodle server, outside
+webroot: root:PHP-runtime group, directory 0750, file 0640. Do not paste its
+contents into a browser or issue report. In **Site administration → Plugins →
+Activity modules → Video Service configuration**, enter its local path and click
+**Test Connection**. Require COMPATIBLE, schema 001–005, both buckets, Redis and
+fresh worker capacity. `/health` alone is insufficient.
+
+Create a lesson as a teacher → Save and display → Upload Video → wait for Ready.
+Use an enrolled student to check playback and saved watch progress/completion.
+That short browser test is essential: a service-host probe cannot prove browser
+DNS/TLS/CORS or Moodle-host connectivity. [Troubleshooting](troubleshooting.md).

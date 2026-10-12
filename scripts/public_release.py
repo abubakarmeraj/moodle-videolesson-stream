@@ -85,13 +85,13 @@ def snapshot():
     service = [r for r in product if r['path'].startswith('service/video-service/')]
     write(ROOT / 'docs/release/PRODUCT-MANIFEST.json', product)
     write(ROOT / 'docs/release/SERVICE-MANIFEST.json', service)
-    identity = {'plugin_component': 'mod_videolessonstream', 'plugin_version': 2026100702,
-                'plugin_release': 'ValeLMS 3.1.0-rc2', 'service_version': '0.5.0-rc2',
+    identity = {'plugin_component': 'mod_videolessonstream', 'plugin_version': 2026101200,
+                'plugin_release': 'ValeLMS 3.1.0-dev.3', 'service_version': '0.5.0-rc2',
                 'service_package_version': '0.5.0rc2', 'protocol': 2,
                 'schema_migrations': ['001', '002', '003', '004', '005'],
                 'moodle_line': '5.2', 'license': 'GPL-3.0-or-later',
                 'product_manifest_sha256': sha(json_bytes(product)), 'service_manifest_sha256': sha(json_bytes(service)),
-                'status': 'Private RC2 Local qualification candidate; not published; Deployment qualification required'}
+                'status': 'Unreleased installation-experience development; not an RC2 artifact; publication not authorized'}
     write(ROOT / 'docs/release/IDENTITY.json', identity)
     # Re-list newly generated public metadata; exclude only the self-referential index.
     records = inventory(n for n in source_paths() if n != PUBLIC_MANIFEST)
@@ -143,7 +143,8 @@ def verify_archive(path):
         raise ValueError('GPL license missing or differs')
     if release['component'] == 'plugin':
         version = payload[prefix + 'version.php'].decode()
-        if "$plugin->component = 'mod_videolessonstream';" not in version or '$plugin->version = 2026100702;' not in version:
+        if ("$plugin->component = 'mod_videolessonstream';" not in version or
+                ('$plugin->version = ' + str(release['plugin_version']) + ';') not in version):
             raise ValueError('Packaged Moodle identity differs')
     elif payload[prefix + 'service/video-service/VERSION'].decode().strip() != release['service_version']:
         raise ValueError('Packaged service identity differs')
@@ -152,6 +153,8 @@ def verify_archive(path):
 
 def build(output):
     identity, names = verify_source()
+    if identity.get('status', '').startswith('Unreleased'):
+        raise ValueError('Development source is not authorized for release; preserve published RC2 artifacts')
     # Activity plugin names have stricter rules than other Moodle plugin types.
     if not re.fullmatch(r'mod_[a-z][a-z0-9]*', identity['plugin_component']):
         raise ValueError('Moodle activity name invalid; never package an undiscoverable component')

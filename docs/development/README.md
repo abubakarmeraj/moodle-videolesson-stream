@@ -8,3 +8,7 @@ The [RC2 handoff](RC2-QUALIFICATION-HANDOFF.md) is a bounded qualification task,
 not permission to publish. Read [identity audit](RC2-IDENTITY-AUDIT.md),
 [coexistence](ORIGINAL-PLUGIN-COEXISTENCE.md) and [breaking transition](../rc1-to-rc2.md).
 Source fingerprints live in `docs/release/`; immutable RC1 copies remain under rc1/.
+
+Unreleased installation-experience work: [results](installation-ux/RESULTS.md),
+[review handoff](installation-ux/HANDOFF.md), [watch-credit observation plan](installation-ux/watch-progress-plan.md).
+The shared human/AI installation entry point is [docs/quick-start.md](../quick-start.md).

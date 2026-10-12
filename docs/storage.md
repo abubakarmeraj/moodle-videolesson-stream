@@ -54,6 +54,9 @@ development-only service HTTP setting is used for storage-layer tests.
 
 - API: raw multipart creation/list/complete/abort, HEAD/verification and narrowly
   scoped raw deletion for verified abort cleanup; no processed deletion.
+  Its readiness probe also needs **HEAD on the processed bucket**; this does
+  not grant processed-object modification. S3 commonly maps HEAD bucket to
+  `s3:ListBucket`; SeaweedFS role actions differ (see the examples).
 - Worker: raw read and processed write; gateway: processed read only.
 - Janitor: scoped cleanup in assigned buckets; no bucket-wide arbitrary deletion.
 - Buckets remain private. The MinIO admin console must not be publicly exposed.
@@ -76,3 +79,9 @@ and exact sizes, ranged/normal GET and idempotent scoped delete. Adaptive sizing
 plans at most 8192 parts; resume discovers committed parts, not browser-only state.
 Readiness checks bucket access; a short real browser upload remains required to
 verify CORS/network/provider behavior.
+
+The later independent Ubuntu ARM64 VM run used **SeaweedFS 4.48**, private buckets,
+exact-origin CORS and an HTTPS proxy. See [practical role/CORS examples](installation-examples.md)
+and [sanitized evidence/limits](qualification-ubuntu-arm64.md). MinIO remains
+supported, but its old binary/image URLs were unavailable to that tester; neither
+storage server is bundled or automatically downloaded by ValeLMS.

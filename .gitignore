@@ -34,6 +34,7 @@ docs/development/*
 !docs/development/RC1-ARTIFACT-VERIFICATION-HANDOFF.md
 !docs/development/rc1/
 !docs/development/rc2/
+!docs/development/installation-ux/
 !docs/development/ORIGINAL-PLUGIN-COEXISTENCE.md
 !docs/development/RC2-IDENTITY-AUDIT.md
 !docs/development/RC2-QUALIFICATION-HANDOFF.md

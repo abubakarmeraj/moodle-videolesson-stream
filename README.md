@@ -2,12 +2,17 @@
 
 > RC2 is a release candidate, not stable software or an in-place RC1 upgrade.
 > Its exact distributions passed focused installation and media qualification
-> on Ubuntu 24.04 WSL2. See the [RC2 release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
+> on Ubuntu 24.04 WSL2, then an independent Ubuntu 24.04.5 ARM64 VM installation
+> with Moodle 5.2.4 and SeaweedFS. See the [RC2 release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
 > for verified assets, qualification scope and known limits. RC1 remains immutable.
 
-A Moodle video lesson/activity plugin plus a self-hosted processing service.
-Teachers upload directly to private object storage; students watch authorized
-adaptive video in Moodle, with course-controlled progress and completion.
+Add private, adaptive video lessons to Moodle. Teachers upload a video; students
+watch it inside their course with saved progress and completion. Your own Linux
+Video Service processes the upload—no ValeLMS-hosted subscription is required.
+
+You install **two pieces**: a normal Moodle plugin ZIP and a separate Video
+Service. You also need private S3-compatible storage and trusted HTTPS. The ZIP
+alone cannot encode or host videos. [Start the installation here](docs/quick-start.md).
 
 Distinct Moodle activity: **`mod_videolessonstream`**, installed under
 `mod/videolessonstream`. It is not the original `mod_videolesson` plugin.
@@ -16,6 +21,12 @@ RC2 does not automatically upgrade or migrate RC1 activities.
 
 **Release candidate:** plugin **3.1.0-rc2** (2026100702), Video Service
 **0.5.0-rc2**. This is not a stable release. No ValeLMS-hosted account is needed.
+
+This development branch contains unreleased **3.1.0-dev.3** (2026101200)
+installation improvements. Service runtime remains **0.5.0-rc2** / protocol 2.
+New setup/preflight commands below are development source, not retroactively
+included in the immutable RC2 download. Do not mix development and release files
+on a live installation; await a reviewed successor distribution.
 
 ## Quick start
 
@@ -36,8 +47,9 @@ Storage accounts/buckets, DNS and HTTPS are operator prerequisites, not automati
 See the [short quick start](docs/quick-start.md), [requirements](docs/installation.md),
 [configuration](docs/configuration.md), [storage contract](docs/storage.md),
 [upgrading](docs/upgrading.md), and [known qualification limits](docs/known-limitations.md).
-Cloudflare R2 and generic S3-compatible storage are supported; MinIO was used for
-qualification, not bundled. Local-filesystem storage is not implemented.
+Cloudflare R2 and generic S3-compatible storage are supported. MinIO (WSL2) and
+SeaweedFS 4.48 (ARM64 VM) were used for separate qualification runs, not bundled.
+Local-filesystem storage is not implemented. [AI installation agents start here](docs/ai-installation.md).
 
 ## Features
 

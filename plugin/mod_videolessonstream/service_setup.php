@@ -31,6 +31,12 @@ if (data_submitted()) {
 }
 echo $OUTPUT->header();
 echo $OUTPUT->heading(get_string('cfservicesetup', 'mod_videolessonstream'));
+echo html_writer::tag('h3', get_string('cfsetupheading', 'mod_videolessonstream'));
+echo html_writer::start_tag('ol');
+foreach (['install', 'storage', 'handoff', 'test', 'smoke'] as $step) {
+    echo html_writer::tag('li', get_string('cfsetupstep_' . $step, 'mod_videolessonstream'));
+}
+echo html_writer::end_tag('ol');
 echo html_writer::tag('p', get_string('cfsetupinstructions', 'mod_videolessonstream'));
 try {
     $connection = \mod_videolessonstream\local\service_setup::configuration();
