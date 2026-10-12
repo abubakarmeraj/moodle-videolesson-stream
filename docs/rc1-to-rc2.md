@@ -29,4 +29,6 @@ keys and database state. Disable legacy protocol only after old clients/grants
 are retired. Ready media bytes, storage keys and migrations001–005 are unchanged.
 
 RC1's immutable tag, release artifacts and historical manifests remain available
-as provenance. Deployment must qualify the exact RC2 candidates before publishing.
+as provenance. The exact RC2 distributions passed focused Deployment qualification;
+see the [RC2 prerelease](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
+for its scope. No automatic RC1 activity/data/media migration is supplied.

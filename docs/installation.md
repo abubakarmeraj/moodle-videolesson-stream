@@ -26,7 +26,9 @@ Allocate staging from actual source size/duration and rendition policy. A large
 upload setting is not a disk-capacity or processing-speed promise. See
 [configuration](configuration.md) and [known limitations](known-limitations.md).
 
-Earlier media/runtime qualification is historical RC1 evidence, not automatic
-qualification of the renamed RC2 activity. RC2 Local proves fresh discovery,
-installation, namespace isolation and signed setup; Deployment must finish the
-short matched-artifact media smoke. Existing RC1 sites must read [transition](rc1-to-rc2.md).
+The exact RC2 distributions passed fresh Moodle 5.2.2 installation and a focused
+Chromium/HTTPS MinIO upload → FFmpeg → HLS → progress/completion → recycle/recovery
+smoke on Ubuntu 24.04 WSL2. Native/systemd installation and Compose passed their
+respective checks; the full browser media lifecycle used Compose. An ordinary
+Ubuntu VM/server and a complete new cross-browser/endurance matrix remain
+unqualified. Existing RC1 sites must read [transition](rc1-to-rc2.md).

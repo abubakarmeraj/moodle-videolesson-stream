@@ -1,8 +1,9 @@
 # ValeLMS Video Lesson Stream
 
-> RC2 is an unpublished qualification candidate. The owner approved
-> `mod_videolessonstream`: Moodle activity names cannot contain underscores.
-> See [identity audit](docs/development/RC2-IDENTITY-AUDIT.md). RC1 remains immutable.
+> RC2 is a release candidate, not stable software or an in-place RC1 upgrade.
+> Its exact distributions passed focused installation and media qualification
+> on Ubuntu 24.04 WSL2. See the [RC2 release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0-rc2)
+> for verified assets, qualification scope and known limits. RC1 remains immutable.
 
 A Moodle video lesson/activity plugin plus a self-hosted processing service.
 Teachers upload directly to private object storage; students watch authorized
@@ -25,7 +26,7 @@ RC2 does not automatically upgrade or migrate RC1 activities.
    configure its server-local path under **Site administration → Plugins →
    Activity modules → Video Service configuration**.
 4. Click **Test Connection**. Require compatible service, storage, Redis and worker readiness.
-5. Add a **Video Lesson**, save and display, then upload a short test video.
+5. Add **ValeLMS Video Lesson Stream**, save and display, then upload a short test video.
 
 The Moodle ZIP **does not install Linux services**. The Video Service is required,
 on the same server or another server. Compose is the recommended installation
@@ -77,7 +78,7 @@ tests, focused pull requests and DCO/Signed-off-by guidance. Follow our
 
 ## Issues
 
-[Bugs, feature requests and installation questions](https://github.com/abubakarmeraj/moodle-videolesson/issues/new/choose)
+[Bugs, feature requests and installation questions](https://github.com/abubakarmeraj/moodle-videolesson-stream/issues/new/choose)
 are welcome. Use the templates and share only sanitized information.
 
 ## Security

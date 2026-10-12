@@ -21,8 +21,8 @@
   },
   {
     "path": ".github/ISSUE_TEMPLATE/config.yml",
-    "sha256": "65ee6ad1b56458751a8ca4a9eb5cdcb3f1db09c9703e1bb0c6b8d01b488fda92",
-    "bytes": 414
+    "sha256": "9585fb7668a01919e97e61f86dc5ac44b39a868a5682078aea88d95ef844344a",
+    "bytes": 421
   },
   {
     "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
@@ -71,13 +71,13 @@
   },
   {
     "path": "README.md",
-    "sha256": "5e616dc6dec771cf6b6a64ec12bf46900fef2780104a6e6a66bd265635051e28",
-    "bytes": 4800
+    "sha256": "e616fed5f51c62af9c46193ad1def838954ecd0c9d85d31dbc218839235f8fa2",
+    "bytes": 4958
   },
   {
     "path": "SECURITY.md",
-    "sha256": "d2c2358cd799d2ec6b35ada382403af8ed851177187bf133e59dfb8e6f1f14f3",
-    "bytes": 1669
+    "sha256": "08a3534c9513bfe3b4127097dd168967aa57afa40da0516c16409ae6dd6734f6",
+    "bytes": 1682
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
@@ -261,13 +261,13 @@
   },
   {
     "path": "docs/installation.md",
-    "sha256": "edd5e5ff2636d3783f90c28f55995861c26f76bf9e082d14106ec09b9b88a157",
-    "bytes": 2117
+    "sha256": "5be7ffc70037490f54be349d2f87f22aee1f9c7b141fe0acfbd4484b93809ab7",
+    "bytes": 2266
   },
   {
     "path": "docs/known-limitations.md",
-    "sha256": "c91b4476763252b6fae564a3eed0d8f88f79f6976fa170709824e4f234fb76de",
-    "bytes": 1489
+    "sha256": "4417e467cce1b9c1451a9c75a0b71a37ccf0f033d77df117a904997a53e57a68",
+    "bytes": 2511
   },
   {
     "path": "docs/licenses/Apache-2.0.txt",
@@ -466,13 +466,13 @@
   },
   {
     "path": "docs/quick-start.md",
-    "sha256": "c9dd37ef8c58e48f946eaf499587d6eac2a1772e9a3368fd34f263d62b2f1cf1",
-    "bytes": 1056
+    "sha256": "259d348a0b51b6a3cd817e2524174c227cc38b387a9e44de197c75104b8e608f",
+    "bytes": 1097
   },
   {
     "path": "docs/rc1-to-rc2.md",
-    "sha256": "9bf9e9a7f10deda8389b82c75385010d419e97bc85223f03a2399bf326a73160",
-    "bytes": 2059
+    "sha256": "fd36b930c1bc32aa2d79a4336013a83527098be28c0597c8488a3c9c37a566b9",
+    "bytes": 2244
   },
   {
     "path": "docs/release/IDENTITY.json",
@@ -516,8 +516,8 @@
   },
   {
     "path": "docs/storage.md",
-    "sha256": "0624186b6f5fd6656d0da98497dfbb24e1e49b5d0526936905c1a8de9784bab4",
-    "bytes": 4708
+    "sha256": "3b27a0b2eddb76f76058d1f4dc99008a9a22978ce4d5a38a8d95b4f584a2e6bb",
+    "bytes": 4702
   },
   {
     "path": "docs/troubleshooting.md",

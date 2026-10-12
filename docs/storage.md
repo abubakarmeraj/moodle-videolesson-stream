@@ -38,10 +38,10 @@ multipart/checksum/metadata/CORS behavior must satisfy the contract below.
 
 ## MinIO qualification
 
-Independent prior qualification used a disposable HTTPS MinIO implementation.
-MinIO is not bundled and its administration console must remain private. Local
-RC2 retains configuration/client/URL tests; Deployment repeats one real upload
-smoke after the identity/protocol change. No universal S3 compatibility claim.
+The exact RC2 distributions passed an independent HTTPS MinIO browser multipart
+upload and short media/recovery smoke. MinIO is not bundled and its administration
+console must remain private. This does not certify every S3 provider. Dedicated
+RC2 R2 regressions are synthetic, not a new live Cloudflare test.
 
 The service's `STORAGE_ENDPOINT` must be reachable by both service and teacher
 browser: it appears in short-lived exact-part presigned PUT URLs. A container-only
