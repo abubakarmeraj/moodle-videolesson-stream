@@ -51,13 +51,13 @@
   },
   {
     "path": "AGENTS.md",
-    "sha256": "243483eb16e379ad655d7d6b957d6bf3a0b07430b4ae4e31f73bf5624778e09c",
-    "bytes": 1188
+    "sha256": "4900b699f2cc93038c74cf39679870a88f00a786d480db931c2f47aba26cc1e7",
+    "bytes": 1264
   },
   {
     "path": "CHANGELOG.md",
-    "sha256": "30c4d1c3a1dc5fd24bf9331f7bcf53ecd916a1e3f1fd47f40ff722b6a0932b5c",
-    "bytes": 3568
+    "sha256": "b36ba3af38f7dbff738bdf4e20a7d4f93e68eb494f1065025fc06ff0c8314d86",
+    "bytes": 3555
   },
   {
     "path": "CODE_OF_CONDUCT.md",
@@ -76,13 +76,13 @@
   },
   {
     "path": "README.md",
-    "sha256": "ff3f1d15d96a14f5b123a7eecdcacc6ed72e3d3b84dee721ad9ada6eef8a58e9",
-    "bytes": 5267
+    "sha256": "f9059b8901fc5d3778559c7a6b8a9cf5b69adba4d041a95f542216184ac11339",
+    "bytes": 5557
   },
   {
     "path": "SECURITY.md",
-    "sha256": "08a3534c9513bfe3b4127097dd168967aa57afa40da0516c16409ae6dd6734f6",
-    "bytes": 1682
+    "sha256": "ce9eed7974f1bb9a7cd64cf963370cdc739e9887904ec2f61ce4778dbc5e4bba",
+    "bytes": 1685
   },
   {
     "path": "THIRD_PARTY_NOTICES.md",
@@ -181,8 +181,8 @@
   },
   {
     "path": "docs/ai-installation.md",
-    "sha256": "856354e9462d4aee451ac0f0b1e0a27ae4fd8dd4b2680b6f6e6c7715b80c3074",
-    "bytes": 4585
+    "sha256": "a56812f5c7042849f93f7d82bb5ae1cfd26423fe7c86007a5dcab66d28611c82",
+    "bytes": 4652
   },
   {
     "path": "docs/architecture.md",
@@ -231,8 +231,8 @@
   },
   {
     "path": "docs/development/README.md",
-    "sha256": "397f1cb3cff41ce877fac423e8950b6dd9603d41722d1636b09dad6708f37eea",
-    "bytes": 1194
+    "sha256": "cfe2e9c8a2f285c1bba22a114fbbb8c22c49a857d37c232b090a0f4bdbab3bc6",
+    "bytes": 1388
   },
   {
     "path": "docs/development/installation-ux/CHANGE-INVENTORY.md",
@@ -321,8 +321,8 @@
   },
   {
     "path": "docs/known-limitations.md",
-    "sha256": "132e4559fc4456ea6efdf56f8f8a7d9c33f5ca6c9416c433252ddca6ab5fcf55",
-    "bytes": 3777
+    "sha256": "1d0c0b75c1c8c280b2729d718efa79e8f48dca416e19b5eff48a6c875af1d93e",
+    "bytes": 4052
   },
   {
     "path": "docs/licenses/Apache-2.0.txt",
@@ -530,14 +530,19 @@
     "bytes": 2928
   },
   {
+    "path": "docs/qualification-stable-3.1.0.md",
+    "sha256": "a0186737ace0607113a54208b278cdab685a5eea06d8f72214f37ad04a7c969c",
+    "bytes": 3897
+  },
+  {
     "path": "docs/qualification-ubuntu-arm64.md",
     "sha256": "db261c37766257cdb6c715919e37d3770fe3d0207acf6cd8bf4c1f423d2d5941",
     "bytes": 2462
   },
   {
     "path": "docs/quick-start.md",
-    "sha256": "3143b4aaa376079ee5d0a3965b695f3f1730aaf24c1316c7d447f4ae6651d619",
-    "bytes": 3341
+    "sha256": "86d18cc64a3a5c0089223eca55d68cd36a2cf5fb6191416f5bbdc6c61ac460a8",
+    "bytes": 3406
   },
   {
     "path": "docs/rc1-to-rc2.md",
@@ -546,8 +551,8 @@
   },
   {
     "path": "docs/release/IDENTITY.json",
-    "sha256": "eef4140a5a32108e0666e879ec26fa67062ad27c7b006ee11d97cd78986cc88f",
-    "bytes": 650
+    "sha256": "ed0bede1a803e0f654103bc23b5e929a24f0e51eb4a0eb4f4ba9cfc0c0d17746",
+    "bytes": 720
   },
   {
     "path": "docs/release/PRODUCT-MANIFEST.json",
@@ -611,8 +616,8 @@
   },
   {
     "path": "docs/upgrading.md",
-    "sha256": "608f1b77aed0bf0372a855d9822cdba8706b147782c6bfc7125a723ffbfea6ad",
-    "bytes": 3977
+    "sha256": "02924205a1438516c5a49aee6d17eb3142fbb0ded3e0979cf974f0ad215c857e",
+    "bytes": 4064
   },
   {
     "path": "plugin/mod_videolessonstream/CHANGES.md",

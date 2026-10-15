@@ -17,13 +17,17 @@ alone cannot encode or host videos. [Start the installation here](docs/quick-sta
 - Durable processing status, recycle/recovery and retention cleanup.
 - Guided protected setup, preflight storage write checks and Moodle Test Connection.
 
-**3.1.0 stable candidate:** plugin **2026101201 / ValeLMS 3.1.0**, Video Service
-**0.5.0**, protocol **2**. Private packages are prepared for final artifact-native
-verification; stable publication still requires human approval. Core functionality
-is supported within the [documented environment/qualification limits](docs/known-limitations.md),
-not a certification of every Linux distribution, S3 provider or workload.
+**Recommended release: [ValeLMS 3.1.0 Stable](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0)** —
+plugin **2026101201 / ValeLMS 3.1.0**, Video Service **0.5.0**, protocol **2**.
+The exact packages passed [final artifact-native qualification](docs/qualification-stable-3.1.0.md)
+and were approved for publication. Core functionality is supported within the
+[documented environment/qualification limits](docs/known-limitations.md), not a
+certification of every Linux distribution, S3 provider or workload.
 
 ## Quick start
+
+Download the matched plugin ZIP, service archive and checksums from the
+[Stable release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0).
 
 1. Install the verified `mod_videolessonstream-3.1.0.zip` through Moodle's plugin installer.
 2. Install the separate Video Service using [Docker Compose](docs/docker.md),

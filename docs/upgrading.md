@@ -1,9 +1,10 @@
 # Upgrading to ValeLMS 3.1.0
 
 Use the coordinated **plugin 2026101201 / ValeLMS 3.1.0 + service 0.5.0**
-packages. This source is a private stable candidate until focused artifact-native
-verification and human approval. Never manually patch or overwrite published
-RC1/RC2 assets. Keep matched backups of Moodle DB/moodledata, service DB, protected
+packages from the [Stable release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0).
+The exact pair passed a supported RC2-to-Stable upgrade in an isolated matched
+clone. Never manually patch or overwrite published RC1/RC2 assets. Keep matched
+backups of Moodle DB/moodledata, service DB, protected
 identity/configuration and storage before an approved upgrade.
 
 From `mod_videolessonstream` RC2 (2026100702) or dev.3 (2026101200), normal Moodle

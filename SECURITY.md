@@ -11,12 +11,12 @@ Do not post exploit details, credentials or customer data publicly.
 Include affected versions, impact and reproducible steps, removing signing keys,
 passwords, credentials, cookies, presigned URLs and private media. If sensitive
 details are essential, first arrange a suitable private channel with the maintainer.
-Investigation/disclosure will be coordinated; release candidates imply no response-time guarantee.
+Investigation/disclosure will be coordinated; no response-time guarantee is offered.
 
 ## Supported line
 
-3.1.0-rc2/plugin plus0.5.0-rc2/service is the prepared supported candidate tuple.
-There is not yet a stable release or guaranteed maintenance window.
+The supported Stable pair is ValeLMS 3.1.0/plugin plus 0.5.0/service, protocol 2.
+Use the matched assets from the v3.1.0 release. No maintenance window is guaranteed.
 
 ## Model
 

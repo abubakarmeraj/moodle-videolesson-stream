@@ -16,5 +16,5 @@
   "license": "GPL-3.0-or-later",
   "product_manifest_sha256": "dca9384dc198dbba5fddc55b72ff4a56719991441559cfa03100888d7f440222",
   "service_manifest_sha256": "a7a4b4b266a38e7008ec7e7d6a3937473adca6b7f7308fbab127fa701981fb45",
-  "status": "Stable preparation candidate; private artifact verification pending; publication not authorized"
+  "status": "Stable 3.1.0 approved for publication; qualified product source edd85c8be803a9c6776c3d55efa121839957e60e; published archives retain their exact preparation manifests"
 }

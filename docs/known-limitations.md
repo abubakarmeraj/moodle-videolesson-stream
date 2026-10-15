@@ -1,13 +1,17 @@
 # Known qualification limits
 
-ValeLMS 3.1.0 / service 0.5.0 is a **stable preparation candidate**, pending one
-focused artifact-native verification and human publication approval. Supported
-core functionality does not certify every OS, S3 implementation or workload.
+ValeLMS 3.1.0 / service 0.5.0 is the recommended **Stable** pair. Its exact
+packages passed [focused artifact-native verification](qualification-stable-3.1.0.md)
+and received human publication approval. Supported core functionality does not
+certify every OS, S3 implementation or workload.
 The independent installation-UX baseline passed on real Ubuntu ARM64/Moodle 5.2.4,
 including faults/retries, pause/reload/resume, upload/processing/playback and
 persisted student completion. See [that separate evidence](qualification-installation-ux.md).
-The stable patch is limited to the final UX/ports/version corrections; it does
-not claim a fresh full media or cross-browser/endurance matrix.
+The final Stable run used Ubuntu 24.04.5 WSL2/systemd, fresh Moodle 5.2.4 and an
+isolated Moodle 5.2.2 RC2-upgrade clone. It verified installation, native onboarding,
+upload faults/retry/pause/reload/resume, HLS playback, completion, recycle/recovery
+and existing-data preservation. It is not a new ordinary ARM64 VM, full
+cross-browser or endurance certification.
 
 - RC1 and RC2 are prereleases, not stable software. RC2 is a distinct Moodle
   component and does not automatically migrate RC1 activities, media or data.

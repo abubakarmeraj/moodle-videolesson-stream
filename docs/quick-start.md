@@ -6,9 +6,10 @@ DNS/trusted HTTPS and enough private processing disk. [Requirements](installatio
 
 Use one matched **3.1.0** package pair: plugin 2026101201 and service 0.5.0,
 protocol 2, migrations 001–005. Verify the supplied `SHA256SUMS` before extracting.
-During stable preparation these packages are private candidates, not a published
-release. Existing installations: read [upgrading](upgrading.md); do not mix files
-or manually patch an older distribution.
+Download the exact matched pair and checksums from
+[ValeLMS 3.1.0 Stable](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0).
+Existing installations: read [upgrading](upgrading.md); do not mix files or
+manually patch an older distribution.
 
 ## 1. Install the plugin normally
 

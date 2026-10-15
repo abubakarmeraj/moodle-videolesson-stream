@@ -1,10 +1,10 @@
 # Changelog
 
-## 3.1.0 — stable candidate, not yet published
+## 3.1.0 — Stable (2026-10-15)
 
 Plugin 2026101201 / ValeLMS 3.1.0; Video Service 0.5.0; protocol 2,
-migrations 001–005. Private artifact verification and human publication approval
-are still required. RC1/RC2 tags and published assets remain immutable.
+migrations 001–005. Final artifact-native verification passed and the human owner
+approved publication. RC1/RC2 tags and published assets remain immutable.
 
 - First-install Moodle New settings now includes the setup entry, with clickable
   guide links on the protected five-step page.

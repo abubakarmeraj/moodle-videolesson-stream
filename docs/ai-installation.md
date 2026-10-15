@@ -19,10 +19,10 @@ Do not use a production/cloud account merely because credentials are available.
 ## Choose and verify one matched version
 
 Verify source/archive manifests and checksums before extraction. The coordinated
-stable candidate is plugin **2026101201 / 3.1.0** + service **0.5.0**, protocol
-**2**, migrations **001–005**. Candidate packages stay private until artifact
-verification and human publication approval. Never mix branch files with frozen
-assets or bypass version guards. RC1 component migration is not automatic;
+recommended [Stable release](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0)
+is plugin **2026101201 / 3.1.0** + service **0.5.0**, protocol **2**, migrations
+**001–005**. Use its exact assets and SHA256SUMS, not a repack of current main.
+Never mix branch files with frozen assets or bypass version guards. RC1 component migration is not automatic;
 read [upgrading](upgrading.md) for existing prerelease installations.
 Use a supported Moodle patch/PHP/DB combination and record what you actually run.
 

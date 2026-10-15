@@ -13,6 +13,8 @@ Unreleased installation-experience work: [results](installation-ux/RESULTS.md),
 [review handoff](installation-ux/HANDOFF.md), [watch-credit observation plan](installation-ux/watch-progress-plan.md).
 The shared human/AI installation entry point is [docs/quick-start.md](../quick-start.md).
 
-Current stable preparation: [results](stable-3.1.0/PREPARATION.md),
-[artifact-native handoff](../release/stable-3.1.0/QUALIFICATION-HANDOFF.md).
-Earlier dev.3/RC2 reports remain historical evidence, not the current package identity.
+Current release: [ValeLMS 3.1.0 Stable](https://github.com/abubakarmeraj/moodle-videolesson-stream/releases/tag/v3.1.0),
+with [final qualification](../qualification-stable-3.1.0.md).
+The [preparation results](stable-3.1.0/PREPARATION.md) and
+[original qualification handoff](../release/stable-3.1.0/QUALIFICATION-HANDOFF.md)
+remain historical, unchanged records. Earlier dev.3/RC2 reports are not the current package identity.
